@@ -1,0 +1,54 @@
+# ── [Phase 1 Fix]: Dimension constants — single source of truth ──
+# State composition: cat([node_emb, sub_emb, intent, csi])
+#   [B, 256] cat [B, 128] cat [B, 64] cat [B, 4] -> [B, 452]
+model_dims:
+  node_emb_dim: 256
+  sub_emb_dim: 128
+  intent_dim: 64
+  csi_dim: 4
+  state_dim: 452        # = 256 + 128 + 64 + 4
+  action_dim: 128
+  transe_emb_dim: 128   # TransE entity/relation embedding dim
+
+# ── Slow Loop ──
+slow_loop:
+  intent:
+    provider: "keyword_lookup"      # deterministic lookup, no LLM/LAM API
+    extractor: "agents/slow_loop/intent_extractor.py"
+  kg:
+    max_subgraph_nodes: 64
+    embedding_dim: 128              # TransE / GNN input embedding dim
+
+# ── Fast Loop ──
+fast_loop:
+  gail:
+    generator_lr: 3.0e-4
+    discriminator_lr: 1.0e-4
+    entropy_coef: 0.01
+    gamma: 0.99
+    gae_lambda: 0.95
+    clip_epsilon: 0.2
+    batch_size: 128
+    buffer_capacity: 10000
+  mdp:
+    max_hops: 8
+    num_bw_bins: 16
+    num_mcs_levels: 8
+  channel:
+    type: "rayleigh"                # awgn | rayleigh | rician
+    snr_db: [0, 30]
+    doppler_hz: 10.0
+
+# ── Training ──
+training:
+  device: "cuda"
+  seed: 42
+  epochs: 200
+  log_interval: 10
+  save_dir: "./checkpoints"
+  tensorboard_dir: "./runs"
+
+# ── Data ──
+data:
+  static_kg_path: ""                # Phase 1: keep empty to assert no static dependency
+  kg_format: "json"

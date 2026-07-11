@@ -1,0 +1,52 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.env
+.env.*
+
+# Local IDE and assistant state
+.idea/
+.vscode/
+.claude/
+.agents/
+
+# Experiment/model outputs
+checkpoints/
+experiments/results/
+tmp_compile_cache/
+tmp_transe_*/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+
+# Generated figures and rendered artifacts
+experiments/figures/*.pdf
+experiments/figures/*.png
+paper/*.pdf
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*_build.*
+paper/main_v2.*
+
+# Temporary research scans and scratch files
+tmp_*.json
+temp_*.txt
+*.tmp
+*.bak
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,16 @@
+# Cognitive Semantic Communication — Fast-Slow Dual Loop
+# Target: IEEE TWC / JSAC
+# Phase 1: Base decoupling & interface definition
+
+numpy>=1.24.0
+torch>=2.0.0
+pyyaml>=6.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+tqdm>=4.65.0
+tensorboard>=2.13.0
+gymnasium>=0.29.0
+networkx>=3.1
+# [Phase 1 Fix]: GNN encoder requires torch_geometric for GCNConv.
+# Install matching your PyTorch/CUDA version: https://pyg.org/whl/
+torch_geometric>=2.4.0
