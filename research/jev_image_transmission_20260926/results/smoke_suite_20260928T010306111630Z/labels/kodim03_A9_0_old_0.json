@@ -1,0 +1,53 @@
+{
+  "case_id": "kodim03_A9_0_old_0",
+  "actions": {
+    "upper_left": {
+      "mse": 0.0027110695373266935,
+      "psnr_db": 25.66859245300293,
+      "lpips_normalized": 0.1523086428642273
+    },
+    "upper_right": {
+      "mse": 0.0025162850506603718,
+      "psnr_db": 25.992401123046875,
+      "lpips_normalized": 0.13922417163848877
+    },
+    "lower_left": {
+      "mse": 0.0024525183252990246,
+      "psnr_db": 26.103878021240234,
+      "lpips_normalized": 0.12981481850147247
+    },
+    "lower_right": {
+      "mse": 0.0024707552511245012,
+      "psnr_db": 26.07170295715332,
+      "lpips_normalized": 0.1527348756790161
+    },
+    "global": {
+      "mse": 0.002857180777937174,
+      "psnr_db": 25.440624237060547,
+      "lpips_normalized": 0.1768251210451126
+    },
+    "stop": {
+      "mse": 0.002511429600417614,
+      "psnr_db": 26.000789642333984,
+      "lpips_normalized": 0.14383681118488312
+    }
+  },
+  "single": {
+    "mse": 0.0019347653724253178,
+    "psnr_db": 27.133716583251953,
+    "lpips_normalized": 0.09440843760967255
+  },
+  "base_region_mse": {
+    "upper_left": 0.003846497042104602,
+    "upper_right": 0.002013429068028927,
+    "lower_left": 0.0014162342995405197,
+    "lower_right": 0.002769558224827051
+  },
+  "base_start": 8368,
+  "enhancement_start": 8436,
+  "base_pilots": 1,
+  "enhancement_pilots": 2,
+  "single_pilots": 2,
+  "base_codec_ms": 32.90959994774312,
+  "single_codec_ms": 40.273600025102496
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "channel": "A1",
+    "snr_db": 6,
+    "note": "Expected ZF error for an independent unit-power complex symbol; physics proxy, not measured neural-feature MSE. Same 32 anchors and two phases as E2E.",
+    "methods": {
+      "hold": {
+        "mean_zf_mse_proxy": 0.31872554510971585,
+        "p95_zf_mse_proxy": 0.6082835491295329,
+        "min_estimated_amplitude": 0.4750123867210527
+      },
+      "wiener": {
+        "mean_zf_mse_proxy": 0.30109777836279167,
+        "p95_zf_mse_proxy": 0.6484915806161362,
+        "min_estimated_amplitude": 0.4682130693358521
+      },
+      "ideal": {
+        "mean_zf_mse_proxy": 0.30137007095083584,
+        "p95_zf_mse_proxy": 0.6541874841793119,
+        "min_estimated_amplitude": 0.46688680085855144
+      }
+    }
+  },
+  {
+    "channel": "A3",
+    "snr_db": 6,
+    "note": "Expected ZF error for an independent unit-power complex symbol; physics proxy, not measured neural-feature MSE. Same 32 anchors and two phases as E2E.",
+    "methods": {
+      "hold": {
+        "mean_zf_mse_proxy": 0.4614999046967111,
+        "p95_zf_mse_proxy": 0.9233008852803257,
+        "min_estimated_amplitude": 0.4364643174472736
+      },
+      "wiener": {
+        "mean_zf_mse_proxy": 0.35452519439809216,
+        "p95_zf_mse_proxy": 0.8722357052281444,
+        "min_estimated_amplitude": 0.4205088527118683
+      },
+      "ideal": {
+        "mean_zf_mse_proxy": 0.36211765606882307,
+        "p95_zf_mse_proxy": 0.8992977986095789,
+        "min_estimated_amplitude": 0.4145785218742232
+      }
+    }
+  },
+  {
+    "channel": "A5",
+    "snr_db": 6,
+    "note": "Expected ZF error for an independent unit-power complex symbol; physics proxy, not measured neural-feature MSE. Same 32 anchors and two phases as E2E.",
+    "methods": {
+      "hold": {
+        "mean_zf_mse_proxy": 0.5752084567725625,
+        "p95_zf_mse_proxy": 1.5206930433687789,
+        "min_estimated_amplitude": 0.3411277069455289
+      },
+      "wiener": {
+        "mean_zf_mse_proxy": 0.4819133683235509,
+        "p95_zf_mse_proxy": 1.3049285315935284,
+        "min_estimated_amplitude": 0.24602135188278992
+      },
+      "ideal": {
+        "mean_zf_mse_proxy": 0.34794244927247475,
+        "p95_zf_mse_proxy": 0.9325256878692868,
+        "min_estimated_amplitude": 0.33947066155873057
+      }
+    }
+  },
+  {
+    "channel": "A7",
+    "snr_db": 6,
+    "note": "Expected ZF error for an independent unit-power complex symbol; physics proxy, not measured neural-feature MSE. Same 32 anchors and two phases as E2E.",
+    "methods": {
+      "hold": {
+        "mean_zf_mse_proxy": 1.8174304348924473,
+        "p95_zf_mse_proxy": 4.083299412624798,
+        "min_estimated_amplitude": 0.22435660012164765
+      },
+      "wiener": {
+        "mean_zf_mse_proxy": 121.21072762636156,
+        "p95_zf_mse_proxy": 9.526838314685726,
+        "min_estimated_amplitude": 0.0010275218500624122
+      },
+      "ideal": {
+        "mean_zf_mse_proxy": 1.2482056638098493,
+        "p95_zf_mse_proxy": 3.140697887995579,
+        "min_estimated_amplitude": 0.209883268341593
+      }
+    }
+  },
+  {
+    "channel": "A9",
+    "snr_db": 6,
+    "note": "Expected ZF error for an independent unit-power complex symbol; physics proxy, not measured neural-feature MSE. Same 32 anchors and two phases as E2E.",
+    "methods": {
+      "hold": {
+        "mean_zf_mse_proxy": 1.9991489603141535,
+        "p95_zf_mse_proxy": 5.251957402251123,
+        "min_estimated_amplitude": 0.24176125495568154
+      },
+      "wiener": {
+        "mean_zf_mse_proxy": 15.64253826731347,
+        "p95_zf_mse_proxy": 37.84023035631372,
+        "min_estimated_amplitude": 0.05841613158832087
+      },
+      "ideal": {
+        "mean_zf_mse_proxy": 0.9468088244024839,
+        "p95_zf_mse_proxy": 2.1771999694174533,
+        "min_estimated_amplitude": 0.17855392448575727
+      }
+    }
+  }
+]

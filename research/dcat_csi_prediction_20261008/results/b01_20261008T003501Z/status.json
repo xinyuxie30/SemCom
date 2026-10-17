@@ -1,0 +1,38 @@
+{
+  "status": "INTERRUPTED",
+  "job": "D:\\PyChram_project\\CognitiveSemCom\\research\\dcat_csi_prediction_20261008\\results\\b01_20261008T003501Z",
+  "b0": "D:\\PyChram_project\\CognitiveSemCom\\research\\dcat_csi_prediction_20261004\\results\\b0_20261004T025556Z",
+  "created_utc": "2026-10-08T00:35:01.506636+00:00",
+  "source_hashes": {
+    "launch.py": "b606184402b2a1e61f98f366d298cc251fb5e963e12de140195e0d6fe62065a8",
+    "worker.py": "795895258e8c49ca8e2c47f8e322f0001c25513636714b1179b866baaa7dd273",
+    "src\\csi_predictors.py": "7687fe462d005b876c40480b5b337984c401d1122cffd25976e1055a89b3d8a4",
+    "src\\run_b0.py": "bc1da92b4bf72d66657fa3086dd1daedf41818ba7216a239960a95167ae8db96",
+    "src\\run_e2e.py": "d2aa515a1043e38eef0818972aa79023c477b143075d35746b1db5329ebbc406"
+  },
+  "expected_transmissions": 69120,
+  "runs": [
+    {
+      "name": "without_seed20261004",
+      "status": "RUNNING",
+      "command": [
+        "D:\\PyChram_project\\DCAT-SoM\\.venv\\Scripts\\python.exe",
+        "-u",
+        "D:\\PyChram_project\\CognitiveSemCom\\research\\dcat_csi_prediction_20261008\\results\\b01_20261008T003501Z\\worker.py",
+        "--src",
+        "D:\\PyChram_project\\CognitiveSemCom\\research\\dcat_csi_prediction_20261008\\results\\b01_20261008T003501Z\\src",
+        "--b0",
+        "D:\\PyChram_project\\CognitiveSemCom\\research\\dcat_csi_prediction_20261004\\results\\b0_20261004T025556Z",
+        "--protocol",
+        "D:\\PyChram_project\\CognitiveSemCom\\research\\dcat_csi_prediction_20261008\\results\\b01_20261008T003501Z\\without_seed20261004_protocol.json",
+        "--output",
+        "D:\\PyChram_project\\CognitiveSemCom\\research\\dcat_csi_prediction_20261008\\results\\b01_20261008T003501Z\\without_seed20261004",
+        "--family",
+        "without"
+      ]
+    }
+  ],
+  "supervisor_pid": 28200,
+  "interruption_observed_utc": "2026-10-08T00:42:09.918218+00:00",
+  "recovery_job": "D:\\PyChram_project\\CognitiveSemCom\\research\\dcat_csi_prediction_20261008\\results\\b01_20261008T004209Z"
+}

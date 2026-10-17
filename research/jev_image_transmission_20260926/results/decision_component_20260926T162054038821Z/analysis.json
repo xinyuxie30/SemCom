@@ -1,0 +1,142 @@
+{
+  "scope": "Development only: 8 images, 32 correlated states; not formal test accuracy",
+  "methods": {
+    "official_jev": {
+      "mean_psnr_db": 24.327881813049316,
+      "mean_mse": 0.004434858288732357,
+      "exact_accuracy": 0.34375,
+      "within_2pct_mse_accuracy": 0.40625,
+      "mean_psnr_regret_db": 0.9609630703926086,
+      "median_total_decision_ms": 1878.3089999342337,
+      "action_counts": {
+        "global": 31,
+        "upper_right": 1
+      }
+    },
+    "visual_jev": {
+      "mean_psnr_db": 24.26264363527298,
+      "mean_mse": 0.004482460972212721,
+      "exact_accuracy": 0.28125,
+      "within_2pct_mse_accuracy": 0.3125,
+      "mean_psnr_regret_db": 1.0262012481689453,
+      "median_total_decision_ms": 321.9828500295989,
+      "action_counts": {
+        "global": 26,
+        "stop": 6
+      }
+    },
+    "qwen_visual": {
+      "mean_psnr_db": 24.29961770772934,
+      "mean_mse": 0.004418229313159827,
+      "exact_accuracy": 0.28125,
+      "within_2pct_mse_accuracy": 0.3125,
+      "mean_psnr_regret_db": 0.9892271757125854,
+      "median_total_decision_ms": 269.1158999223262,
+      "action_counts": {
+        "stop": 6,
+        "global": 26
+      }
+    },
+    "qwen_description_only": {
+      "mean_psnr_db": 24.22623521089554,
+      "mean_mse": 0.004510903869231697,
+      "exact_accuracy": 0.25,
+      "within_2pct_mse_accuracy": 0.28125,
+      "mean_psnr_regret_db": 1.0626096725463867,
+      "median_total_decision_ms": 738.7960000778548,
+      "action_counts": {
+        "stop": 4,
+        "global": 27,
+        "upper_right": 1
+      }
+    },
+    "severity_rule": {
+      "mean_psnr_db": 24.799121379852295,
+      "mean_mse": 0.004060601859237067,
+      "exact_accuracy": 0.125,
+      "within_2pct_mse_accuracy": 0.21875,
+      "mean_psnr_regret_db": 0.4897235035896301,
+      "median_total_decision_ms": null,
+      "action_counts": {
+        "lower_right": 32
+      }
+    },
+    "fixed_upper_right": {
+      "mean_psnr_db": 24.28631094098091,
+      "mean_mse": 0.0061292052996577695,
+      "exact_accuracy": 0.125,
+      "within_2pct_mse_accuracy": 0.28125,
+      "mean_psnr_regret_db": 1.0025339424610138,
+      "median_total_decision_ms": null,
+      "action_counts": {
+        "upper_right": 32
+      }
+    },
+    "global": {
+      "mean_psnr_db": 24.294747054576874,
+      "mean_mse": 0.004448281561053591,
+      "exact_accuracy": 0.34375,
+      "within_2pct_mse_accuracy": 0.375,
+      "mean_psnr_regret_db": 0.9940978288650513,
+      "median_total_decision_ms": null,
+      "action_counts": {
+        "global": 32
+      }
+    },
+    "stop": {
+      "mean_psnr_db": 24.561729788780212,
+      "mean_mse": 0.004524044969002716,
+      "exact_accuracy": 0.15625,
+      "within_2pct_mse_accuracy": 0.1875,
+      "mean_psnr_regret_db": 0.7271150946617126,
+      "median_total_decision_ms": null,
+      "action_counts": {
+        "stop": 32
+      }
+    },
+    "oracle": {
+      "mean_psnr_db": 25.288844883441925,
+      "mean_mse": 0.003508657893689815,
+      "exact_accuracy": 1.0,
+      "within_2pct_mse_accuracy": 1.0,
+      "mean_psnr_regret_db": 0.0,
+      "median_total_decision_ms": null,
+      "action_counts": {
+        "global": 11,
+        "stop": 5,
+        "upper_left": 5,
+        "lower_left": 3,
+        "lower_right": 4,
+        "upper_right": 4
+      }
+    },
+    "single_C192": {
+      "mean_psnr_db": 26.147082732162154,
+      "mean_mse": 0.003110783927695593,
+      "exact_accuracy": null,
+      "within_2pct_mse_accuracy": null,
+      "mean_psnr_regret_db": -0.8582378487202286,
+      "median_total_decision_ms": null,
+      "action_counts": {}
+    }
+  },
+  "api_failures": [
+    {
+      "action": "upper_right",
+      "fallback": true,
+      "error_type": "URLError",
+      "http_status": null,
+      "elapsed_ms": 5014.320299960673
+    }
+  ],
+  "api_usage": {
+    "input_tokens": 39995,
+    "output_tokens": 4898
+  },
+  "noul_diagnostic": {
+    "n": 155,
+    "brier": 0.26610387096774196,
+    "positive_fraction": 0.6709677419354839,
+    "note": "Five correlated action labels per successful request; descriptive only"
+  }
+}

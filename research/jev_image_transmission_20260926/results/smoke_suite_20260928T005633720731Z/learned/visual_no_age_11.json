@@ -1,0 +1,26 @@
+{
+  "variant": "visual_no_age",
+  "seed": 11,
+  "train_rows": 4,
+  "validation_rows": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 0.07170315086841583,
+      "validation_mse": 0.017811793833971024
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.0645364299416542,
+      "validation_mse": 0.017231952399015427
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.05847825109958649,
+      "validation_mse": 0.016737930476665497
+    }
+  ],
+  "best_validation_mse": 0.016737930476665497,
+  "objective": "Relative MSE reduction clipped [-4,1]; stop fixed to zero at action selection",
+  "test_labels_used": false
+}

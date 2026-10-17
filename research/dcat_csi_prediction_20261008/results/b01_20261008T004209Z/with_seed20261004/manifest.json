@@ -1,0 +1,102 @@
+{
+  "status": "COMPLETED",
+  "scope": "B0 development pilot, fixed with_CP_C128; no new neural training",
+  "checkpoint_family": "with",
+  "secondary_checkpoint_diagnostic": true,
+  "preflight_amendment": "Protocol val maps to manifest validation; corrected before any image inference. The first preflight failed with no output run and no GPU inference.",
+  "pid": 2452,
+  "created_utc": "2026-10-08T00:45:56.364351+00:00",
+  "b0": "D:\\PyChram_project\\CognitiveSemCom\\research\\dcat_csi_prediction_20261004\\results\\b0_20261004T025556Z",
+  "protocol_sha256": "254dddfe1324eda58eb7c6b40841ec66491fb0124d8378f52b1825272d8ab9d9",
+  "protocol_path": "D:\\PyChram_project\\CognitiveSemCom\\research\\dcat_csi_prediction_20261008\\results\\b01_20261008T004209Z\\with_seed20261004_protocol.json",
+  "smoke": false,
+  "images": 32,
+  "channels": [
+    "A1",
+    "A3",
+    "A5",
+    "A7",
+    "A9"
+  ],
+  "snrs": [
+    0,
+    6,
+    12
+  ],
+  "phases": [
+    16,
+    112
+  ],
+  "policies": [
+    "hold",
+    "hold_cal",
+    "hold_mmse",
+    "hold_cal_mmse",
+    "wiener",
+    "wiener_cal",
+    "wiener_mmse",
+    "wiener_cal_mmse",
+    "acf",
+    "acf_cal",
+    "acf_mmse",
+    "acf_cal_mmse"
+  ],
+  "completed_batches": 120,
+  "expected_rows": 11520,
+  "code_hashes": {
+    "run_e2e.py": "d2aa515a1043e38eef0818972aa79023c477b143075d35746b1db5329ebbc406",
+    "csi_predictors.py": "7687fe462d005b876c40480b5b337984c401d1122cffd25976e1055a89b3d8a4",
+    "run_b0.py": "bc1da92b4bf72d66657fa3086dd1daedf41818ba7216a239960a95167ae8db96"
+  },
+  "baseline_source_hashes": {
+    "dataloader.py": "f428d29535654c40090ee378bd77be94528b5be345601afca94db9205bc3a5ee",
+    "inference.py": "0d562cb607b59d2899cd47d2fe93a4c1d552341db13116cb5a2b3b3d8010ba40",
+    "net\\base_modules.py": "da3da3b5083986647e62e84c7658b11870c130cfe9d18cbbf58cc4aec058f812",
+    "net\\decoder.py": "96f1e231bbbbe405b15f13adc117f2c635bb2cb841c4bea70e5022a64162a15c",
+    "net\\encoder.py": "d2ce1427ed710185723a72496db71fbad9d02a06619ec4572e9404bb153e0472",
+    "net\\network.py": "a2c01e4265e80610508cd42ab340806270b9be5ef03a86523fe1e696a1135173",
+    "net\\Scoring_channel.py": "b3e56172f17759808e5c84415ebfcd88cc0145611f83595fa0b4409fb571b98c",
+    "net\\som_modules.py": "671a4e0e6dc096052f7f18111046825d5a158f4aec446238dbf64aa17fe74f55",
+    "utils.py": "6b160417fd02634a180f17db3fe885f170cc22fc8d22dd690569cf85f85452cd"
+  },
+  "baseline_helper_hashes": {
+    "common.py": "c87a0b5b29755a44097c86845c960e1fc406760cc868da77ec7304b36a923e38",
+    "evaluate_batched.py": "b853b3ddf146c62ec96e5f3cca43d06514776a57820e8c4a8a46d66eb34ba5c1"
+  },
+  "checkpoint": "DCAT_with_CP_C128.model",
+  "checkpoint_sha256": "b79b15c40d2e18a37f3bd6867c05ae97f1ec5020e60460082d6fa3ff290d9288",
+  "predictor_hashes": {
+    "A1": {
+      "wiener_empirical": "23e807d01cc8e0ed0404fff6e6643d9197901ec4ebd49f2271b52ab288ed8109",
+      "wiener_acf": "40fde156b4ec8fa5bba45d4ae769f7ee6ccb2f1ff4c58d6bae08c5d19caaf328"
+    },
+    "A3": {
+      "wiener_empirical": "4b2361dc4598c3c27db7a5fe73a47dca97cc003843e6de462427e187f21ae1c4",
+      "wiener_acf": "ac7c55037ab04d9617485c6a9a404aa1fc6216078651e9d38011849f1414ef9e"
+    },
+    "A5": {
+      "wiener_empirical": "c35173ab931a2e1121e79f29586a87c157cc5de00edf8774ab4c788f6fc8ccda",
+      "wiener_acf": "d8928bf49d4378465bf4a9152f5aa12c75d595771b18c549de4e04484f93953e"
+    },
+    "A7": {
+      "wiener_empirical": "5f5a7b5c9c225edaea7db6f342aa1db9b5569b27d997691215ea0ddb2f01384f",
+      "wiener_acf": "6e645feaf90e82713b7bb857ebbfa69b8b0dfa7bc0891105875ee79892a33502"
+    },
+    "A9": {
+      "wiener_empirical": "5b5678193a9d460f145bea3344fcaf7049547f303cb1367dbe49b0cccf64a9c6",
+      "wiener_acf": "84c883a22303317064ab329c18cded4f9b8bcef973d0cc0e91fd9457aaf08858"
+    }
+  },
+  "environment": {
+    "python": "3.13.0 | packaged by conda-forge | (main, Nov 27 2024, 19:03:49) [MSC v.1942 64 bit (AMD64)]",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti"
+  },
+  "repeated_call_max_abs_difference": 0.0,
+  "completed_rows": 11520,
+  "elapsed_seconds": 91.43563919997541,
+  "peak_allocated_bytes": 335757312,
+  "peak_reserved_bytes": 509607936,
+  "finished_utc": "2026-10-08T00:47:27.801453+00:00"
+}

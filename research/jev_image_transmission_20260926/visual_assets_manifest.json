@@ -1,0 +1,160 @@
+{
+  "repository": "https://github.com/guanxuyu-sv/Visual-Jev",
+  "commit": "a392eaedfa41adae348f9767b55c0f54b3a13b57",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "README.md",
+      "sha256": "25d66790bc28cf10f3bf2af532771cfbf9e16d4aecd8f693a9cc46ff4c96983a"
+    },
+    {
+      "path": "REPRODUCE.md",
+      "sha256": "e728b4bb4eb969650936daddccedf4c48cdbdfcac7a210b103be6eb11277681d"
+    },
+    {
+      "path": "code/examples/quickstart.py",
+      "sha256": "53695ec848b4b87f0b29aa567f8ef7f66f1872ced9d9308f577a3b0d293113f7"
+    },
+    {
+      "path": "code/requirements.txt",
+      "sha256": "2ab8b8f2697a8b038d5cc8b83b87b2827d54e1f85205f36158f3c4cfd2c31d40"
+    },
+    {
+      "path": "code/vdm/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "code/vdm/bench/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "code/vdm/bench/precision.py",
+      "sha256": "54fea1915f32f5b77a90c4a14bed5f9b813d3dae6c8c2c1b0ee412a98e1ee5d1"
+    },
+    {
+      "path": "code/vdm/bench/sweep.py",
+      "sha256": "b6e8aecff556ef52253af6bcf3768a8696149e6c8988b13327e014015e2b7f3c"
+    },
+    {
+      "path": "code/vdm/data/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "code/vdm/data/audit_sheet.py",
+      "sha256": "099162d4f01467b9023ebb45f49c855ae82ae049a2e46985893dda69a3c75b68"
+    },
+    {
+      "path": "code/vdm/data/build_gqa.py",
+      "sha256": "057e614f5ac72d2841e1e5e01b9a901bdeb626b49c827c8ceeaa866ef02dda60"
+    },
+    {
+      "path": "code/vdm/data/build_other.py",
+      "sha256": "a05630a920da2ed9315a38a54a7847c2a1c53ee33de0587f6ec57d2c36454ab4"
+    },
+    {
+      "path": "code/vdm/data/build_tallyqa.py",
+      "sha256": "8a24472ac7c0a50dd1a72609c543ed7d527b9752cbd23e7d04f83e33a42b382a"
+    },
+    {
+      "path": "code/vdm/data/gqa.py",
+      "sha256": "0740a2bb561d7e5e993e06f3efc61cca4fb743cb4e2991c661c8aba96c90b3e0"
+    },
+    {
+      "path": "code/vdm/data/interventions.py",
+      "sha256": "1751e67611a3d142fcedc2c868e665af4a0726693367f81302f0d4c83b51fc72"
+    },
+    {
+      "path": "code/vdm/data/schema.py",
+      "sha256": "bbeb13554c327ba195dd42690f122880df3666c5b36652de5dce07d2684aea18"
+    },
+    {
+      "path": "code/vdm/eval/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "code/vdm/eval/analyze_triples.py",
+      "sha256": "4c861be820117622ad17d6ed66dfb7441b721890d40080cde77d65ee27ce0a01"
+    },
+    {
+      "path": "code/vdm/eval/benchmarks.py",
+      "sha256": "756833f4a7477ee25c0d75ab484221941532258706b0bf867bdbf54d3e1702dc"
+    },
+    {
+      "path": "code/vdm/eval/deployment.py",
+      "sha256": "5ba759b097eaebfc350308bc7ed0edd530927cb42efaa86b9865d8baa1f0c61e"
+    },
+    {
+      "path": "code/vdm/eval/external_openjev.py",
+      "sha256": "202dfab34c2b8fdfb2e4bf0b36e3bfeda40f6cc796efc709dafe2db741f45076"
+    },
+    {
+      "path": "code/vdm/eval/leak.py",
+      "sha256": "6301532b920cc5407cf4d5a9ca958d1ec349f2551b65f4332cdf4612ff602413"
+    },
+    {
+      "path": "code/vdm/eval/metrics.py",
+      "sha256": "81b0e7eee759d37508713c5be1af3bda1a415f85835944a52beaa846d57185d7"
+    },
+    {
+      "path": "code/vdm/eval/predict.py",
+      "sha256": "9b27c5159d26f6068a9d163888cc1f53529051c2566ee5a8917af48798d95429"
+    },
+    {
+      "path": "code/vdm/eval/report.py",
+      "sha256": "0baaeaee704283d025544452f4f193280f7d0ca17f546d01997c7be209bc01e2"
+    },
+    {
+      "path": "code/vdm/inference/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "code/vdm/models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "code/vdm/models/prompts.py",
+      "sha256": "1a253be26d17ae1544c8a9c72f4f3ea4178f7746ffc5745e333d5da21157815b"
+    },
+    {
+      "path": "code/vdm/models/vdm_model.py",
+      "sha256": "45cc2d8aac83dd08ddc1c578610e0a459f4b2d737b1561da7b62f1c4087cd474"
+    },
+    {
+      "path": "code/vdm/paths.py",
+      "sha256": "481fd1dbe67399de98af001f58293e444361a95db3f0ae8e1244ea203291bcc3"
+    },
+    {
+      "path": "code/vdm/training/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "code/vdm/training/checkpoint.py",
+      "sha256": "754053f73a3d16b2dbe77f38f4180b734e55c80a1bdc85c65daba33e1ce23814"
+    },
+    {
+      "path": "code/vdm/training/dataset.py",
+      "sha256": "dc9e952d801a23d9c8e004368f4bb0d9e14fc0bb500827de23bc5f625d5424d9"
+    },
+    {
+      "path": "code/vdm/training/losses.py",
+      "sha256": "fe12fc4b6b9bd4438d6f5ba93c2ec11a239d9db2b34abb38030afc3050a03450"
+    },
+    {
+      "path": "code/vdm/training/train.py",
+      "sha256": "32974d9dce169f2bf039fc055e6089f3c438720fa1fabd9958c0b3cca3fadad9"
+    }
+  ],
+  "models": {
+    "qwen_base": {
+      "repo_id": "Qwen/Qwen3-VL-4B-Instruct",
+      "revision": "ebb281ec70b05090aa6165b016eac8ec08e71b17"
+    },
+    "visual_adapter": {
+      "repo_id": "guanxuyu/visual-jev-4b-answer-sft",
+      "revision": "7a3f1bb0d8f7bfbbd8514d968ab7de3518849c8d"
+    }
+  }
+}

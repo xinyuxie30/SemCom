@@ -1,0 +1,26 @@
+{
+  "variant": "qwen",
+  "seed": 47,
+  "train_rows": 4,
+  "validation_rows": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 0.06707838177680969,
+      "validation_mse": 0.020127402618527412
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.05920436605811119,
+      "validation_mse": 0.019557887688279152
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.05232665315270424,
+      "validation_mse": 0.01939803920686245
+    }
+  ],
+  "best_validation_mse": 0.01939803920686245,
+  "objective": "Relative MSE reduction clipped [-4,1]; stop fixed to zero at action selection",
+  "test_labels_used": false
+}

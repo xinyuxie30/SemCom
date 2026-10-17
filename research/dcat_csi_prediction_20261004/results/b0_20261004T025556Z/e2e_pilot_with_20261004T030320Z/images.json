@@ -1,0 +1,258 @@
+[
+  {
+    "image_id": "udis_000194.png",
+    "scene_id": "udis_000194",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000194.png",
+    "sha256": "bd8276b6c03905be6e2003bfb4e6620154b925b70847c158918c4b0fb5de5776",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000194.jpg"
+  },
+  {
+    "image_id": "udis_000702.png",
+    "scene_id": "udis_000702",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000702.png",
+    "sha256": "36a37f72fd620d2879cbd0fef0e0ad5e7bb395e13797daa5d14e992ffa76a5d0",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000702.jpg"
+  },
+  {
+    "image_id": "udis_000297.png",
+    "scene_id": "udis_000297",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000297.png",
+    "sha256": "b6ce7d4abe3a6463d21964532d2eb292e6f64aa477ba1ec89276efb6ffc53518",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000297.jpg"
+  },
+  {
+    "image_id": "udis_000339.png",
+    "scene_id": "udis_000339",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000339.png",
+    "sha256": "eac12b5c03a612fdefbaef2f6cc16d00a0378a74e5e9c35d9a608f93b966ba94",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000339.jpg"
+  },
+  {
+    "image_id": "udis_000232.png",
+    "scene_id": "udis_000232",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000232.png",
+    "sha256": "0412885a3226a431ba90c8b0345ac5d1535e63a0b4c97194e80e6c56e6f57307",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000232.jpg"
+  },
+  {
+    "image_id": "udis_000770.png",
+    "scene_id": "udis_000770",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000770.png",
+    "sha256": "5c2cc623eba06b2316355e0c34571635eed59cdfea186c6b8479115e4a6e06f4",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000770.jpg"
+  },
+  {
+    "image_id": "udis_000425.png",
+    "scene_id": "udis_000425",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000425.png",
+    "sha256": "6f71ae6fe4fc60bf32a944e677af4aca3ac2d53cf662b80afd850491d9a711d5",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000425.jpg"
+  },
+  {
+    "image_id": "udis_000976.png",
+    "scene_id": "udis_000976",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000976.png",
+    "sha256": "b9812edfc8ff68cf291f4515682ca76961d325cd6d87c720c03d8515ea24ad6d",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000976.jpg"
+  },
+  {
+    "image_id": "udis_000897.png",
+    "scene_id": "udis_000888",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000897.png",
+    "sha256": "e0435d04b6c5f76d9b340380365126b741c3a76a8f907351cd84430f644a2e8c",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000897.jpg"
+  },
+  {
+    "image_id": "udis_000672.png",
+    "scene_id": "udis_000672",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000672.png",
+    "sha256": "64c57e4e516446fa60a32d102b3fa61534a970ba65179c56a9545e84f9048cb2",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000672.jpg"
+  },
+  {
+    "image_id": "udis_001068.png",
+    "scene_id": "udis_001068",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\001068.png",
+    "sha256": "1ad76adbf70d58ca49b224df6ff32ec1c4a4719ec0a9f1c6107749249fe5e0a2",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\001068.jpg"
+  },
+  {
+    "image_id": "udis_000619.png",
+    "scene_id": "udis_000619",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000619.png",
+    "sha256": "290a6d4e695d382c5055fdf740473f6a1fa551103f292381e2fd6f92167bf3a1",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000619.jpg"
+  },
+  {
+    "image_id": "udis_000501.png",
+    "scene_id": "udis_000501",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000501.png",
+    "sha256": "79f947f09941cf03c225d27355e321a0950a8b4d6dcb78ee5da27daeab9e307d",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000501.jpg"
+  },
+  {
+    "image_id": "udis_000664.png",
+    "scene_id": "udis_000663",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000664.png",
+    "sha256": "f14629d7a97d55660196619cf7b18d73d1f559b9337ce66784bb53674fe80151",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000664.jpg"
+  },
+  {
+    "image_id": "udis_000515.png",
+    "scene_id": "udis_000515",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000515.png",
+    "sha256": "7d0ff04293520a5a4214f21e7a8cde590a7022e79b2582f7a07f1624fd4250d7",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000515.jpg"
+  },
+  {
+    "image_id": "udis_000548.png",
+    "scene_id": "udis_000548",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000548.png",
+    "sha256": "8477b34da6d3fea61bc18ea184ee3ec596707fd52e23e991aa26df95d4d36891",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000548.jpg"
+  },
+  {
+    "image_id": "udis_001815.png",
+    "scene_id": "udis_000709",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\001815.png",
+    "sha256": "7a5015d5798bb163b5e1c5b79f4fc8b075488f264f50ac44c576efdcd2a53f7b",
+    "split": "validation",
+    "source": "raw\\testing\\input2\\000709.jpg"
+  },
+  {
+    "image_id": "udis_000509.png",
+    "scene_id": "udis_000509",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000509.png",
+    "sha256": "905c990c218423581ae8ef2bbf9971df715d653409c6de649111c156f5ce6d13",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000509.jpg"
+  },
+  {
+    "image_id": "udis_000058.png",
+    "scene_id": "udis_000058",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000058.png",
+    "sha256": "8b34bf8609c2c15603be3919407ab687e17e099711832bcbe1fd08c77ed72676",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000058.jpg"
+  },
+  {
+    "image_id": "udis_001358.png",
+    "scene_id": "udis_000252",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\001358.png",
+    "sha256": "0b5fe4609f357cf9196e5f5ae708bb48eb52804998f41fd042c4955b5e2409ef",
+    "split": "validation",
+    "source": "raw\\testing\\input2\\000252.jpg"
+  },
+  {
+    "image_id": "udis_000949.png",
+    "scene_id": "udis_000949",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000949.png",
+    "sha256": "e3a2bb8346de92a654af1ac769d0c256617f6c13c8e29021650794a0df3c5e65",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000949.jpg"
+  },
+  {
+    "image_id": "udis_000146.png",
+    "scene_id": "udis_000146",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000146.png",
+    "sha256": "fe5a6aa740b95014fec2019268756a0a1cbaa5fb8f111f357eb44099038fb6a2",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000146.jpg"
+  },
+  {
+    "image_id": "udis_000195.png",
+    "scene_id": "udis_000195",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000195.png",
+    "sha256": "32b0db2cfaf00870f216bc42b2b30b6bf181399608830eb5b80324d5207c0ce9",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000195.jpg"
+  },
+  {
+    "image_id": "udis_000532.png",
+    "scene_id": "udis_000532",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000532.png",
+    "sha256": "c7db60bbf2a344e82becb08ab82e43dbcc16014fbdbbb28888e3cbc8281bc8de",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000532.jpg"
+  },
+  {
+    "image_id": "udis_000080.png",
+    "scene_id": "udis_000080",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000080.png",
+    "sha256": "a7a979177c4acfd214db01bc6063af1f83cce6942a54fe5561ac7ba636af35db",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000080.jpg"
+  },
+  {
+    "image_id": "udis_001602.png",
+    "scene_id": "udis_000496",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\001602.png",
+    "sha256": "ca26e1442db4748e9536a80016b4bc885d28c17e9fc4cceefbc7f6f912bbc0f9",
+    "split": "validation",
+    "source": "raw\\testing\\input2\\000496.jpg"
+  },
+  {
+    "image_id": "udis_000387.png",
+    "scene_id": "udis_000387",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000387.png",
+    "sha256": "9b1bfc26bd8045e0f4959bae2a5abaa92c04bd4d89b961f5b306025e83e947a6",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000387.jpg"
+  },
+  {
+    "image_id": "udis_001089.png",
+    "scene_id": "udis_000841",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\001089.png",
+    "sha256": "c87e242028a79fa4bd3735bf834154ce5de21c18bbf1d510c8308a95bf88f645",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\001089.jpg"
+  },
+  {
+    "image_id": "udis_000394.png",
+    "scene_id": "udis_000394",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000394.png",
+    "sha256": "1b9baf0f2b7b477e0930793bd387724c34155c4e2dd7319bf3b5bc7776e23c77",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000394.jpg"
+  },
+  {
+    "image_id": "udis_001118.png",
+    "scene_id": "udis_000012",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\001118.png",
+    "sha256": "f041bb2ee1a01bb7ba3d5e74610540819b01df076847ceb442f384a88f8b3309",
+    "split": "validation",
+    "source": "raw\\testing\\input2\\000012.jpg"
+  },
+  {
+    "image_id": "udis_000763.png",
+    "scene_id": "udis_000763",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000763.png",
+    "sha256": "a6f0c43afd638c568e75956d02ac45424049f095b47b28b13f13f7e7cd4ee9a5",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000763.jpg"
+  },
+  {
+    "image_id": "udis_000900.png",
+    "scene_id": "udis_000900",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000900.png",
+    "sha256": "82fb298e08441dc3eadf367378041384019d890ccfb3ebdaff2e54eb589f26d9",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000900.jpg"
+  }
+]

@@ -1,0 +1,18 @@
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: D:\anconda\envs\pytorch\Lib\site-packages\lpips\weights\v0.1\alex.pth
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: D:\anconda\envs\pytorch\Lib\site-packages\lpips\weights\v0.1\alex.pth
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: D:\anconda\envs\pytorch\Lib\site-packages\lpips\weights\v0.1\alex.pth
+psnr: tensor([27.9800, 27.7404, 29.5546, 28.7165, 24.4566], device='cuda:0')
+lpips: tensor([0.2150, 0.2343, 0.1559, 0.2282, 0.1263], device='cuda:0')
+psnr: tensor([21.7451], device='cuda:0')
+lpips: tensor(0.2739, device='cuda:0')
+psnr: tensor([21.7451], device='cuda:0')
+lpips: tensor(0.2739, device='cuda:0')
+psnr: tensor([24.6287], device='cuda:0')
+lpips: tensor(0.1163, device='cuda:0')
+psnr: tensor([21.9038], device='cuda:0')
+lpips: tensor(0.2297, device='cuda:0')
+psnr: tensor([25.0422], device='cuda:0')
+lpips: tensor(0.1175, device='cuda:0')

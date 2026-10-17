@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-15",
+  "language": "zh-CN",
+  "mode": "asset_inventory_and_targeted_literature_synthesis",
+  "status": "candidate_research_questions_not_validated_methods",
+  "new_training_or_inference": false,
+  "current_direction": "Image reconstruction and transmission, with optional local channel simulation; no LLM/LAM API.",
+  "scope": "Local source/report inspection plus targeted primary-source web verification, not an exhaustive systematic review or novelty certification.",
+  "claim_intent_manifests": [{
+    "manifest_version": "1.0",
+    "manifest_id": "M-image-assets-20261015",
+    "emitted_by": "inline_synthesis",
+    "claims": [
+      {"claim_id": "C1", "claim_text": "DCAT has the strongest inspected local pretrained-inference evidence, but not complete training reproduction.", "intended_evidence_kind": "empirical", "planned_refs": ["local_dcat_report"]},
+      {"claim_id": "C2", "claim_text": "PADC is runnable with checkpoints; FAJSCCv2 passed a minimal run and has DIV2K data prepared.", "intended_evidence_kind": "empirical", "planned_refs": ["local_padc_r1", "local_fajscc_run", "local_div2k"]},
+      {"claim_id": "C3", "claim_text": "Lower CSI NMSE and better action selection did not establish better end-to-end images in the inspected development experiments.", "intended_evidence_kind": "empirical", "planned_refs": ["local_b01", "local_roi_pilot", "local_d56"]},
+      {"claim_id": "C4", "claim_text": "Selective computation, channel conditioning, progressive coding, and importance allocation already have direct prior work.", "intended_evidence_kind": "empirical", "planned_refs": ["fajscc", "dcat", "swinjscc", "hjscc", "deepjscc_f", "fast", "hana", "tokencomsr", "tsjscc"]},
+      {"claim_id": "C5", "claim_text": "Receiver computation allocation by observable conditional reconstruction benefit is a proposed first research question, requiring matched baselines and a headroom test.", "intended_evidence_kind": "normative", "planned_refs": ["fajscc", "local_b01", "local_d56"]}
+    ],
+    "manifest_negative_constraints": [
+      {"constraint_id": "NC1", "rule": "Do not call candidates novel, SOTA, or successful without new evidence."},
+      {"constraint_id": "NC2", "rule": "Do not equate smoke execution, inference replication, and full paper reproduction."},
+      {"constraint_id": "NC3", "rule": "Do not restart the rejected low-bit receiver line or alter locked tests."},
+      {"constraint_id": "NC4", "rule": "Do not treat true future CSI or clean images as receiver deployment inputs."}
+    ]
+  }],
+  "this_turn_checks": {
+    "padc_raw_csv_rows": 13932,
+    "padc_primary_author_zf_psnr": 28.099805787552235,
+    "padc_primary_classical_mmse_psnr": 28.328996979913047,
+    "padc_primary_gain_db": 0.229191192360812,
+    "b01_A7_acf_cal_vs_hold_db_from_comparisons": -0.03754370411237081,
+    "b01_A7_acf_cal_vs_matched_hold_db_from_comparisons": 0.00435834460788303,
+    "div2k_training_png_count": 800,
+    "div2k_validation_png_count": 100,
+    "note": "PADC mean was recomputed from raw rows. B01 values were read from the existing comparison CSV and checked against its report, not independently recomputed from all raw B01 files. DIV2K files were counted, not decoded or rehashed this turn."
+  },
+  "search_families": [
+    "DeepJSCC original and feedback official implementations",
+    "SwinJSCC NTSCC NTSCC+ HJSCC FAJSCCv2 official code and papers",
+    "DCAT and imperfect-CSI receiver adaptation HANA-JSCC",
+    "image JSCC progressive feedback retransmission uncertainty",
+    "JSCC adaptive computation decoder computational budget",
+    "image transmission task sensitivity feature allocation TokenComSR TS-JSCC"
+  ],
+  "search_limits": [
+    "Primary sources only for technical conclusions; search-engine hits are not a complete corpus.",
+    "No claim of latest global SOTA; papers through 2026-10-15 were eligible but coverage is incomplete.",
+    "Most repositories were checked at README or selected-source level; new dependencies and weights were not downloaded or tested.",
+    "Complete journal versions, forward citations, and dynamic image-restoration routing remain novelty-check gaps.",
+    "A final grouped web retrieval failed; no additional claims depend on its missing output."
+  ]
+}

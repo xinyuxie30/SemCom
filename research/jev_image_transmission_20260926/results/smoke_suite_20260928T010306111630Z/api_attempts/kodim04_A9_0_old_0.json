@@ -1,0 +1,6 @@
+{
+  "case_id": "kodim04_A9_0_old_0",
+  "request_sha256": "c1c543cf33424f7bccb98f9c319356da04edc5d48be81b7eac17b7abef129c6b",
+  "status": "attempt_reserved_before_send",
+  "automatic_retry": false
+}

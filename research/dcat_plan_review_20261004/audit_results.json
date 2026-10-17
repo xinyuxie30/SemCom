@@ -1,0 +1,241 @@
+{
+  "status": "Existing-artifact arithmetic verified; no new model experiment",
+  "date": "2026-10-04",
+  "phase0": {
+    "source": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\results\\counterfactual_20260926T112638517856Z\\action_outcomes.jsonl",
+    "sha256": "354ffc3c85c3e036565b44385557c044c39ce04d27e1b955cc5b08cdedcfe475",
+    "rows": 4608,
+    "states": 384,
+    "primary_alpha": 0.5,
+    "strata": [
+      {
+        "base_c": 64,
+        "single_comparator_c": 128,
+        "states": 192,
+        "best_fixed": "global",
+        "best_fixed_quadrant": "upper_left",
+        "oracle_counts": {
+          "upper_left": 14,
+          "upper_right": 12,
+          "lower_left": 11,
+          "lower_right": 15,
+          "global": 138,
+          "stop": 2
+        },
+        "roi_oracle_fraction": 0.2708333333333333,
+        "global_no_worse_best_quadrant_count": 138,
+        "global_within_1pct_best_quadrant_count": 142,
+        "quadrant_beats_global_or_stop_by_1pct_count": 47,
+        "phase0_kill": false,
+        "scores": {
+          "best_fixed": {
+            "mean_mse": 0.006530723130102463,
+            "mean_psnr_db": 22.551655614971374
+          },
+          "best_fixed_quadrant": {
+            "mean_mse": 0.0072415741384854,
+            "mean_psnr_db": 22.050009977246134
+          },
+          "oracle_quadrants": {
+            "mean_mse": 0.006966317048257527,
+            "mean_psnr_db": 22.228767815610055
+          },
+          "oracle_enhancement": {
+            "mean_mse": 0.006298263949550649,
+            "mean_psnr_db": 22.68724968522406
+          },
+          "oracle_all": {
+            "mean_mse": 0.006297175602109443,
+            "mean_psnr_db": 22.687756326673163
+          },
+          "oracle_global_or_stop": {
+            "mean_mse": 0.006394613068550825,
+            "mean_psnr_db": 22.62264974319512
+          },
+          "stop": {
+            "mean_mse": 0.00793178794568424,
+            "mean_psnr_db": 21.6446236048647
+          },
+          "single": {
+            "mean_mse": 0.004450731018550869,
+            "mean_psnr_db": 24.46383023342931
+          },
+          "oracle_action_and_scalar_alpha": {
+            "mean_mse": 0.00600128832461481,
+            "mean_psnr_db": 22.9188855121452
+          }
+        },
+        "oracle_mse_reduction_vs_best_fixed": 0.035761358021214384,
+        "decomposition_note": "Fixed quadrant -> best quadrant -> add global -> add stop. Order-dependent, not a causal attribution. C64 starts at best fixed QUADRANT, not its best fixed action (global).",
+        "decomposition": [
+          {
+            "from": "best_fixed_quadrant",
+            "to": "oracle_quadrants",
+            "delta_psnr_db": 0.17875783836392145,
+            "absolute_mse_drop": 0.000275257090227873
+          },
+          {
+            "from": "oracle_quadrants",
+            "to": "oracle_enhancement",
+            "delta_psnr_db": 0.4584818696140047,
+            "absolute_mse_drop": 0.0006680530987068778
+          },
+          {
+            "from": "oracle_enhancement",
+            "to": "oracle_all",
+            "delta_psnr_db": 0.0005066414491032845,
+            "absolute_mse_drop": 1.0883474412057975e-06
+          }
+        ]
+      },
+      {
+        "base_c": 128,
+        "single_comparator_c": 192,
+        "states": 192,
+        "best_fixed": "upper_right",
+        "best_fixed_quadrant": "upper_right",
+        "oracle_counts": {
+          "upper_left": 39,
+          "upper_right": 26,
+          "lower_left": 24,
+          "lower_right": 23,
+          "global": 55,
+          "stop": 25
+        },
+        "roi_oracle_fraction": 0.5833333333333334,
+        "global_no_worse_best_quadrant_count": 55,
+        "global_within_1pct_best_quadrant_count": 57,
+        "quadrant_beats_global_or_stop_by_1pct_count": 104,
+        "phase0_kill": false,
+        "scores": {
+          "best_fixed": {
+            "mean_mse": 0.004455699535052797,
+            "mean_psnr_db": 24.39188538261478
+          },
+          "best_fixed_quadrant": {
+            "mean_mse": 0.004455699535052797,
+            "mean_psnr_db": 24.39188538261478
+          },
+          "oracle_quadrants": {
+            "mean_mse": 0.004300054103320387,
+            "mean_psnr_db": 24.55984477743371
+          },
+          "oracle_enhancement": {
+            "mean_mse": 0.004161853977469339,
+            "mean_psnr_db": 24.687203744669382
+          },
+          "oracle_all": {
+            "mean_mse": 0.004145686473748356,
+            "mean_psnr_db": 24.70554942037807
+          },
+          "oracle_global_or_stop": {
+            "mean_mse": 0.004266483065597034,
+            "mean_psnr_db": 24.57198878414257
+          },
+          "stop": {
+            "mean_mse": 0.004686363654703503,
+            "mean_psnr_db": 24.209043088244677
+          },
+          "single": {
+            "mean_mse": 0.00360186519628769,
+            "mean_psnr_db": 25.602025083625943
+          },
+          "oracle_action_and_scalar_alpha": {
+            "mean_mse": 0.004083404494708222,
+            "mean_psnr_db": 24.776474797582555
+          }
+        },
+        "oracle_mse_reduction_vs_best_fixed": 0.06957674297056649,
+        "decomposition_note": "Fixed quadrant -> best quadrant -> add global -> add stop. Order-dependent, not a causal attribution. C64 starts at best fixed QUADRANT, not its best fixed action (global).",
+        "decomposition": [
+          {
+            "from": "best_fixed_quadrant",
+            "to": "oracle_quadrants",
+            "delta_psnr_db": 0.1679593948189293,
+            "absolute_mse_drop": 0.00015564543173240963
+          },
+          {
+            "from": "oracle_quadrants",
+            "to": "oracle_enhancement",
+            "delta_psnr_db": 0.12735896723567208,
+            "absolute_mse_drop": 0.00013820012585104811
+          },
+          {
+            "from": "oracle_enhancement",
+            "to": "oracle_all",
+            "delta_psnr_db": 0.01834567570868728,
+            "absolute_mse_drop": 1.616750372098342e-05
+          }
+        ]
+      }
+    ],
+    "fusion_scope": "Post-hoc ground-truth oracle over one scalar alpha per state/action in [0,1]; NOT an upper bound on CNN fusion, spatial weights, or a new codec."
+  },
+  "channel_audit": [
+    {
+      "trace": "A1",
+      "source": "D:\\PyChram_project\\DCAT-SoM\\SoM-DCAT-main\\Channel_inputs\\A1.mat",
+      "sha256": "056cdb7a7a0e3e1c0d9f8a996c40bc092aac70da344df2628e3c0d0d4e5d6e85",
+      "samples": 128000,
+      "zero_age_pilots": 1000,
+      "pilot_spacing_steps": [
+        128
+      ],
+      "age_step_ms": 0.03125,
+      "hold_equals_pilot_csi_max_abs_diff": 0.0,
+      "hold_nmse": 0.033659016769428715
+    },
+    {
+      "trace": "A3",
+      "source": "D:\\PyChram_project\\DCAT-SoM\\SoM-DCAT-main\\Channel_inputs\\A3.mat",
+      "sha256": "e5610a504ea0e8fd0e9d4339d1a1fa9b3ad530f08c4bdd6b43c540ae05e61b50",
+      "samples": 128000,
+      "zero_age_pilots": 1000,
+      "pilot_spacing_steps": [
+        128
+      ],
+      "age_step_ms": 0.03125,
+      "hold_equals_pilot_csi_max_abs_diff": 0.0,
+      "hold_nmse": 0.09163649536153928
+    },
+    {
+      "trace": "A5",
+      "source": "D:\\PyChram_project\\DCAT-SoM\\SoM-DCAT-main\\Channel_inputs\\A5.mat",
+      "sha256": "4b839313a0bfa0dfdc467e87389d2649343b52b3abbfb4a3f2322d1b3a39effb",
+      "samples": 128000,
+      "zero_age_pilots": 1000,
+      "pilot_spacing_steps": [
+        128
+      ],
+      "age_step_ms": 0.03125,
+      "hold_equals_pilot_csi_max_abs_diff": 0.0,
+      "hold_nmse": 0.15656536693974912
+    },
+    {
+      "trace": "A7",
+      "source": "D:\\PyChram_project\\DCAT-SoM\\SoM-DCAT-main\\Channel_inputs\\A7.mat",
+      "sha256": "92db924397ea595dc34b7ce7dafe1220de93d14193b93d54694e3fb8dac3194a",
+      "samples": 128000,
+      "zero_age_pilots": 1000,
+      "pilot_spacing_steps": [
+        128
+      ],
+      "age_step_ms": 0.03125,
+      "hold_equals_pilot_csi_max_abs_diff": 0.0,
+      "hold_nmse": 0.4706866572410924
+    },
+    {
+      "trace": "A9",
+      "source": "D:\\PyChram_project\\DCAT-SoM\\SoM-DCAT-main\\Channel_inputs\\A9.mat",
+      "sha256": "f3bf9f31e0ea76b6fc587544a56f41df5e41a8562a9a4b573f7ca33aeea287ff",
+      "samples": 128000,
+      "zero_age_pilots": 1000,
+      "pilot_spacing_steps": [
+        128
+      ],
+      "age_step_ms": 0.03125,
+      "hold_equals_pilot_csi_max_abs_diff": 0.0,
+      "hold_nmse": 1.1337074118998172
+    }
+  ]
+}

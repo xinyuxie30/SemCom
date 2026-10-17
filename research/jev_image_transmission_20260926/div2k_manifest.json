@@ -1,0 +1,1309 @@
+{
+  "source": "https://data.vision.ee.ethz.ch/cvl/DIV2K/DIV2K_valid_HR.zip",
+  "archive_sha256": "20dd31fd84d777bc1cf5d6b7654a3f569c0aec74458ae094122ad1d0489900fc",
+  "source_split": "DIV2K validation HR; used here only as external test",
+  "license": "Academic research only; cite Agustsson and Timofte, CVPRW 2017",
+  "preprocessing": "EXIF transpose / RGB / BICUBIC 128x128",
+  "images": [
+    {
+      "image_id": "div2k_0801.png",
+      "scene_id": "div2k_0801",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0801.png",
+      "source_member": "DIV2K_valid_HR/0801.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "ab5cf6a1cac2d1c2d0792dbd274fd2e53e42118ab6537771a825fd87aa28a60c",
+      "sha256": "c99a368e9806599a7cfa00eab5bd4f7fece91f8b5a7e7a377feb4e3cbfe41949",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0802.png",
+      "scene_id": "div2k_0802",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0802.png",
+      "source_member": "DIV2K_valid_HR/0802.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "4ad6f3ca8bf740192042978121f05ec493ddbe5a3da5584eaf0d9699c25ee431",
+      "sha256": "942faed9f53fafac65d17362993ba133f6456452ffb35e0745929291afa83359",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0803.png",
+      "scene_id": "div2k_0803",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0803.png",
+      "source_member": "DIV2K_valid_HR/0803.png",
+      "source_size": [
+        2040,
+        1536
+      ],
+      "source_sha256": "4b0148a9a1ff877ad9f76e65736a50cc36e10822b5d8ccd2abb2988ff4e1782b",
+      "sha256": "02a87231fd558c782008a6d58364f5a378642f16b052f1324f5b00a50533598d",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0804.png",
+      "scene_id": "div2k_0804",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0804.png",
+      "source_member": "DIV2K_valid_HR/0804.png",
+      "source_size": [
+        2040,
+        1200
+      ],
+      "source_sha256": "16b5fdbe808b868bed0be32f235208a1716d44e271a37b79cbc77ab53d2f6bdb",
+      "sha256": "18558ec35f22c916f1be988b21e87f429437e5d63229fbfb1a8cd28c0b8adbfd",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0805.png",
+      "scene_id": "div2k_0805",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0805.png",
+      "source_member": "DIV2K_valid_HR/0805.png",
+      "source_size": [
+        2040,
+        1536
+      ],
+      "source_sha256": "e28d56feee10c2e2663f347dda574fff736894dba37341d37b91bac2ecd863b2",
+      "sha256": "c57415017ef12ed94e2a07ad6da67fb62c339dfb5541c763ccfc6abeed30703d",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0806.png",
+      "scene_id": "div2k_0806",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0806.png",
+      "source_member": "DIV2K_valid_HR/0806.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "36720ddd59f8b3eed28f8981e12e6e2d680bfa78b9d25f33ec4152013652c713",
+      "sha256": "0fb81142fff3aad8b350d7dc4d869d81a1309aae9382de2468a2bf7dfa218d3b",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0807.png",
+      "scene_id": "div2k_0807",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0807.png",
+      "source_member": "DIV2K_valid_HR/0807.png",
+      "source_size": [
+        2040,
+        1128
+      ],
+      "source_sha256": "4a2493d918862f703f783dc675bacbae5bd7698aa58f81ddb8bb71cf39ac173a",
+      "sha256": "06e894fd429f5277351c457558917b5a9455abd62b30d74a58b650e5b7b869df",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0808.png",
+      "scene_id": "div2k_0808",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0808.png",
+      "source_member": "DIV2K_valid_HR/0808.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "956528ab3e0fadad1ed8ce93f93a30bf9f58c36ffa9dd775e2ad362ffdcf5ace",
+      "sha256": "134a5113536028b52c8b39bb141dc09e8bbe6340561e977e8495259e2571879d",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0809.png",
+      "scene_id": "div2k_0809",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0809.png",
+      "source_member": "DIV2K_valid_HR/0809.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "a0b094da02bcaeabea1976fb939c87366d437bdda1a796fbc3f4700fb5e7bbed",
+      "sha256": "b05d78c5759a9394eb7defd2888fcc014be2ad7ab53708144b425f76b799a91b",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0810.png",
+      "scene_id": "div2k_0810",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0810.png",
+      "source_member": "DIV2K_valid_HR/0810.png",
+      "source_size": [
+        2040,
+        1536
+      ],
+      "source_sha256": "6940c660b97d2c5f1113101c3e6360d1d6886743c5796cad52224b8076b903f8",
+      "sha256": "ee69af62518a6b4784406e29a832357ba8496517f23dbff28a67d69add693683",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0811.png",
+      "scene_id": "div2k_0811",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0811.png",
+      "source_member": "DIV2K_valid_HR/0811.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "7016bcf4112049162da604772c810bed4f5983af52e07d23755ac2c3475fe8ad",
+      "sha256": "28ef7815b6848026f6c64d15b469b11c436db5621a2eec5c4d295251d97d0b7f",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0812.png",
+      "scene_id": "div2k_0812",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0812.png",
+      "source_member": "DIV2K_valid_HR/0812.png",
+      "source_size": [
+        2040,
+        1536
+      ],
+      "source_sha256": "49e45b8922872b44ece90db047756f3a5356612bb6ee30bdc23df2bd208ec861",
+      "sha256": "7b618cfb03bbde7585924247175121e4ff7b563607e12eaee51d233b374947ad",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0813.png",
+      "scene_id": "div2k_0813",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0813.png",
+      "source_member": "DIV2K_valid_HR/0813.png",
+      "source_size": [
+        2040,
+        1464
+      ],
+      "source_sha256": "71c06a2c36979345c99c887e7bd6aebfd0bd1648d93b7bd15f56c65e1291b37e",
+      "sha256": "cc10a3e41695669f1a2702fe0b42237aa10db9377dd547ee0b86435984fc8b74",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0814.png",
+      "scene_id": "div2k_0814",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0814.png",
+      "source_member": "DIV2K_valid_HR/0814.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "2fec903d11d2a79070268a4316c100f8314eaadd8f8a65cce152f14826f04876",
+      "sha256": "dfd8119016d6b1430e63dbd7920c1569549e52f960eb0faa85c4f6f21c904a36",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0815.png",
+      "scene_id": "div2k_0815",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0815.png",
+      "source_member": "DIV2K_valid_HR/0815.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "c8f278e51f2bc9be7a696935b7e386eb4adafde24572d8ecdd4edf8adf4b4108",
+      "sha256": "b185bd626900dfb1c00c2072c99469935539eb27812a6a3e327873c62f5a62ac",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0816.png",
+      "scene_id": "div2k_0816",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0816.png",
+      "source_member": "DIV2K_valid_HR/0816.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "87b7b2a666c92efdb24eadf67bc0c68bce5560ee89bd0532f50f94d8cf88b434",
+      "sha256": "38a8c260b38c317fbf1c73b764b6d92027a71d9d75b46b74e4fdb00d5b4d7a27",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0817.png",
+      "scene_id": "div2k_0817",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0817.png",
+      "source_member": "DIV2K_valid_HR/0817.png",
+      "source_size": [
+        2040,
+        1536
+      ],
+      "source_sha256": "fdb28a6df3408758cc6d87563a157081c22d1325ea6d8034405ce45abcfc3879",
+      "sha256": "cd54677543d24ffa60b6e4a50331b15017939697c8312aec9cbca1c54e58badd",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0818.png",
+      "scene_id": "div2k_0818",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0818.png",
+      "source_member": "DIV2K_valid_HR/0818.png",
+      "source_size": [
+        2040,
+        1536
+      ],
+      "source_sha256": "8679d88891d7e8491fd61abded2c6864d90f5c1817b300f5d5796d05bb11488f",
+      "sha256": "c2f435e262c4274438ec74385973554b22c3597312a2e6ae64019f4da490fb83",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0819.png",
+      "scene_id": "div2k_0819",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0819.png",
+      "source_member": "DIV2K_valid_HR/0819.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "fcbc6cb7e7cdb717e94d8c8eaf659d6b2bfa513aa133c0d2c4a8e2aa96092529",
+      "sha256": "4fd76363c14b92ff2a1a7ec7c3eae52fb3e20128462758b21849c90d1bbcb986",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0820.png",
+      "scene_id": "div2k_0820",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0820.png",
+      "source_member": "DIV2K_valid_HR/0820.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "2617cfc25dd5442cc017bd17aa24ecae4751b1e5ed6013e8adddb727617bcd5b",
+      "sha256": "2caf39934d2b962e0d07bffe146c84f70caff15e6833f1a888ceef956f9b3811",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0821.png",
+      "scene_id": "div2k_0821",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0821.png",
+      "source_member": "DIV2K_valid_HR/0821.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "0eb14dfcb1d21cb5d3437dc5135c458154cd7fabed8147fbdc415d3ef671c14b",
+      "sha256": "09a6c2026adea1d06e888ffc5587451524e0c79852736ac2e55a5ed6d28b1c70",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0822.png",
+      "scene_id": "div2k_0822",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0822.png",
+      "source_member": "DIV2K_valid_HR/0822.png",
+      "source_size": [
+        2040,
+        1596
+      ],
+      "source_sha256": "a1d308fd62adecb1ea8b0fa8d0c687c92d3cf0d3358e598c8b97aca1b9cf8ad0",
+      "sha256": "8b349bb450ed5b050a829227e50bba98de9d7613dee3d8aa5cf06d9581a3fa37",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0823.png",
+      "scene_id": "div2k_0823",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0823.png",
+      "source_member": "DIV2K_valid_HR/0823.png",
+      "source_size": [
+        2040,
+        1284
+      ],
+      "source_sha256": "8db26bddf2ac9975e5227be3eb1180f6377145eee5dca1e421100014cbd7ef6e",
+      "sha256": "67e9f6b2fe0bb011ef26abe209d254cda76e00fbd47bed9796291e96a5858170",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0824.png",
+      "scene_id": "div2k_0824",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0824.png",
+      "source_member": "DIV2K_valid_HR/0824.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "484316545f6b08655d30faa1bc5f29eb6821d049b62bb528319b504790c188e2",
+      "sha256": "42aae4dbd55d40b9505ba4c1411895e1f793db96afc4a9c91e86b71e48f1204d",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0825.png",
+      "scene_id": "div2k_0825",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0825.png",
+      "source_member": "DIV2K_valid_HR/0825.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "0db87d6f7d6cf3a12fc384d8232c337fe0f509f2518845166c1033e22169115d",
+      "sha256": "f1d184abb579892b06c153d4bc712ba10ea3365ff3ed7e9e64348f4a1f1c2e85",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0826.png",
+      "scene_id": "div2k_0826",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0826.png",
+      "source_member": "DIV2K_valid_HR/0826.png",
+      "source_size": [
+        2040,
+        1536
+      ],
+      "source_sha256": "b0f675a14e8fe9f2ec0b705bee98d75f8a22478eafdc1a0a0afc0f820bc5ab4d",
+      "sha256": "a863afd6e1758346621e33f91a96b896437940ef0cb272f3f030b37d285cb28d",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0827.png",
+      "scene_id": "div2k_0827",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0827.png",
+      "source_member": "DIV2K_valid_HR/0827.png",
+      "source_size": [
+        2040,
+        1536
+      ],
+      "source_sha256": "e8cfa94ed77a021b63da63406940de3a830fe1217e752b5929d50602a1aaa407",
+      "sha256": "18944125576309fcdce6fd8d369efa435508c5bb10addf135419fcd236aed637",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0828.png",
+      "scene_id": "div2k_0828",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0828.png",
+      "source_member": "DIV2K_valid_HR/0828.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "a62013e252fa503920f54b9b1eff9babd501c742d2c82c97d7c22394493ffa12",
+      "sha256": "bdbafc6237b09e6a88377523d0e73a8bf1a32fde2962105f3c61ad525e16a17c",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0829.png",
+      "scene_id": "div2k_0829",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0829.png",
+      "source_member": "DIV2K_valid_HR/0829.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "de81c82e13d499226fd96505b6a72f59b6b8506c03ff0b6d06b6393d066f68a4",
+      "sha256": "46ac8f5f883eeff2441c114ae74c56c84d69f639a78abca90bcc2705ce217a50",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0830.png",
+      "scene_id": "div2k_0830",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0830.png",
+      "source_member": "DIV2K_valid_HR/0830.png",
+      "source_size": [
+        2040,
+        816
+      ],
+      "source_sha256": "4eb18566ab01447a06daf0314a3711aa78cea5ca0eaa47cfedafbceeb6dd0a3e",
+      "sha256": "ffe0c03ab33c347bdbf31b183fc8f460003b5c27327e16691883c444eb30337a",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0831.png",
+      "scene_id": "div2k_0831",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0831.png",
+      "source_member": "DIV2K_valid_HR/0831.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "343c5d2665d9c5efd7a5444e72d383f63d96bac35902ed088c9a3ee88e0d4ed2",
+      "sha256": "7fb60ac50d29793c959b1b2da8ff91e81cb01ed00cb787b00e1fd06146747248",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0832.png",
+      "scene_id": "div2k_0832",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0832.png",
+      "source_member": "DIV2K_valid_HR/0832.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "5c609d644b5924900e82dbecadfb85497b77d6cfad52a0c4c7e43a83f9868c33",
+      "sha256": "748f88bf889563229aba7c31c958c58268b581963f0e82f1bedc5f68c435332f",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0833.png",
+      "scene_id": "div2k_0833",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0833.png",
+      "source_member": "DIV2K_valid_HR/0833.png",
+      "source_size": [
+        2040,
+        1548
+      ],
+      "source_sha256": "2e9668b3a318284ec90c9bbdd940317ecd2f7b95314e68c48c94d2380fad679a",
+      "sha256": "b78d25802ec251769a1cc2a3f5526a7f888fa2d77da97c78ab518628c1a57a3a",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0834.png",
+      "scene_id": "div2k_0834",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0834.png",
+      "source_member": "DIV2K_valid_HR/0834.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "4d2621a246e4a771754aa0052b91d79dbebfe866d9dbd8200e3c68e038a3de88",
+      "sha256": "7105eae4fc224424b22c08c8027f05b83bf7bf09ce17071febbeb8cceb56abf4",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0835.png",
+      "scene_id": "div2k_0835",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0835.png",
+      "source_member": "DIV2K_valid_HR/0835.png",
+      "source_size": [
+        1620,
+        2040
+      ],
+      "source_sha256": "263cfd9c7d2eee15b29250e6d0dc366ed680feb222de3f8c2fb5c6bd304608e4",
+      "sha256": "8b42f9873bf686c626a355403c872c47d214b87b067717b7238d55f79b8289b2",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0836.png",
+      "scene_id": "div2k_0836",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0836.png",
+      "source_member": "DIV2K_valid_HR/0836.png",
+      "source_size": [
+        2040,
+        1536
+      ],
+      "source_sha256": "d056c4afc22367640c8ec7a1b84c06eaa7405e29363f0e75ea824e15aec149d0",
+      "sha256": "06de809b5717cd6d32ae994dc5ad824eea70aad8733933e05cb519d19a22f5af",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0837.png",
+      "scene_id": "div2k_0837",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0837.png",
+      "source_member": "DIV2K_valid_HR/0837.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "4618bd32e1d1a2ef0f4ad3f6b941e3745a97371fd300dad3c5c4c9013caec8db",
+      "sha256": "618af4d03ce9d03df80f1d31140fa0b8c609ef02c9efb806cac7c618996e873d",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0838.png",
+      "scene_id": "div2k_0838",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0838.png",
+      "source_member": "DIV2K_valid_HR/0838.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "01e42bb5efb35d97a9931fc421f793e3c12d0922a3df288bbfd148b6a82a145b",
+      "sha256": "0e18d5ca081d786ea14a500ea18596fefdda73c21e48b983c4cfd2e19765d925",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0839.png",
+      "scene_id": "div2k_0839",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0839.png",
+      "source_member": "DIV2K_valid_HR/0839.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "818abf16ba0aacc3fb6737c5ddd7c2188ca7321b6b28b7f4ba1898627387dee7",
+      "sha256": "b1d076d60a646e973a4800d4166045a2000f9ed27a470556523674cc827ff52f",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0840.png",
+      "scene_id": "div2k_0840",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0840.png",
+      "source_member": "DIV2K_valid_HR/0840.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "e023c2b2628b7d897d69150baa40be6ceda9fe0e45a0d51348011c6a47b44d86",
+      "sha256": "bcb1fe1d520c6402c7f5928a6edec1323b962375e92bfb327cafac3f00736368",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0841.png",
+      "scene_id": "div2k_0841",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0841.png",
+      "source_member": "DIV2K_valid_HR/0841.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "0f46093cd84e7ee037d1ded8680f2f39583af5dadac0da580a3911ed482de285",
+      "sha256": "62c1858c0d7fe5a9a4fb0dc82122940e4d03261346915c85b88bb1c7a14857c8",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0842.png",
+      "scene_id": "div2k_0842",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0842.png",
+      "source_member": "DIV2K_valid_HR/0842.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "c6ec845abfd696fcf5f39beadb8632ecc56ac8416318a9dbb27c4c4d294aa592",
+      "sha256": "fe18440145dad3cc864cf7f01f252c77cfcd1e235ed7be35fde2957e1155ff4f",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0843.png",
+      "scene_id": "div2k_0843",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0843.png",
+      "source_member": "DIV2K_valid_HR/0843.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "3ef88e17c711156a52ef8c7385f01b364ade64bb0d90938debfc4b454e0d1e06",
+      "sha256": "764e790e8b7c68f0dc6d04d9cfc34f0283a77f3e0bf4dfc9ede73ae93f92340b",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0844.png",
+      "scene_id": "div2k_0844",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0844.png",
+      "source_member": "DIV2K_valid_HR/0844.png",
+      "source_size": [
+        1356,
+        2040
+      ],
+      "source_sha256": "93da0f98885573c518891c5eb6004818436ae36cf1ed894cfef853e131d9d86d",
+      "sha256": "595a64ff8f05aae2fb0a159cb03f178c6c9c8a8ce4f165e8cb312cae37876737",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0845.png",
+      "scene_id": "div2k_0845",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0845.png",
+      "source_member": "DIV2K_valid_HR/0845.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "35416e153d4ffd1f83df1502dca371db2059e818b72c1e3a95fb9a9266b59172",
+      "sha256": "7d0294f231b6699fd875d71d98b2dd743820f6b4c77d52842e9fb6d8f2bad178",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0846.png",
+      "scene_id": "div2k_0846",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0846.png",
+      "source_member": "DIV2K_valid_HR/0846.png",
+      "source_size": [
+        2040,
+        1368
+      ],
+      "source_sha256": "eaef63b3b0889ea99559e1e959240393505d9f6d4d5cb7f6a90729b024b4ffb4",
+      "sha256": "bbdd6783560b1a7cfe259d7292665f3b28175e9e8cc7e76739e34c5cd6cad1e1",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0847.png",
+      "scene_id": "div2k_0847",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0847.png",
+      "source_member": "DIV2K_valid_HR/0847.png",
+      "source_size": [
+        1356,
+        2040
+      ],
+      "source_sha256": "ce39eab49b45fc08177556f7c9ae0d0e928e283fb3cd471bddf0fbf17db8ca73",
+      "sha256": "2f054d9867c54e91cc8cb9760b4ba309a1d991e14d844a138353b77260d0c682",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0848.png",
+      "scene_id": "div2k_0848",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0848.png",
+      "source_member": "DIV2K_valid_HR/0848.png",
+      "source_size": [
+        2040,
+        1536
+      ],
+      "source_sha256": "4a8f2f4eee348242b17eb7ee72aad9c1c1fe870a1d414db4704819fede40b660",
+      "sha256": "cb410b3c197c48d54c88fca407b88d1a44aa27c977a613489ec02b0cf30c27f6",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0849.png",
+      "scene_id": "div2k_0849",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0849.png",
+      "source_member": "DIV2K_valid_HR/0849.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "1d576e20f4720050d0b7af5295b323c342a5284ed75a8ce3bae6e0cb46c89eb6",
+      "sha256": "a6c5db76e37460650339145a7a74880aac5b29a9d223f7ba212d461f678e404a",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0850.png",
+      "scene_id": "div2k_0850",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0850.png",
+      "source_member": "DIV2K_valid_HR/0850.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "1d026bda033ce6fa0db97aa3ec120f3609663f4d0aaf2f9d8e677fdbe235ab03",
+      "sha256": "4de32f02e8c137646529bbbb5023e8f5a138731c5ef350be7d79be00611ea8ed",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0851.png",
+      "scene_id": "div2k_0851",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0851.png",
+      "source_member": "DIV2K_valid_HR/0851.png",
+      "source_size": [
+        2040,
+        1344
+      ],
+      "source_sha256": "1c4bc95887a3c06f9690fec153d5548ec52039c8ba83da749f2b5f6e0d2ecf33",
+      "sha256": "4428dd06c93e5c3ac221177398c31cc802f1a7242e85b2914ad7c95532d5400d",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0852.png",
+      "scene_id": "div2k_0852",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0852.png",
+      "source_member": "DIV2K_valid_HR/0852.png",
+      "source_size": [
+        2040,
+        1152
+      ],
+      "source_sha256": "47f4db4100055a954606d789dfe183612ea7e196a06b2e7bc4bd39c3522628ee",
+      "sha256": "4552e8929a3c4a3cd21d3a1242d78aa76c3be135407c0438813f7dbb449c77a0",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0853.png",
+      "scene_id": "div2k_0853",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0853.png",
+      "source_member": "DIV2K_valid_HR/0853.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "854189ea5c2a325324500c6cf7168e0b78d30b09606eb5a59f938a5ae69139fe",
+      "sha256": "7e8f4c74a52b14321128b35031b1bed459e1510cadd9e759c0e30192a6dbfd78",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0854.png",
+      "scene_id": "div2k_0854",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0854.png",
+      "source_member": "DIV2K_valid_HR/0854.png",
+      "source_size": [
+        2040,
+        1068
+      ],
+      "source_sha256": "f77817c7a5d940baf174efa61d2fbf40354a08ade7a151e155ce62bd2481eca8",
+      "sha256": "d96332cc3d4c127e52c72aa95bd0e232ae89ea2d7166b9e33568806499895a68",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0855.png",
+      "scene_id": "div2k_0855",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0855.png",
+      "source_member": "DIV2K_valid_HR/0855.png",
+      "source_size": [
+        2040,
+        2040
+      ],
+      "source_sha256": "86001004f1eb6a1e182bb2ed3c23093d2656690a61091b2822af1c9124a40141",
+      "sha256": "8d4dae59d0d2e45499985592297ead8560f3679412f01bf5363583a3d388eecb",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0856.png",
+      "scene_id": "div2k_0856",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0856.png",
+      "source_member": "DIV2K_valid_HR/0856.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "cf845f85d9f65570938a15f56fe9de749619f9bee35533944f46bba94f0ff77b",
+      "sha256": "419bde9a35037283439089d9362f1c7e22c5451f3109a22bf8e3f7639d4188b4",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0857.png",
+      "scene_id": "div2k_0857",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0857.png",
+      "source_member": "DIV2K_valid_HR/0857.png",
+      "source_size": [
+        2040,
+        1416
+      ],
+      "source_sha256": "4fafd48e2926f530129290c9f843490dcbf7809c8505c123a5f18ec2a5005611",
+      "sha256": "ea3d0fe57b7857fb1212b95b86d5bed1f543fd8f95b188b2e3f5dd1d084a6cfd",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0858.png",
+      "scene_id": "div2k_0858",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0858.png",
+      "source_member": "DIV2K_valid_HR/0858.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "428049494acf4dadf08c5bd62c8711ac258af5fa0f008b5fb389a4fffca96c58",
+      "sha256": "5dbd2075056bb17febd3257878450a99facb19da28bc4ad95e076d678fd76d53",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0859.png",
+      "scene_id": "div2k_0859",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0859.png",
+      "source_member": "DIV2K_valid_HR/0859.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "3ada872de7c5def1d408920385db278b1ff3a5a0cfcab83105a789ff540a1827",
+      "sha256": "ead1ef4fd1ece2858f5ee38bf4151e060eefd42cf36d2d8985a27488f44af85d",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0860.png",
+      "scene_id": "div2k_0860",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0860.png",
+      "source_member": "DIV2K_valid_HR/0860.png",
+      "source_size": [
+        2040,
+        1536
+      ],
+      "source_sha256": "eac29d623ecfab9e2299c04b49e5da3f282a576eb7f9107d0b88076c972ac3ef",
+      "sha256": "a89c773d106d3d282f71578a3336960cff0911f82af72963f62ac02e3c718b11",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0861.png",
+      "scene_id": "div2k_0861",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0861.png",
+      "source_member": "DIV2K_valid_HR/0861.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "c6fe192a3f1b702948e99c483f04edfb362d2d218082a12457a5b0f09219ffc6",
+      "sha256": "c18c32cb66d6e2e660d6f774f655072aac9fd412aebe2f09f8a5317fd8db6c5e",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0862.png",
+      "scene_id": "div2k_0862",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0862.png",
+      "source_member": "DIV2K_valid_HR/0862.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "31a02d7392ee9dadd4b8a2c1b5b9d670943135d0d40e85d4178ab77923c75548",
+      "sha256": "9e3c35699263758354c29f94470baad9e0b0f2d0039905850fb5c5feb32d10a6",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0863.png",
+      "scene_id": "div2k_0863",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0863.png",
+      "source_member": "DIV2K_valid_HR/0863.png",
+      "source_size": [
+        1500,
+        2040
+      ],
+      "source_sha256": "5e98cca0fbeb2e649fa36a41a06240ce4ec4b05aa23859da13797f8ded0d5c1f",
+      "sha256": "8b47f849892e4b414c2712e247fe94b36076d8c9c0fb7ee1214a6915ad941906",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0864.png",
+      "scene_id": "div2k_0864",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0864.png",
+      "source_member": "DIV2K_valid_HR/0864.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "ca9811dd5910f947ee4dc75f709dcffe17bb7811ca562a0e4bcdefc781eadd76",
+      "sha256": "8dc18b745cc16d4ddb5654e26534a5fede64c5fc354ee126c5f43d7e25d48c13",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0865.png",
+      "scene_id": "div2k_0865",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0865.png",
+      "source_member": "DIV2K_valid_HR/0865.png",
+      "source_size": [
+        2040,
+        1536
+      ],
+      "source_sha256": "46ced1e049fce5a0381c3dc7d7276d058f78a7a7dab5cd88ef7a224cbf51fdb1",
+      "sha256": "a771ed47becd66c4a17b9e25c557c6c488c947da2dc1e60d042096a3cd2771bb",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0866.png",
+      "scene_id": "div2k_0866",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0866.png",
+      "source_member": "DIV2K_valid_HR/0866.png",
+      "source_size": [
+        1356,
+        2040
+      ],
+      "source_sha256": "7fc232b9294ea4e6f32bdacc26f314efc067ee0359c5ff1a7000ec61c8da8511",
+      "sha256": "aaa4c0682e76a7a4d6795ca969930958137ae82583423c682ac94d163113b09f",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0867.png",
+      "scene_id": "div2k_0867",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0867.png",
+      "source_member": "DIV2K_valid_HR/0867.png",
+      "source_size": [
+        1356,
+        2040
+      ],
+      "source_sha256": "e3c2ee14a108f50479db683e3a6adc3682374eba236f64c74397fdb55a17b264",
+      "sha256": "94fe88d9028dacb4f3ec952cc4ec3fe072b5e283f3fbbe300bae81d80593fb42",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0868.png",
+      "scene_id": "div2k_0868",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0868.png",
+      "source_member": "DIV2K_valid_HR/0868.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "ba7de4237fa7cbdc2fff31f35015711909e501230e7c2f3f01f4e8dcf7a23c95",
+      "sha256": "8b6899e982be94350c9f24942b850bfb9524dc386621471bb71032886f0e41e5",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0869.png",
+      "scene_id": "div2k_0869",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0869.png",
+      "source_member": "DIV2K_valid_HR/0869.png",
+      "source_size": [
+        1356,
+        2040
+      ],
+      "source_sha256": "68a693195536fc94bc34ce7ff0e041990916fed73164a7c2dce00098a178ac75",
+      "sha256": "8472d4b45cdb4fab6a8e0bf1b7958cc16496210c5cd2dd174d8b9318514af4cd",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0870.png",
+      "scene_id": "div2k_0870",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0870.png",
+      "source_member": "DIV2K_valid_HR/0870.png",
+      "source_size": [
+        2040,
+        1572
+      ],
+      "source_sha256": "f03f496bb0f21d53012723782bfdbcbbde66115c45c35aa7d83373c304a9c041",
+      "sha256": "f51142b55b81831dbfca1582c44cb2d91386049b4e4effb4f819629a4e9357ba",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0871.png",
+      "scene_id": "div2k_0871",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0871.png",
+      "source_member": "DIV2K_valid_HR/0871.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "777df9ed736ff3ccc73388e90de36e131c002dfac64767f3b8ebccdd2cd5f058",
+      "sha256": "3b07acc85871eb1c152dc9e490baf9fa8dfe40c521a723a0b85e184ea7f0abdd",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0872.png",
+      "scene_id": "div2k_0872",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0872.png",
+      "source_member": "DIV2K_valid_HR/0872.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "028ca10affee013698c7f15068fe4813a9d7b2c24f2bd40dac68305774a5577a",
+      "sha256": "1f72a03347c6eb02250dd778d900aaebde6a454cddca68351e46a020c0f49f4a",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0873.png",
+      "scene_id": "div2k_0873",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0873.png",
+      "source_member": "DIV2K_valid_HR/0873.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "3fcb2ae160dd255180854eaf54051c40cd205421367d0352144bb7490bc9afb1",
+      "sha256": "9e7bc17b4552a562bc9b78c6df53187628005e1f49e713e5bde09a63a10a63ac",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0874.png",
+      "scene_id": "div2k_0874",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0874.png",
+      "source_member": "DIV2K_valid_HR/0874.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "11cb511247d70d84adad5557a720254e5f73e3786dbcd399c6053a1982ce1784",
+      "sha256": "374d38d0e51a902959e3e3b9de9b2495f5be5fe1a0805d3ef69d24d9e310850b",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0875.png",
+      "scene_id": "div2k_0875",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0875.png",
+      "source_member": "DIV2K_valid_HR/0875.png",
+      "source_size": [
+        2040,
+        1536
+      ],
+      "source_sha256": "3c4859b59635fe7fcd6ec182c798eb3af44a2eafb6e8b891df3db62d0da3c5e2",
+      "sha256": "e6b8bc9c1f8c36c408e6da7c107e97350ae0096253567fa2a06e1f12eebe0a8f",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0876.png",
+      "scene_id": "div2k_0876",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0876.png",
+      "source_member": "DIV2K_valid_HR/0876.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "9d5a819847876bb0061bf1fd42b8bd97e8aef89d1f5fb09b1669b7e9546a25f1",
+      "sha256": "21598275e6652dc259730af0c7229b0c2c6bf0b0aeecd7c46526851ba0a3c9bd",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0877.png",
+      "scene_id": "div2k_0877",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0877.png",
+      "source_member": "DIV2K_valid_HR/0877.png",
+      "source_size": [
+        2040,
+        1152
+      ],
+      "source_sha256": "4e0fb583729accf7b93e07b2b81ce8d919f6490cee2d1f90db90b60095a59165",
+      "sha256": "39457514a600a616d2965a8a0d9231d8d8b01893c483be220b4c7b2661dab111",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0878.png",
+      "scene_id": "div2k_0878",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0878.png",
+      "source_member": "DIV2K_valid_HR/0878.png",
+      "source_size": [
+        2040,
+        1740
+      ],
+      "source_sha256": "e1aff248577bc04ddeba4f48a62aff421ca06450a703e4a450dd401e1efd9546",
+      "sha256": "5ce7f6068c484a6148bdde76ac81cf173711c127d43b792571e67b6e70ff685c",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0879.png",
+      "scene_id": "div2k_0879",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0879.png",
+      "source_member": "DIV2K_valid_HR/0879.png",
+      "source_size": [
+        2040,
+        1872
+      ],
+      "source_sha256": "ad5eb9637c891994c00f44358cf0a5238f642b8796b5cacaa8b59ba8bb51553a",
+      "sha256": "c46d2765b244fd1ad8038cdba0843d35d1de63f64312bba34b7f8eee6abaf0b5",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0880.png",
+      "scene_id": "div2k_0880",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0880.png",
+      "source_member": "DIV2K_valid_HR/0880.png",
+      "source_size": [
+        1356,
+        2040
+      ],
+      "source_sha256": "db5773c6e460824c5132c23917492fda7acd370c87e9ae6293a0103fee2b642d",
+      "sha256": "84cba6df6e3cba45488924bf2ec4a222c5c0b55df2a60b97a39f7017d01b1715",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0881.png",
+      "scene_id": "div2k_0881",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0881.png",
+      "source_member": "DIV2K_valid_HR/0881.png",
+      "source_size": [
+        2040,
+        1260
+      ],
+      "source_sha256": "d2fba016ee3cee2395b677524d7ae2b2f6750cea1a6df4edc41f2977bd5d1b7c",
+      "sha256": "37abf3a0e51ad31a168adc68aa9e3556b7e255eba6d9973fd65102cd38f56b89",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0882.png",
+      "scene_id": "div2k_0882",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0882.png",
+      "source_member": "DIV2K_valid_HR/0882.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "573345fb42061a43fe8f1c0b3b9faf57cdd77189782a4d89b78c31e421f19115",
+      "sha256": "89bd8459505274171f8f5bece4dc3d540ea96a70a57d800a5dd9cbd1b6b32929",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0883.png",
+      "scene_id": "div2k_0883",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0883.png",
+      "source_member": "DIV2K_valid_HR/0883.png",
+      "source_size": [
+        2040,
+        1380
+      ],
+      "source_sha256": "3355621b3d834c320a66879e6cd23988df29f504f6cdecd22f1984b432a7e55a",
+      "sha256": "6cf3f29328ae777701c86391c8947559f818515678eba712d8e0c04bf5f269b2",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0884.png",
+      "scene_id": "div2k_0884",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0884.png",
+      "source_member": "DIV2K_valid_HR/0884.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "06a928200ad757ff2422ecd2e12986bb90e3bf6b64c6062e5d31f864cdc992bc",
+      "sha256": "131d46766d0e2fc61a4677d02d114742b2823b803dc5b91dd9f251d1abe3a527",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0885.png",
+      "scene_id": "div2k_0885",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0885.png",
+      "source_member": "DIV2K_valid_HR/0885.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "36f1c2b8af6d898354506ef3f78d386156cf1c1f1397c165a84e74cf6484d800",
+      "sha256": "39f17639ff289b08b6038a42555dae455400110af72b240b10afdb205b696ca1",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0886.png",
+      "scene_id": "div2k_0886",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0886.png",
+      "source_member": "DIV2K_valid_HR/0886.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "26af6bcdeea90b9900a021bf20a0550d9a1e107c59b4f05c96e8bccf0ab35db8",
+      "sha256": "0aecd012bfe171c00eb6e557d816d3fbb15747348cf17ecb300cf2a7acbdaf4d",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0887.png",
+      "scene_id": "div2k_0887",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0887.png",
+      "source_member": "DIV2K_valid_HR/0887.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "a0a893c9417fcd04067bf254512801f92ae7c795b686e05f7389853c9fb78b11",
+      "sha256": "e225abaf6c235ca19dc458eb4863c4eba917d042a0c08d1341701e0ce7e3d3f1",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0888.png",
+      "scene_id": "div2k_0888",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0888.png",
+      "source_member": "DIV2K_valid_HR/0888.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "82a8d193f4eb0819ad3e48c048d13860d0b8f34d6fafc9b626e304294db3ba12",
+      "sha256": "d35a31e34a83f6689bfdfa816e0fe48df5a420d6a0669d954dad52a189889d64",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0889.png",
+      "scene_id": "div2k_0889",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0889.png",
+      "source_member": "DIV2K_valid_HR/0889.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "a8f73c42065e3193c4deb883dcb3bc432a3f838e9be5bacea708ee39eb2c6e04",
+      "sha256": "0c945de1c6ca2cb2abfc6fedabc94ad8a44385f853079298d2152da3f55e6b3c",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0890.png",
+      "scene_id": "div2k_0890",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0890.png",
+      "source_member": "DIV2K_valid_HR/0890.png",
+      "source_size": [
+        2040,
+        1368
+      ],
+      "source_sha256": "67069da53af2b4f5237030631b0b5e087b8014d7b0f59917d96924aca1ab433c",
+      "sha256": "c07c34b8ae9efe8f295ec18f53d96deb1ebd15c4397c79bbaae1f6800374b1ce",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0891.png",
+      "scene_id": "div2k_0891",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0891.png",
+      "source_member": "DIV2K_valid_HR/0891.png",
+      "source_size": [
+        1668,
+        2040
+      ],
+      "source_sha256": "8e36e76f3675831c87b2e645e70ef33513b898dc09beb20b0bdcc61cc6d63bed",
+      "sha256": "c879cea2e99b298e764328f0b674bc036fadeae1132bbf1dbabab5c5bbc32230",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0892.png",
+      "scene_id": "div2k_0892",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0892.png",
+      "source_member": "DIV2K_valid_HR/0892.png",
+      "source_size": [
+        2040,
+        1284
+      ],
+      "source_sha256": "7fb05e491f00963e64b53a0f3f7a3d1af51f1434e7fd4898d4b84c479e1f66f9",
+      "sha256": "305e492dee04aae39389e4a18bb81a0676887acae899177db9a82661b022fd55",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0893.png",
+      "scene_id": "div2k_0893",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0893.png",
+      "source_member": "DIV2K_valid_HR/0893.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "cdcef3c0f0dd65da7ca0c4e75b672dd1f87f778740cb42d675bcb13dc1b3c307",
+      "sha256": "c4955e14f42cffacbc8807d7c5894448dcaeba32b230d30f5fc88769137f867c",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0894.png",
+      "scene_id": "div2k_0894",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0894.png",
+      "source_member": "DIV2K_valid_HR/0894.png",
+      "source_size": [
+        1356,
+        2040
+      ],
+      "source_sha256": "f412ff02984a0de7acc7e1209d02f8dcaa18ac76008fa260cf7c355e4a77976c",
+      "sha256": "eaa3b65d41f69790ffc22e277f8d58ede5fbeefdbb959a8e87fe9dd0cd16ca86",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0895.png",
+      "scene_id": "div2k_0895",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0895.png",
+      "source_member": "DIV2K_valid_HR/0895.png",
+      "source_size": [
+        2040,
+        1284
+      ],
+      "source_sha256": "a1c0888648fed4eb909c6e7f5f5db220ae98861294ebfdfa14b2c72567e96b2b",
+      "sha256": "04ce423afaeeb7f27782f1d4e29e781a05d4dfbbb04e8b055fc1f5dbb4f759da",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0896.png",
+      "scene_id": "div2k_0896",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0896.png",
+      "source_member": "DIV2K_valid_HR/0896.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "367c698aa344cea6e790239f04bae168ef204ae771f6ea05285e5255fad2f84f",
+      "sha256": "fe01448a9fb709a793863d97b37af4dba09dde32447d70bc0cffa77fcddf1f5a",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0897.png",
+      "scene_id": "div2k_0897",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0897.png",
+      "source_member": "DIV2K_valid_HR/0897.png",
+      "source_size": [
+        2040,
+        1368
+      ],
+      "source_sha256": "dca63f56dba4a2a2c6b920c4b0406c6c6459d8f7ffb0d20322f51fbbc8f14b38",
+      "sha256": "879dc45c24dab2057d98844b195bc1cfed8946177820b1ce1648b4c7a48ebbe9",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0898.png",
+      "scene_id": "div2k_0898",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0898.png",
+      "source_member": "DIV2K_valid_HR/0898.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "4cd6696b8e59615ceacff729181dd9b0cc5ea936ea9a57e089bb1fe4fe87c347",
+      "sha256": "f4ca3f7276bf3f4769eca309cb04282270e9932ddbc18d11e787a313b57f6c7f",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0899.png",
+      "scene_id": "div2k_0899",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0899.png",
+      "source_member": "DIV2K_valid_HR/0899.png",
+      "source_size": [
+        2040,
+        1356
+      ],
+      "source_sha256": "77e25eca6c3828abbea8f7fcf360d9be7f496513aa9ec08ff3f2e3a9c272e60e",
+      "sha256": "88670c52bdda591e536325fbd486c4c86acee196ee08cba29ec6d4c11aef893f",
+      "split": "external_test"
+    },
+    {
+      "image_id": "div2k_0900.png",
+      "scene_id": "div2k_0900",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\div2k\\128\\0900.png",
+      "source_member": "DIV2K_valid_HR/0900.png",
+      "source_size": [
+        2040,
+        1152
+      ],
+      "source_sha256": "06717f2a8f5d21fcec9a9229a7ecaab44dec0343406a59464382f5c4fdea3023",
+      "sha256": "7a920c8ceb01bbdb50acb487bda28381c997ee7a105706161e4244f6e642ab72",
+      "split": "external_test"
+    }
+  ]
+}

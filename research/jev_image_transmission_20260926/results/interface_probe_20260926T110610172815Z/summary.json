@@ -1,0 +1,17 @@
+{
+  "scope": "Synthetic API conformance probe; NOT transmission accuracy evidence",
+  "endpoint": "https://api.typesafe.ai/v1/systemone",
+  "requested_model": "jev-1.13.0",
+  "attempted_requests": 8,
+  "successful_requests": 8,
+  "retries": 0,
+  "synthetic_expectation_matches": 8,
+  "response_validation_failures": 0,
+  "input_tokens": 4780,
+  "output_tokens": 814,
+  "observed_median_ms_including_first_request": 1428.9417500258423,
+  "observed_min_ms": 1312.9575999919325,
+  "observed_max_ms": 1704.9283999949694,
+  "latency_scope": "One local client, serial HTTP; includes network and service; tiny sample, no latency guarantee",
+  "output_directory": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\results\\interface_probe_20260926T110610172815Z"
+}
