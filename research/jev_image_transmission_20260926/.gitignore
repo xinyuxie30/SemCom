@@ -1,0 +1,7 @@
+datasets/
+__pycache__/
+results/**/receiver_arrays/
+results/**/previews/
+models/
+vendor/
+visual_env/

@@ -1,0 +1,92 @@
+{
+  "channel": "A5",
+  "source_sha256": "4b839313a0bfa0dfdc467e87389d2649343b52b3abbfb4a3f2322d1b3a39effb",
+  "selected": {
+    "wiener_empirical": {
+      "order": 8,
+      "ridge": 1e-06,
+      "validation_objective": 0.11291515888921973
+    },
+    "wiener_acf": {
+      "order": 2,
+      "ridge": 1e-06,
+      "validation_objective": 0.1416924853457221
+    }
+  },
+  "split_anchors": {
+    "train": {
+      "count": 568,
+      "first": 31,
+      "last": 598
+    },
+    "validation": {
+      "count": 168,
+      "first": 631,
+      "last": 798
+    },
+    "diagnostic_test": {
+      "count": 168,
+      "first": 831,
+      "last": 998
+    }
+  },
+  "hold_full_trace_nmse": 0.15656536693974912,
+  "diagnostic_test": {
+    "hold": {
+      "rx_nmse": 0.40368446982145456,
+      "tx_nmse": 0.7527623824574223,
+      "objective": 0.5782234261394384,
+      "mean_abs_prediction": 0.9971802249656929,
+      "abs_prediction_p01": 0.3411277069455289
+    },
+    "zero_nmse_reference": {
+      "rx_nmse": 1.0,
+      "tx_nmse": 1.0,
+      "objective": 1.0,
+      "mean_abs_prediction": 0.0,
+      "abs_prediction_p01": 0.0
+    },
+    "ar1_pilot": {
+      "rx_nmse": 0.4313440923540489,
+      "tx_nmse": 0.7837880783042801,
+      "objective": 0.6075660853291645,
+      "mean_abs_prediction": 0.9324273396145129,
+      "abs_prediction_p01": 0.32640357336553844
+    },
+    "wiener_empirical": {
+      "rx_nmse": 0.10600107487198066,
+      "tx_nmse": 0.28811616675866775,
+      "objective": 0.19705862081532421,
+      "mean_abs_prediction": 1.0220801378460227,
+      "abs_prediction_p01": 0.22234011295654554
+    },
+    "wiener_acf": {
+      "rx_nmse": 0.12275375218717025,
+      "tx_nmse": 0.2758598277031379,
+      "objective": 0.19930678994515405,
+      "mean_abs_prediction": 0.9499330498385778,
+      "abs_prediction_p01": 0.25217461213137055
+    },
+    "genie_acf_test_statistics": {
+      "rx_nmse": 0.0035721894526895646,
+      "tx_nmse": 0.007882353834367585,
+      "objective": 0.005727271643528575,
+      "mean_abs_prediction": 0.9823018542213829,
+      "abs_prediction_p01": 0.35395730906909184
+    },
+    "genie_empirical_test_fit": {
+      "rx_nmse": 0.000649951824636981,
+      "tx_nmse": 0.0016189321903444971,
+      "objective": 0.0011344420074907392,
+      "mean_abs_prediction": 0.9980747732366041,
+      "abs_prediction_p01": 0.3537805543365253
+    },
+    "ideal": {
+      "rx_nmse": 0.0,
+      "tx_nmse": 0.0,
+      "objective": 0.0,
+      "mean_abs_prediction": 0.9998407744936589,
+      "abs_prediction_p01": 0.36640205873810794
+    }
+  }
+}

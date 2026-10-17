@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETED",
+  "pid": 46540,
+  "created_utc": "2026-10-04T02:55:56.424981+00:00",
+  "protocol_sha256": "04d8db68d39f3f16662b08594213760bd3458f9fa627b819585c1a7cef7982c7",
+  "source_hashes": {
+    "run_b0.py": "bc1da92b4bf72d66657fa3086dd1daedf41818ba7216a239960a95167ae8db96",
+    "csi_predictors.py": "7687fe462d005b876c40480b5b337984c401d1122cffd25976e1055a89b3d8a4"
+  },
+  "environment": {
+    "python": "3.13.0 | packaged by conda-forge | (main, Nov 27 2024, 19:03:49) [MSC v.1942 64 bit (AMD64)]",
+    "numpy": "2.4.4",
+    "scipy": "1.16.3"
+  },
+  "channels_completed": [
+    "A1",
+    "A3",
+    "A5",
+    "A7",
+    "A9",
+    "B1",
+    "B3",
+    "B7"
+  ],
+  "elapsed_seconds": 3.278456199914217,
+  "finished_utc": "2026-10-04T02:55:59.703850+00:00"
+}

@@ -1,0 +1,76 @@
+{
+  "status": "READY",
+  "formal_started": false,
+  "matrix_states": 16224,
+  "image_counts": {
+    "train": 512,
+    "validation": 128,
+    "test": 512,
+    "external_test": 100
+  },
+  "api_requests_max": 16224,
+  "api_key_present": true,
+  "source_hashes": {
+    "suite_common.py": "6f0fa70b5dbe70f822036b514ce0b02b94db7636abbe232f57ba51a0f33d6d9a",
+    "suite_codec.py": "55f020ed548184e3fcaeac6e43cd6ba88a482008134058f84d3401f96aaea9d0",
+    "suite_decisions.py": "be02d1f48945f59abb7a7cd63f8ca21560a8b318e293e68268ca9e25c73f0b82",
+    "suite_learning.py": "3f7e5382ad98a0fbcf9c77768ee3ec85c378b2a7fae75371b8df942c5fbe66fb",
+    "suite_report.py": "5b071ae35f128acaa336ae698ca3df6f177e292fbfd5309441780c899faf795b",
+    "run_suite.py": "0ace23b9deff55598f39b49120072effbfb9d45c03821976745571c40536ca2c",
+    "pilot_counterfactual.py": "b289c8e7a978196f084795ddb7dcab560c59825fa3308e5b350f01ce73ee18d8",
+    "pilot_decisions.py": "11b6cd86b0c4ad5722bdc4821e94f2f9f5eb8cbef40958dd319e6c1c7d16fcd1",
+    "probe_typesafe.py": "e693ada6aa28fd44c7362ed4539d96a922a7bc962647d6e3c3e8108bc45838ea",
+    "suite_config.json": "3183ca8bbb0aeb774bd6c648ead5afff93c261d586a38fca821ecf295914bf49",
+    "suite_data.json": "997cfbe4b2695a0b729e6ea7a510338c57c02c7adba747f23649a781c9a7695a",
+    "smoke_config.json": "554c753bdb90e76f1ed4cebf0de737c1705d2731ce6bd2836c6ab3e1cd08ca19",
+    "smoke_data.json": "3c32abce6255976eef0c9fbc07933a70361c407f6674e78e9fd8062160c7b1c3"
+  },
+  "asset_hashes": {
+    "D:\\PyChram_project\\DCAT-SoM\\SoM-DCAT-main\\Checkpoints\\DCAT_without_CP_C64.model": "9f9859735f55c2fc04e4d7b27faafad76b960486bb8b23866528297d24cbff53",
+    "D:\\PyChram_project\\DCAT-SoM\\SoM-DCAT-main\\Checkpoints\\DCAT_without_CP_C128.model": "8ff0ab9dffa4bfe17ee37fb3d2f79245e9f4fee2d70bf57775e3c91011fbe3a2",
+    "D:\\PyChram_project\\DCAT-SoM\\SoM-DCAT-main\\Checkpoints\\DCAT_without_CP_C192.model": "24dd8fd8ad502967af6b9bd5e9e8e171b7294ba5342670520752e809e7c6a2c8",
+    "D:\\PyChram_project\\DCAT-SoM\\SoM-DCAT-main\\Channel_inputs\\A1.mat": "056cdb7a7a0e3e1c0d9f8a996c40bc092aac70da344df2628e3c0d0d4e5d6e85",
+    "D:\\PyChram_project\\DCAT-SoM\\SoM-DCAT-main\\Channel_inputs\\A9.mat": "f3bf9f31e0ea76b6fc587544a56f41df5e41a8562a9a4b573f7ca33aeea287ff",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\qwen_base\\model-00001-of-00002.safetensors": "30a01a0556622645a3cce87b655bbbbbc1f170c196099f1b666c93202c3339a9",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\qwen_base\\model-00002-of-00002.safetensors": "046296a2a387efb43b0c997d5833c789604d168834f6e0d3064bf7bb13d002a6",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\visual_adapter\\adapter_model.safetensors": "4584eae896796372a0ff657d47de02b19ceea8962f6b58609ed570bc8ac8cd37",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\hf_home\\.agent_harnesses.json": "2697b4b40d91f00ea0328ccaf0442d531d94d6f5228f306eccc1f88e6d24eda3",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\qwen_base\\.cache\\huggingface\\trees\\ebb281ec70b05090aa6165b016eac8ec08e71b17.json": "a95b3c59d2e7513aa38fe9650d225645bbc7e927058c594cbb31e47844f5ee8f",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\qwen_base\\chat_template.json": "6f8a6a55027e3da5160105556cda5dd69f6423f1c32645f6730d32de7773d0c4",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\qwen_base\\config.json": "edac7703329133edfc53e46ac0081835144c99d7eebf28b71c732694d435224d",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\qwen_base\\generation_config.json": "8469742d1fce0de951c8909b26a2c0c0d8490837ce476efb114da9e0cefc4d44",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\qwen_base\\model.safetensors.index.json": "58a7841d7bff2548dd91577d216274a83cf1b500bc6a534b809d6c1b1707cf2b",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\qwen_base\\preprocessor_config.json": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\qwen_base\\tokenizer.json": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\qwen_base\\tokenizer_config.json": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\qwen_base\\video_preprocessor_config.json": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\qwen_base\\vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\visual_adapter\\.cache\\huggingface\\trees\\7a3f1bb0d8f7bfbbd8514d968ab7de3518849c8d.json": "c275ae3429377735b9a3dabcea939b6ecbbc0a724079125136f4e7223819275a",
+    "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\models\\visual_adapter\\adapter_config.json": "abec2b9046102a530b7472c3586883be5ccb8fb5ca06235273c5de1b3f1b9742",
+    "D:\\PyChram_project\\DCAT-SoM\\reproduction\\common.py": "c87a0b5b29755a44097c86845c960e1fc406760cc868da77ec7304b36a923e38",
+    "D:\\PyChram_project\\DCAT-SoM\\reproduction\\evaluate_batched.py": "b853b3ddf146c62ec96e5f3cca43d06514776a57820e8c4a8a46d66eb34ba5c1"
+  },
+  "versions": {
+    "codec": {
+      "torch": "2.11.0+cu128",
+      "cuda": true,
+      "gpu": "NVIDIA GeForce RTX 5060 Ti",
+      "numpy": "2.4.4",
+      "pillow": "12.2.0"
+    },
+    "visual": {
+      "torch": "2.11.0+cu128",
+      "cuda": true,
+      "gpu": "NVIDIA GeForce RTX 5060 Ti",
+      "numpy": "2.4.4",
+      "pillow": "12.2.0"
+    }
+  },
+  "free_disk_gib": 176.6408462524414,
+  "external_references": {
+    "DCAT": "D:\\PyChram_project\\DCAT-SoM",
+    "Visual_Jev": "https://github.com/guanxuyu-sv/Visual-Jev",
+    "Visual_Jev_commit": "a392eaedfa41adae348f9767b55c0f54b3a13b57"
+  },
+  "limits": "Readiness does not imply positive scientific results; external API availability can change."
+}

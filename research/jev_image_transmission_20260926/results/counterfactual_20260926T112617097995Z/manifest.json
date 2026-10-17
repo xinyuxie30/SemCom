@@ -1,0 +1,112 @@
+{
+  "status": "COMPLETED",
+  "created_utc": "2026-09-26T11:26:17.098582+00:00",
+  "parameters": {
+    "images": 1,
+    "snrs": "0",
+    "ages": "young",
+    "segments": 1,
+    "timeout_seconds": 300.0
+  },
+  "protocol": {
+    "status": "prespecified_before_pilot_results",
+    "date": "2026-09-26",
+    "scope": "Frozen-codec engineering pilot; not a formal experiment or SOTA claim",
+    "data": {
+      "source": "https://r0k.us/graphics/kodak/",
+      "download_count": 24,
+      "p1_development_images": "kodim01..kodim16",
+      "reserved_images": "kodim17..kodim24; do not inspect results during P1",
+      "preprocessing": "EXIF transpose, RGB, Pillow BICUBIC resize to 128x128; deliberately development data, not a Kodak leaderboard protocol"
+    },
+    "baseline_reference": "D:/PyChram_project/DCAT-SoM/SoM-DCAT-main",
+    "adapter_reference": "D:/PyChram_project/DCAT-SoM/reproduction/evaluate_batched.py",
+    "base_channels": [
+      64,
+      128
+    ],
+    "enhancement_channels": 64,
+    "single_round_comparators": [
+      128,
+      192
+    ],
+    "channel_cases": [
+      "A9"
+    ],
+    "snr_db": [
+      0,
+      6
+    ],
+    "age_at_enhancement_start_ms": {
+      "young": [
+        0.25,
+        0.75
+      ],
+      "old": [
+        3.0,
+        3.5
+      ]
+    },
+    "channel_trajectories_per_image_condition": 3,
+    "trajectory_scope": "Three nonoverlapping segments of the released channel trace with independent additive-noise seeds; not three independently regenerated propagation traces",
+    "seed": 20260926,
+    "trace_step_ms": 0.03125,
+    "feedback_wait_steps": 4,
+    "timing_scope": "Fixed 0.125 ms diagnostic gap. No API latency. Actual channel trace advances. Diagnostic is optimistic and not an end-to-end latency claim.",
+    "actions": [
+      "upper_left",
+      "upper_right",
+      "lower_left",
+      "lower_right",
+      "global",
+      "stop"
+    ],
+    "enhancement_input": "Original 64x64 quadrant upsampled bilinearly to 128x128, or original full image; independent C64 encoding",
+    "primary_fusion": "alpha=0.5: equal blend with current reconstruction, only in the selected region for ROI",
+    "secondary_fusion": "alpha=1.0: replacement, reported separately without oracle selection across fusion rules",
+    "noise_coupling": "Common complex Gaussian noise on an absolute local trace timeline across counterfactual actions and widths; independent between image/condition/trajectory units",
+    "metric": "MSE on [0,1] RGB, PSNR from floating reconstructions clipped to [0,1], LPIPS normalize=True",
+    "oracle": "Hindsight argmin realized MSE, including stop; diagnosis only, never available to deployed policy",
+    "upper_bound": "Perfect replacement of one quadrant from the original image, no noise/cost; geometric diagnostic only",
+    "primary_headroom_threshold": "At least 5% mean MSE reduction versus the best fixed feasible action on the development set; this is an engineering threshold, not a significance claim",
+    "single_round_gate": "If oracle still cannot match matched-payload single-round performance, do not launch full selector training for this codec; missing overhead makes the two-round comparison optimistic",
+    "timeout_seconds": 1800,
+    "formal_training": false
+  },
+  "protocol_sha256": "d5938f79e7c1ff2273720d04ba03ee08e871ee28d76127cd843fcfa5aba41a98",
+  "script_sha256": "7444f5b05fc7b6331d7762c437da00ca12655d919ebd4572d2b7e706584eceb6",
+  "dataset_sha256": "11e8eaada459873063513bbe39396c483bc0f5bce86da72daeb604bd669f74b9",
+  "baseline_source_hashes": {
+    "dataloader.py": "f428d29535654c40090ee378bd77be94528b5be345601afca94db9205bc3a5ee",
+    "inference.py": "0d562cb607b59d2899cd47d2fe93a4c1d552341db13116cb5a2b3b3d8010ba40",
+    "net\\base_modules.py": "da3da3b5083986647e62e84c7658b11870c130cfe9d18cbbf58cc4aec058f812",
+    "net\\decoder.py": "96f1e231bbbbe405b15f13adc117f2c635bb2cb841c4bea70e5022a64162a15c",
+    "net\\encoder.py": "d2ce1427ed710185723a72496db71fbad9d02a06619ec4572e9404bb153e0472",
+    "net\\network.py": "a2c01e4265e80610508cd42ab340806270b9be5ef03a86523fe1e696a1135173",
+    "net\\Scoring_channel.py": "b3e56172f17759808e5c84415ebfcd88cc0145611f83595fa0b4409fb571b98c",
+    "net\\som_modules.py": "671a4e0e6dc096052f7f18111046825d5a158f4aec446238dbf64aa17fe74f55",
+    "utils.py": "6b160417fd02634a180f17db3fe885f170cc22fc8d22dd690569cf85f85452cd"
+  },
+  "external_helper_hashes": {
+    "common.py": "c87a0b5b29755a44097c86845c960e1fc406760cc868da77ec7304b36a923e38",
+    "evaluate_batched.py": "b853b3ddf146c62ec96e5f3cca43d06514776a57820e8c4a8a46d66eb34ba5c1"
+  },
+  "checkpoint_hashes": {
+    "64": "9f9859735f55c2fc04e4d7b27faafad76b960486bb8b23866528297d24cbff53",
+    "128": "8ff0ab9dffa4bfe17ee37fb3d2f79245e9f4fee2d70bf57775e3c91011fbe3a2",
+    "192": "24dd8fd8ad502967af6b9bd5e9e8e171b7294ba5342670520752e809e7c6a2c8"
+  },
+  "environment": {
+    "python": "3.13.0 | packaged by conda-forge | (main, Nov 27 2024, 19:03:49) [MSC v.1942 64 bit (AMD64)]",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti"
+  },
+  "scope": "Development-only counterfactual diagnosis; no trained selector, no live API",
+  "completed_states": 2,
+  "channel_sha256": "f3bf9f31e0ea76b6fc587544a56f41df5e41a8562a9a4b573f7ca33aeea287ff",
+  "repeat_max_abs_difference": 0.0,
+  "elapsed_seconds": 8.930798700079322,
+  "peak_allocated_bytes": 375442432,
+  "ended_utc": "2026-09-26T11:26:26.348518+00:00"
+}

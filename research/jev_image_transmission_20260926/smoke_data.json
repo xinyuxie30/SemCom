@@ -1,0 +1,40 @@
+{
+  "scope": "Previously observed Kodak development fixtures only",
+  "images": [
+    {
+      "image_id": "kodim01.png",
+      "scene_id": "kodim01",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\kodak\\128\\kodim01.png",
+      "sha256": "606f738eaffa53599311705405771c5bdcf1762859f536d6e590120e653f8d77",
+      "split": "train"
+    },
+    {
+      "image_id": "kodim02.png",
+      "scene_id": "kodim02",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\kodak\\128\\kodim02.png",
+      "sha256": "b69210c8183330b8ac27e5c37e89a31eee559246361d790d444f977cb91c5577",
+      "split": "train"
+    },
+    {
+      "image_id": "kodim03.png",
+      "scene_id": "kodim03",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\kodak\\128\\kodim03.png",
+      "sha256": "0ad5fad20565501b640625c5032bc59d8cd5b0c2b4df6e55cf0fc3c503b82720",
+      "split": "validation"
+    },
+    {
+      "image_id": "kodim04.png",
+      "scene_id": "kodim04",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\kodak\\128\\kodim04.png",
+      "sha256": "cd6cd8b730f89af73a6ebd043336c79edec4e5fd07401d0b5bd5f2b7b1fb57c1",
+      "split": "test"
+    },
+    {
+      "image_id": "kodim05.png",
+      "scene_id": "kodim05",
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\jev_image_transmission_20260926\\datasets\\kodak\\128\\kodim05.png",
+      "sha256": "62b16154ab0a31bb273023ad1bd630187ac7aa1cee18939c5ccce63d3f8bb7c2",
+      "split": "external_test"
+    }
+  ]
+}

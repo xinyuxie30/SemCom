@@ -1,0 +1,4961 @@
+{
+  "status": "VERIFIED_ARITHMETIC_AND_COMPLETED_PILOT_NOT_FORMAL",
+  "interval_scope": "Post-hoc exploratory percentile intervals from 10000 resamples of 8 blocks, each comprising 4 adjacent sampled windows/scenes; six SNR/phase repeats stay together. One propagation trace per speed. Not a population CI over new channel realizations; block-size sensitivity untested.",
+  "manifests": {
+    "without": {
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\dcat_csi_prediction_20261004\\results\\b0_20261004T025556Z\\e2e_pilot_20261004T030106Z",
+      "status": "COMPLETED",
+      "scope": "B0 development pilot, fixed without_CP_C128; no new neural training",
+      "preflight_amendment": "Protocol val maps to manifest validation; corrected before any image inference. The first preflight failed with no output run and no GPU inference.",
+      "pid": 31856,
+      "created_utc": "2026-10-04T03:01:06.750324+00:00",
+      "b0": "research\\dcat_csi_prediction_20261004\\results\\b0_20261004T025556Z",
+      "protocol_sha256": "04d8db68d39f3f16662b08594213760bd3458f9fa627b819585c1a7cef7982c7",
+      "smoke": false,
+      "images": 32,
+      "channels": [
+        "A1",
+        "A3",
+        "A5",
+        "A7",
+        "A9"
+      ],
+      "snrs": [
+        0,
+        6,
+        12
+      ],
+      "phases": [
+        16,
+        112
+      ],
+      "policies": [
+        "hold",
+        "wiener_tx",
+        "wiener_rx",
+        "wiener_both",
+        "acf_both",
+        "ideal_same_metadata",
+        "ideal_zero_age"
+      ],
+      "completed_batches": 120,
+      "expected_rows": 6720,
+      "code_hashes": {
+        "run_e2e.py": "d422eee12eebbd01f52d6c94612373839bb1fe8785322b7709e3ee72263a17de",
+        "csi_predictors.py": "7687fe462d005b876c40480b5b337984c401d1122cffd25976e1055a89b3d8a4",
+        "run_b0.py": "bc1da92b4bf72d66657fa3086dd1daedf41818ba7216a239960a95167ae8db96"
+      },
+      "baseline_source_hashes": {
+        "dataloader.py": "f428d29535654c40090ee378bd77be94528b5be345601afca94db9205bc3a5ee",
+        "inference.py": "0d562cb607b59d2899cd47d2fe93a4c1d552341db13116cb5a2b3b3d8010ba40",
+        "net\\base_modules.py": "da3da3b5083986647e62e84c7658b11870c130cfe9d18cbbf58cc4aec058f812",
+        "net\\decoder.py": "96f1e231bbbbe405b15f13adc117f2c635bb2cb841c4bea70e5022a64162a15c",
+        "net\\encoder.py": "d2ce1427ed710185723a72496db71fbad9d02a06619ec4572e9404bb153e0472",
+        "net\\network.py": "a2c01e4265e80610508cd42ab340806270b9be5ef03a86523fe1e696a1135173",
+        "net\\Scoring_channel.py": "b3e56172f17759808e5c84415ebfcd88cc0145611f83595fa0b4409fb571b98c",
+        "net\\som_modules.py": "671a4e0e6dc096052f7f18111046825d5a158f4aec446238dbf64aa17fe74f55",
+        "utils.py": "6b160417fd02634a180f17db3fe885f170cc22fc8d22dd690569cf85f85452cd"
+      },
+      "baseline_helper_hashes": {
+        "common.py": "c87a0b5b29755a44097c86845c960e1fc406760cc868da77ec7304b36a923e38",
+        "evaluate_batched.py": "b853b3ddf146c62ec96e5f3cca43d06514776a57820e8c4a8a46d66eb34ba5c1"
+      },
+      "checkpoint_sha256": "8ff0ab9dffa4bfe17ee37fb3d2f79245e9f4fee2d70bf57775e3c91011fbe3a2",
+      "predictor_hashes": {
+        "A1": {
+          "wiener_empirical": "23e807d01cc8e0ed0404fff6e6643d9197901ec4ebd49f2271b52ab288ed8109",
+          "wiener_acf": "40fde156b4ec8fa5bba45d4ae769f7ee6ccb2f1ff4c58d6bae08c5d19caaf328"
+        },
+        "A3": {
+          "wiener_empirical": "4b2361dc4598c3c27db7a5fe73a47dca97cc003843e6de462427e187f21ae1c4",
+          "wiener_acf": "ac7c55037ab04d9617485c6a9a404aa1fc6216078651e9d38011849f1414ef9e"
+        },
+        "A5": {
+          "wiener_empirical": "c35173ab931a2e1121e79f29586a87c157cc5de00edf8774ab4c788f6fc8ccda",
+          "wiener_acf": "d8928bf49d4378465bf4a9152f5aa12c75d595771b18c549de4e04484f93953e"
+        },
+        "A7": {
+          "wiener_empirical": "5f5a7b5c9c225edaea7db6f342aa1db9b5569b27d997691215ea0ddb2f01384f",
+          "wiener_acf": "6e645feaf90e82713b7bb857ebbfa69b8b0dfa7bc0891105875ee79892a33502"
+        },
+        "A9": {
+          "wiener_empirical": "5b5678193a9d460f145bea3344fcaf7049547f303cb1367dbe49b0cccf64a9c6",
+          "wiener_acf": "84c883a22303317064ab329c18cded4f9b8bcef973d0cc0e91fd9457aaf08858"
+        }
+      },
+      "environment": {
+        "python": "3.13.0 | packaged by conda-forge | (main, Nov 27 2024, 19:03:49) [MSC v.1942 64 bit (AMD64)]",
+        "torch": "2.11.0+cu128",
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5060 Ti"
+      },
+      "repeated_call_max_abs_difference": 0.0,
+      "completed_rows": 6720,
+      "elapsed_seconds": 40.76190739986487,
+      "peak_allocated_bytes": 335757312,
+      "peak_reserved_bytes": 509607936,
+      "finished_utc": "2026-10-04T03:01:47.512730+00:00"
+    },
+    "with": {
+      "path": "D:\\PyChram_project\\CognitiveSemCom\\research\\dcat_csi_prediction_20261004\\results\\b0_20261004T025556Z\\e2e_pilot_with_20261004T030320Z",
+      "status": "COMPLETED",
+      "scope": "B0 development pilot, fixed with_CP_C128; no new neural training",
+      "checkpoint_family": "with",
+      "secondary_checkpoint_diagnostic": true,
+      "preflight_amendment": "Protocol val maps to manifest validation; corrected before any image inference. The first preflight failed with no output run and no GPU inference.",
+      "pid": 36584,
+      "created_utc": "2026-10-04T03:03:20.943439+00:00",
+      "b0": "research\\dcat_csi_prediction_20261004\\results\\b0_20261004T025556Z",
+      "protocol_sha256": "04d8db68d39f3f16662b08594213760bd3458f9fa627b819585c1a7cef7982c7",
+      "smoke": false,
+      "images": 32,
+      "channels": [
+        "A1",
+        "A3",
+        "A5",
+        "A7",
+        "A9"
+      ],
+      "snrs": [
+        0,
+        6,
+        12
+      ],
+      "phases": [
+        16,
+        112
+      ],
+      "policies": [
+        "hold",
+        "wiener_tx",
+        "wiener_rx",
+        "wiener_both",
+        "acf_both",
+        "ideal_same_metadata",
+        "ideal_zero_age"
+      ],
+      "completed_batches": 120,
+      "expected_rows": 6720,
+      "code_hashes": {
+        "run_e2e.py": "7ba104bc7f0696dc05a838a7e4470e16e3da2893202d7249bedc0d6ebe7ff1d8",
+        "csi_predictors.py": "7687fe462d005b876c40480b5b337984c401d1122cffd25976e1055a89b3d8a4",
+        "run_b0.py": "bc1da92b4bf72d66657fa3086dd1daedf41818ba7216a239960a95167ae8db96"
+      },
+      "baseline_source_hashes": {
+        "dataloader.py": "f428d29535654c40090ee378bd77be94528b5be345601afca94db9205bc3a5ee",
+        "inference.py": "0d562cb607b59d2899cd47d2fe93a4c1d552341db13116cb5a2b3b3d8010ba40",
+        "net\\base_modules.py": "da3da3b5083986647e62e84c7658b11870c130cfe9d18cbbf58cc4aec058f812",
+        "net\\decoder.py": "96f1e231bbbbe405b15f13adc117f2c635bb2cb841c4bea70e5022a64162a15c",
+        "net\\encoder.py": "d2ce1427ed710185723a72496db71fbad9d02a06619ec4572e9404bb153e0472",
+        "net\\network.py": "a2c01e4265e80610508cd42ab340806270b9be5ef03a86523fe1e696a1135173",
+        "net\\Scoring_channel.py": "b3e56172f17759808e5c84415ebfcd88cc0145611f83595fa0b4409fb571b98c",
+        "net\\som_modules.py": "671a4e0e6dc096052f7f18111046825d5a158f4aec446238dbf64aa17fe74f55",
+        "utils.py": "6b160417fd02634a180f17db3fe885f170cc22fc8d22dd690569cf85f85452cd"
+      },
+      "baseline_helper_hashes": {
+        "common.py": "c87a0b5b29755a44097c86845c960e1fc406760cc868da77ec7304b36a923e38",
+        "evaluate_batched.py": "b853b3ddf146c62ec96e5f3cca43d06514776a57820e8c4a8a46d66eb34ba5c1"
+      },
+      "checkpoint": "DCAT_with_CP_C128.model",
+      "checkpoint_sha256": "b79b15c40d2e18a37f3bd6867c05ae97f1ec5020e60460082d6fa3ff290d9288",
+      "predictor_hashes": {
+        "A1": {
+          "wiener_empirical": "23e807d01cc8e0ed0404fff6e6643d9197901ec4ebd49f2271b52ab288ed8109",
+          "wiener_acf": "40fde156b4ec8fa5bba45d4ae769f7ee6ccb2f1ff4c58d6bae08c5d19caaf328"
+        },
+        "A3": {
+          "wiener_empirical": "4b2361dc4598c3c27db7a5fe73a47dca97cc003843e6de462427e187f21ae1c4",
+          "wiener_acf": "ac7c55037ab04d9617485c6a9a404aa1fc6216078651e9d38011849f1414ef9e"
+        },
+        "A5": {
+          "wiener_empirical": "c35173ab931a2e1121e79f29586a87c157cc5de00edf8774ab4c788f6fc8ccda",
+          "wiener_acf": "d8928bf49d4378465bf4a9152f5aa12c75d595771b18c549de4e04484f93953e"
+        },
+        "A7": {
+          "wiener_empirical": "5f5a7b5c9c225edaea7db6f342aa1db9b5569b27d997691215ea0ddb2f01384f",
+          "wiener_acf": "6e645feaf90e82713b7bb857ebbfa69b8b0dfa7bc0891105875ee79892a33502"
+        },
+        "A9": {
+          "wiener_empirical": "5b5678193a9d460f145bea3344fcaf7049547f303cb1367dbe49b0cccf64a9c6",
+          "wiener_acf": "84c883a22303317064ab329c18cded4f9b8bcef973d0cc0e91fd9457aaf08858"
+        }
+      },
+      "environment": {
+        "python": "3.13.0 | packaged by conda-forge | (main, Nov 27 2024, 19:03:49) [MSC v.1942 64 bit (AMD64)]",
+        "torch": "2.11.0+cu128",
+        "cuda": "12.8",
+        "gpu": "NVIDIA GeForce RTX 5060 Ti"
+      },
+      "repeated_call_max_abs_difference": 0.0,
+      "completed_rows": 6720,
+      "elapsed_seconds": 40.23255979991518,
+      "peak_allocated_bytes": 335757312,
+      "peak_reserved_bytes": 509607936,
+      "finished_utc": "2026-10-04T03:04:01.176451+00:00"
+    }
+  },
+  "comparisons": [
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "hold",
+      "states": 192,
+      "mean_psnr_db": 29.92339700460434,
+      "delta_psnr_db": 0.0,
+      "exploratory_block_ci95_db": [
+        0.0,
+        0.0
+      ],
+      "mean_mse": 0.0015329988394417644,
+      "mean_lpips": 0.04437100370220529,
+      "pooled_tx_nmse": 0.06766562822483731,
+      "pooled_rx_nmse": 0.01948237655591598,
+      "mean_tx_error_estimate": 0.07559017278254032,
+      "mean_rx_error_estimate": 0.01900123106315732,
+      "prediction_ms_median": 0.02359994687139988,
+      "codec_ms_per_image_mean": 5.901646357718467
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_tx",
+      "states": 192,
+      "mean_psnr_db": 29.928870538870495,
+      "delta_psnr_db": 0.005473534266153972,
+      "exploratory_block_ci95_db": [
+        0.0009199380874633789,
+        0.009896971036990481
+      ],
+      "mean_mse": 0.001530939125018449,
+      "mean_lpips": 0.04466446536631944,
+      "pooled_tx_nmse": 2.9404940469717215e-05,
+      "pooled_rx_nmse": 0.01948237655591598,
+      "mean_tx_error_estimate": 0.07559017278254032,
+      "mean_rx_error_estimate": 0.01900123106315732,
+      "prediction_ms_median": 0.09624985978007317,
+      "codec_ms_per_image_mean": 6.02317031249792
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_rx",
+      "states": 192,
+      "mean_psnr_db": 29.936717361211777,
+      "delta_psnr_db": 0.013320356607437134,
+      "exploratory_block_ci95_db": [
+        0.005414952834447225,
+        0.020294080923000966
+      ],
+      "mean_mse": 0.0015294975011480953,
+      "mean_lpips": 0.044300430759903975,
+      "pooled_tx_nmse": 0.06766562822483731,
+      "pooled_rx_nmse": 5.3822129606534464e-06,
+      "mean_tx_error_estimate": 0.07559017278254032,
+      "mean_rx_error_estimate": 0.01900123106315732,
+      "prediction_ms_median": 0.09310001041740179,
+      "codec_ms_per_image_mean": 6.011243751951649
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_both",
+      "states": 192,
+      "mean_psnr_db": 29.942996978759766,
+      "delta_psnr_db": 0.019599974155426025,
+      "exploratory_block_ci95_db": [
+        0.010043630997339886,
+        0.028787463903427124
+      ],
+      "mean_mse": 0.0015271947592433814,
+      "mean_lpips": 0.044627850201019705,
+      "pooled_tx_nmse": 2.9404940469717215e-05,
+      "pooled_rx_nmse": 5.3822129606534464e-06,
+      "mean_tx_error_estimate": 0.07559017278254032,
+      "mean_rx_error_estimate": 0.01900123106315732,
+      "prediction_ms_median": 0.16155000776052475,
+      "codec_ms_per_image_mean": 5.946927600840961
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "acf_both",
+      "states": 192,
+      "mean_psnr_db": 29.940335154533386,
+      "delta_psnr_db": 0.01693814992904663,
+      "exploratory_block_ci95_db": [
+        0.004457215468088785,
+        0.031062068293492003
+      ],
+      "mean_mse": 0.0015308134964016062,
+      "mean_lpips": 0.04437069931009319,
+      "pooled_tx_nmse": 0.0005905375207147321,
+      "pooled_rx_nmse": 0.00016014910925154602,
+      "mean_tx_error_estimate": 0.07559017278254032,
+      "mean_rx_error_estimate": 0.01900123106315732,
+      "prediction_ms_median": 0.14050002209842205,
+      "codec_ms_per_image_mean": 5.949155210449438
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "ideal_same_metadata",
+      "states": 192,
+      "mean_psnr_db": 29.939783294995625,
+      "delta_psnr_db": 0.016386290391286213,
+      "exploratory_block_ci95_db": [
+        0.0011262694994608573,
+        0.030791429926951726
+      ],
+      "mean_mse": 0.001527807353644069,
+      "mean_lpips": 0.044199124778970145,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": 0.07559017278254032,
+      "mean_rx_error_estimate": 0.01900123106315732,
+      "prediction_ms_median": 0.019249971956014633,
+      "codec_ms_per_image_mean": 6.138759375365528
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "ideal_zero_age",
+      "states": 192,
+      "mean_psnr_db": 29.93188151717186,
+      "delta_psnr_db": 0.008484512567520142,
+      "exploratory_block_ci95_db": [
+        -0.016542365153630573,
+        0.029821136593818662
+      ],
+      "mean_mse": 0.001539088254617127,
+      "mean_lpips": 0.04340885399627344,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": -0.011600896716117859,
+      "mean_rx_error_estimate": -0.019471991807222366,
+      "prediction_ms_median": 0.021000043489038944,
+      "codec_ms_per_image_mean": 5.944633336184779
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "hold",
+      "states": 192,
+      "mean_psnr_db": 29.557760308186214,
+      "delta_psnr_db": 0.0,
+      "exploratory_block_ci95_db": [
+        0.0,
+        0.0
+      ],
+      "mean_mse": 0.0017320941653527673,
+      "mean_lpips": 0.04926478960987879,
+      "pooled_tx_nmse": 0.3512686129867247,
+      "pooled_rx_nmse": 0.10466422218410042,
+      "mean_tx_error_estimate": 0.1430640947073698,
+      "mean_rx_error_estimate": 0.040992122143507004,
+      "prediction_ms_median": 0.02289994154125452,
+      "codec_ms_per_image_mean": 5.964152599820712
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_tx",
+      "states": 192,
+      "mean_psnr_db": 29.523418953021366,
+      "delta_psnr_db": -0.03434135516484579,
+      "exploratory_block_ci95_db": [
+        -0.052856773138046265,
+        -0.013409733772277832
+      ],
+      "mean_mse": 0.0017477552849716933,
+      "mean_lpips": 0.048893735103774816,
+      "pooled_tx_nmse": 0.007402649080904649,
+      "pooled_rx_nmse": 0.10466422218410042,
+      "mean_tx_error_estimate": 0.1430640947073698,
+      "mean_rx_error_estimate": 0.040992122143507004,
+      "prediction_ms_median": 0.08519995026290417,
+      "codec_ms_per_image_mean": 6.187791665676438
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_rx",
+      "states": 192,
+      "mean_psnr_db": 29.621783802906673,
+      "delta_psnr_db": 0.06402349472045898,
+      "exploratory_block_ci95_db": [
+        0.04555512468020121,
+        0.07837337255477905
+      ],
+      "mean_mse": 0.0017174962618658658,
+      "mean_lpips": 0.04904213764045077,
+      "pooled_tx_nmse": 0.3512686129867247,
+      "pooled_rx_nmse": 0.0012148986833327197,
+      "mean_tx_error_estimate": 0.1430640947073698,
+      "mean_rx_error_estimate": 0.040992122143507004,
+      "prediction_ms_median": 0.08344987872987986,
+      "codec_ms_per_image_mean": 5.857511972862994
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_both",
+      "states": 192,
+      "mean_psnr_db": 29.653796126445133,
+      "delta_psnr_db": 0.09603581825892131,
+      "exploratory_block_ci95_db": [
+        0.07048273086547852,
+        0.12372520565986633
+      ],
+      "mean_mse": 0.0016929196223145482,
+      "mean_lpips": 0.047699908393648606,
+      "pooled_tx_nmse": 0.007402649080904649,
+      "pooled_rx_nmse": 0.0012148986833327197,
+      "mean_tx_error_estimate": 0.1430640947073698,
+      "mean_rx_error_estimate": 0.040992122143507004,
+      "prediction_ms_median": 0.13589998707175255,
+      "codec_ms_per_image_mean": 5.877783335260271
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "acf_both",
+      "states": 192,
+      "mean_psnr_db": 29.646549214919407,
+      "delta_psnr_db": 0.08878890673319499,
+      "exploratory_block_ci95_db": [
+        0.06813948353131613,
+        0.11320534845193227
+      ],
+      "mean_mse": 0.0016953583781287307,
+      "mean_lpips": 0.047946047833344586,
+      "pooled_tx_nmse": 0.03726952052549214,
+      "pooled_rx_nmse": 0.007537445821441966,
+      "mean_tx_error_estimate": 0.1430640947073698,
+      "mean_rx_error_estimate": 0.040992122143507004,
+      "prediction_ms_median": 0.1286498736590147,
+      "codec_ms_per_image_mean": 5.863215625140583
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "ideal_same_metadata",
+      "states": 192,
+      "mean_psnr_db": 29.652999341487885,
+      "delta_psnr_db": 0.09523903330167134,
+      "exploratory_block_ci95_db": [
+        0.06753771702448526,
+        0.12254761656125385
+      ],
+      "mean_mse": 0.0016940785655682096,
+      "mean_lpips": 0.04799581527671156,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": 0.1430640947073698,
+      "mean_rx_error_estimate": 0.040992122143507004,
+      "prediction_ms_median": 0.018700025975704193,
+      "codec_ms_per_image_mean": 5.863164062854291
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "ideal_zero_age",
+      "states": 192,
+      "mean_psnr_db": 29.70086568593979,
+      "delta_psnr_db": 0.14310537775357565,
+      "exploratory_block_ci95_db": [
+        0.10494973808526993,
+        0.17582882444063824
+      ],
+      "mean_mse": 0.0016763797362576345,
+      "mean_lpips": 0.04762573537785405,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": 0.020431581884622574,
+      "mean_rx_error_estimate": 0.0073615205474197865,
+      "prediction_ms_median": 0.02010003663599491,
+      "codec_ms_per_image_mean": 5.835679166921182
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "hold",
+      "states": 192,
+      "mean_psnr_db": 29.616545806328457,
+      "delta_psnr_db": 0.0,
+      "exploratory_block_ci95_db": [
+        0.0,
+        0.0
+      ],
+      "mean_mse": 0.0017770414727162158,
+      "mean_lpips": 0.0474675357399974,
+      "pooled_tx_nmse": 0.7769669210094601,
+      "pooled_rx_nmse": 0.2450351295803264,
+      "mean_tx_error_estimate": 0.22343330830335617,
+      "mean_rx_error_estimate": 0.06625082716345787,
+      "prediction_ms_median": 0.009700190275907516,
+      "codec_ms_per_image_mean": 4.570674997618577
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_tx",
+      "states": 192,
+      "mean_psnr_db": 29.281493306159973,
+      "delta_psnr_db": -0.3350525001684825,
+      "exploratory_block_ci95_db": [
+        -0.49765030269821486,
+        -0.1948877374331156
+      ],
+      "mean_mse": 0.0019659079309424974,
+      "mean_lpips": 0.052361391814580806,
+      "pooled_tx_nmse": 0.3623620247695767,
+      "pooled_rx_nmse": 0.2450351295803264,
+      "mean_tx_error_estimate": 0.22343330830335617,
+      "mean_rx_error_estimate": 0.06625082716345787,
+      "prediction_ms_median": 0.02610008232295513,
+      "codec_ms_per_image_mean": 4.516449997026939
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_rx",
+      "states": 192,
+      "mean_psnr_db": 29.64537004629771,
+      "delta_psnr_db": 0.02882423996925354,
+      "exploratory_block_ci95_db": [
+        -0.006496141354242964,
+        0.06321113879481949
+      ],
+      "mean_mse": 0.0017879304169809984,
+      "mean_lpips": 0.04829876928609641,
+      "pooled_tx_nmse": 0.7769669210094601,
+      "pooled_rx_nmse": 0.06387381561709503,
+      "mean_tx_error_estimate": 0.22343330830335617,
+      "mean_rx_error_estimate": 0.06625082716345787,
+      "prediction_ms_median": 0.026250025257468224,
+      "codec_ms_per_image_mean": 4.506656250062709
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_both",
+      "states": 192,
+      "mean_psnr_db": 29.542273998260498,
+      "delta_psnr_db": -0.07427180806795756,
+      "exploratory_block_ci95_db": [
+        -0.15776880582173664,
+        -0.0004343387981256139
+      ],
+      "mean_mse": 0.001897162550297556,
+      "mean_lpips": 0.050217912789473,
+      "pooled_tx_nmse": 0.3623620247695767,
+      "pooled_rx_nmse": 0.06387381561709503,
+      "mean_tx_error_estimate": 0.22343330830335617,
+      "mean_rx_error_estimate": 0.06625082716345787,
+      "prediction_ms_median": 0.042899977415800095,
+      "codec_ms_per_image_mean": 4.524481252398497
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "acf_both",
+      "states": 192,
+      "mean_psnr_db": 29.546909073988598,
+      "delta_psnr_db": -0.06963673233985901,
+      "exploratory_block_ci95_db": [
+        -0.12335088849067688,
+        -0.02147930810848872
+      ],
+      "mean_mse": 0.0018300832643944887,
+      "mean_lpips": 0.049738513169965394,
+      "pooled_tx_nmse": 0.3161878973730001,
+      "pooled_rx_nmse": 0.07307261000973478,
+      "mean_tx_error_estimate": 0.22343330830335617,
+      "mean_rx_error_estimate": 0.06625082716345787,
+      "prediction_ms_median": 0.03959995228797197,
+      "codec_ms_per_image_mean": 4.448325518751517
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "ideal_same_metadata",
+      "states": 192,
+      "mean_psnr_db": 29.8860990802447,
+      "delta_psnr_db": 0.2695532739162445,
+      "exploratory_block_ci95_db": [
+        0.2028777301311493,
+        0.3515502393245697
+      ],
+      "mean_mse": 0.001681289063147536,
+      "mean_lpips": 0.045939772161849156,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": 0.22343330830335617,
+      "mean_rx_error_estimate": 0.06625082716345787,
+      "prediction_ms_median": 0.007899943739175797,
+      "codec_ms_per_image_mean": 4.477729687399308
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "ideal_zero_age",
+      "states": 192,
+      "mean_psnr_db": 29.943992962439854,
+      "delta_psnr_db": 0.32744715611139935,
+      "exploratory_block_ci95_db": [
+        0.2485445521771908,
+        0.4123798608779907
+      ],
+      "mean_mse": 0.0016649890004221863,
+      "mean_lpips": 0.046019276065635495,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": 0.0328638032078743,
+      "mean_rx_error_estimate": 0.021210864186286926,
+      "prediction_ms_median": 0.008400063961744308,
+      "codec_ms_per_image_mean": 4.477570836267357
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "hold",
+      "states": 192,
+      "mean_psnr_db": 26.513981997966766,
+      "delta_psnr_db": 0.0,
+      "exploratory_block_ci95_db": [
+        0.0,
+        0.0
+      ],
+      "mean_mse": 0.0032572706492525563,
+      "mean_lpips": 0.08959519799100235,
+      "pooled_tx_nmse": 1.8239294815028235,
+      "pooled_rx_nmse": 0.6740896711026391,
+      "mean_tx_error_estimate": 0.571814090013504,
+      "mean_rx_error_estimate": 0.274182952940464,
+      "prediction_ms_median": 0.00970007386058569,
+      "codec_ms_per_image_mean": 4.542329166724812
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_tx",
+      "states": 192,
+      "mean_psnr_db": 26.27240698536237,
+      "delta_psnr_db": -0.24157501260439554,
+      "exploratory_block_ci95_db": [
+        -0.30771849552790326,
+        -0.1811458465953668
+      ],
+      "mean_mse": 0.0034479530678102797,
+      "mean_lpips": 0.09475068959970183,
+      "pooled_tx_nmse": 1.2950552345698667,
+      "pooled_rx_nmse": 0.6740896711026391,
+      "mean_tx_error_estimate": 0.571814090013504,
+      "mean_rx_error_estimate": 0.274182952940464,
+      "prediction_ms_median": 0.025300076231360435,
+      "codec_ms_per_image_mean": 4.4593473940039985
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_rx",
+      "states": 192,
+      "mean_psnr_db": 26.05899973710378,
+      "delta_psnr_db": -0.45498226086298627,
+      "exploratory_block_ci95_db": [
+        -0.9222575838367145,
+        -0.13887345741192506
+      ],
+      "mean_mse": 0.004097772373825137,
+      "mean_lpips": 0.10938580414707151,
+      "pooled_tx_nmse": 1.8239294815028235,
+      "pooled_rx_nmse": 0.3578943367130313,
+      "mean_tx_error_estimate": 0.571814090013504,
+      "mean_rx_error_estimate": 0.274182952940464,
+      "prediction_ms_median": 0.024950015358626842,
+      "codec_ms_per_image_mean": 4.421685939936045
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_both",
+      "states": 192,
+      "mean_psnr_db": 25.96986938516299,
+      "delta_psnr_db": -0.5441126128037771,
+      "exploratory_block_ci95_db": [
+        -0.973303218682607,
+        -0.26596881027023
+      ],
+      "mean_mse": 0.0041673701142220425,
+      "mean_lpips": 0.11078972316075426,
+      "pooled_tx_nmse": 1.2950552345698667,
+      "pooled_rx_nmse": 0.3578943367130313,
+      "mean_tx_error_estimate": 0.571814090013504,
+      "mean_rx_error_estimate": 0.274182952940464,
+      "prediction_ms_median": 0.040250131860375404,
+      "codec_ms_per_image_mean": 4.358943231636658
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "acf_both",
+      "states": 192,
+      "mean_psnr_db": 26.348410209019978,
+      "delta_psnr_db": -0.1655717889467875,
+      "exploratory_block_ci95_db": [
+        -0.2170619674026966,
+        -0.11387411157290143
+      ],
+      "mean_mse": 0.0033679700874624055,
+      "mean_lpips": 0.09297318569830774,
+      "pooled_tx_nmse": 0.828578040362869,
+      "pooled_rx_nmse": 0.22060956806512858,
+      "mean_tx_error_estimate": 0.571814090013504,
+      "mean_rx_error_estimate": 0.274182952940464,
+      "prediction_ms_median": 0.03950006794184446,
+      "codec_ms_per_image_mean": 4.370785416540457
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "ideal_same_metadata",
+      "states": 192,
+      "mean_psnr_db": 26.70943973461787,
+      "delta_psnr_db": 0.1954577366511027,
+      "exploratory_block_ci95_db": [
+        0.11924911489089329,
+        0.2759276429812113
+      ],
+      "mean_mse": 0.003157992713189136,
+      "mean_lpips": 0.0874531103230159,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": 0.571814090013504,
+      "mean_rx_error_estimate": 0.274182952940464,
+      "prediction_ms_median": 0.007999944500625134,
+      "codec_ms_per_image_mean": 4.411739060742548
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "ideal_zero_age",
+      "states": 192,
+      "mean_psnr_db": 26.96255464355151,
+      "delta_psnr_db": 0.44857264558474225,
+      "exploratory_block_ci95_db": [
+        0.3550031629701455,
+        0.5493332363665103
+      ],
+      "mean_mse": 0.0030589366059909175,
+      "mean_lpips": 0.08355160321419437,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": 0.10719717293977737,
+      "mean_rx_error_estimate": 0.14880172908306122,
+      "prediction_ms_median": 0.008500181138515472,
+      "codec_ms_per_image_mean": 4.436081248665384
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "hold",
+      "states": 192,
+      "mean_psnr_db": 26.80976954102516,
+      "delta_psnr_db": 0.0,
+      "exploratory_block_ci95_db": [
+        0.0,
+        0.0
+      ],
+      "mean_mse": 0.003083872232688615,
+      "mean_lpips": 0.0809575741586741,
+      "pooled_tx_nmse": 2.3463189563702467,
+      "pooled_rx_nmse": 1.0969686883929544,
+      "mean_tx_error_estimate": 0.7871900200843811,
+      "mean_rx_error_estimate": 0.6386027932167053,
+      "prediction_ms_median": 0.009450013749301434,
+      "codec_ms_per_image_mean": 4.535194268100895
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_tx",
+      "states": 192,
+      "mean_psnr_db": 26.241315493981045,
+      "delta_psnr_db": -0.5684540470441183,
+      "exploratory_block_ci95_db": [
+        -0.6533570686976115,
+        -0.5013581216335297
+      ],
+      "mean_mse": 0.0034197089151651503,
+      "mean_lpips": 0.09255961026065052,
+      "pooled_tx_nmse": 1.0299516422637038,
+      "pooled_rx_nmse": 1.0969686883929544,
+      "mean_tx_error_estimate": 0.7871900200843811,
+      "mean_rx_error_estimate": 0.6386027932167053,
+      "prediction_ms_median": 0.02284988295286894,
+      "codec_ms_per_image_mean": 4.553904687782051
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_rx",
+      "states": 192,
+      "mean_psnr_db": 25.449828426043194,
+      "delta_psnr_db": -1.3599411149819691,
+      "exploratory_block_ci95_db": [
+        -1.5643863677978516,
+        -1.1989538669586182
+      ],
+      "mean_mse": 0.004017017058989343,
+      "mean_lpips": 0.10733560842345469,
+      "pooled_tx_nmse": 2.3463189563702467,
+      "pooled_rx_nmse": 0.881779959159683,
+      "mean_tx_error_estimate": 0.7871900200843811,
+      "mean_rx_error_estimate": 0.6386027932167053,
+      "prediction_ms_median": 0.022549997083842754,
+      "codec_ms_per_image_mean": 4.593273439240875
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_both",
+      "states": 192,
+      "mean_psnr_db": 25.073911269505818,
+      "delta_psnr_db": -1.7358582715193431,
+      "exploratory_block_ci95_db": [
+        -1.9866932173569996,
+        -1.548324813445409
+      ],
+      "mean_mse": 0.004264137800570704,
+      "mean_lpips": 0.1158931147462378,
+      "pooled_tx_nmse": 1.0299516422637038,
+      "pooled_rx_nmse": 0.881779959159683,
+      "mean_tx_error_estimate": 0.7871900200843811,
+      "mean_rx_error_estimate": 0.6386027932167053,
+      "prediction_ms_median": 0.03600004129111767,
+      "codec_ms_per_image_mean": 4.565289059731488
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "acf_both",
+      "states": 192,
+      "mean_psnr_db": 25.075882211327553,
+      "delta_psnr_db": -1.733887329697609,
+      "exploratory_block_ci95_db": [
+        -1.9663787484169004,
+        -1.5561731964349748
+      ],
+      "mean_mse": 0.004255687257530856,
+      "mean_lpips": 0.11559380890685134,
+      "pooled_tx_nmse": 1.0158680284611294,
+      "pooled_rx_nmse": 0.882890543427022,
+      "mean_tx_error_estimate": 0.7871900200843811,
+      "mean_rx_error_estimate": 0.6386027932167053,
+      "prediction_ms_median": 0.03584998194128275,
+      "codec_ms_per_image_mean": 4.50340416864492
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "ideal_same_metadata",
+      "states": 192,
+      "mean_psnr_db": 27.33148307601611,
+      "delta_psnr_db": 0.5217135349909464,
+      "exploratory_block_ci95_db": [
+        0.40438345745205884,
+        0.6384795506795247
+      ],
+      "mean_mse": 0.002874055036424276,
+      "mean_lpips": 0.07588670902866095,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": 0.7871900200843811,
+      "mean_rx_error_estimate": 0.6386027932167053,
+      "prediction_ms_median": 0.00800006091594696,
+      "codec_ms_per_image_mean": 4.542775516407953
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "ideal_zero_age",
+      "states": 192,
+      "mean_psnr_db": 27.69894963502884,
+      "delta_psnr_db": 0.8891800940036774,
+      "exploratory_block_ci95_db": [
+        0.7729969436923663,
+        1.0131964484850564
+      ],
+      "mean_mse": 0.0026260773696928177,
+      "mean_lpips": 0.0718803402511791,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": 0.24385802447795868,
+      "mean_rx_error_estimate": 0.2952229976654053,
+      "prediction_ms_median": 0.008499948307871819,
+      "codec_ms_per_image_mean": 4.638137499568984
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "hold",
+      "states": 192,
+      "mean_psnr_db": 30.26634434858958,
+      "delta_psnr_db": 0.0,
+      "exploratory_block_ci95_db": [
+        0.0,
+        0.0
+      ],
+      "mean_mse": 0.0014526179232916547,
+      "mean_lpips": 0.039972937859905265,
+      "pooled_tx_nmse": 0.06766562822483731,
+      "pooled_rx_nmse": 0.01948237655591598,
+      "mean_tx_error_estimate": 7.788813672959805e-05,
+      "mean_rx_error_estimate": -0.0008897967636585236,
+      "prediction_ms_median": 0.008599949069321156,
+      "codec_ms_per_image_mean": 4.4138052059376305
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_tx",
+      "states": 192,
+      "mean_psnr_db": 30.05673822760582,
+      "delta_psnr_db": -0.20960612098375955,
+      "exploratory_block_ci95_db": [
+        -0.25971186856428785,
+        -0.1600333829720815
+      ],
+      "mean_mse": 0.0015035235514157346,
+      "mean_lpips": 0.0401372676108925,
+      "pooled_tx_nmse": 2.9404940469717215e-05,
+      "pooled_rx_nmse": 0.01948237655591598,
+      "mean_tx_error_estimate": 7.788813672959805e-05,
+      "mean_rx_error_estimate": -0.0008897967636585236,
+      "prediction_ms_median": 0.029399991035461426,
+      "codec_ms_per_image_mean": 4.496797915635398
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_rx",
+      "states": 192,
+      "mean_psnr_db": 30.40978879729907,
+      "delta_psnr_db": 0.14344444870948792,
+      "exploratory_block_ci95_db": [
+        0.13179651896158856,
+        0.1564850707848867
+      ],
+      "mean_mse": 0.0014187932675516397,
+      "mean_lpips": 0.03917756299779285,
+      "pooled_tx_nmse": 0.06766562822483731,
+      "pooled_rx_nmse": 5.3822129606534464e-06,
+      "mean_tx_error_estimate": 7.788813672959805e-05,
+      "mean_rx_error_estimate": -0.0008897967636585236,
+      "prediction_ms_median": 0.028699985705316067,
+      "codec_ms_per_image_mean": 4.578565625706688
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_both",
+      "states": 192,
+      "mean_psnr_db": 30.4411097963651,
+      "delta_psnr_db": 0.17476544777552286,
+      "exploratory_block_ci95_db": [
+        0.13767841458320618,
+        0.21503964066505432
+      ],
+      "mean_mse": 0.0014134325057284514,
+      "mean_lpips": 0.03821403571055271,
+      "pooled_tx_nmse": 2.9404940469717215e-05,
+      "pooled_rx_nmse": 5.3822129606534464e-06,
+      "mean_tx_error_estimate": 7.788813672959805e-05,
+      "mean_rx_error_estimate": -0.0008897967636585236,
+      "prediction_ms_median": 0.0489500816911459,
+      "codec_ms_per_image_mean": 4.593193750527765
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "acf_both",
+      "states": 192,
+      "mean_psnr_db": 30.42516749103864,
+      "delta_psnr_db": 0.15882314244906107,
+      "exploratory_block_ci95_db": [
+        0.12138400201996169,
+        0.1976388911406199
+      ],
+      "mean_mse": 0.0014122591229200527,
+      "mean_lpips": 0.038487396535250205,
+      "pooled_tx_nmse": 0.0005905375207147321,
+      "pooled_rx_nmse": 0.00016014910925154602,
+      "mean_tx_error_estimate": 7.788813672959805e-05,
+      "mean_rx_error_estimate": -0.0008897967636585236,
+      "prediction_ms_median": 0.04315003752708435,
+      "codec_ms_per_image_mean": 4.549008851123896
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "ideal_same_metadata",
+      "states": 192,
+      "mean_psnr_db": 30.447033723195393,
+      "delta_psnr_db": 0.1806893746058146,
+      "exploratory_block_ci95_db": [
+        0.14627489397923152,
+        0.21798343360424038
+      ],
+      "mean_mse": 0.0014088334349935394,
+      "mean_lpips": 0.03838705429370748,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": 7.788813672959805e-05,
+      "mean_rx_error_estimate": -0.0008897967636585236,
+      "prediction_ms_median": 0.007500057108700275,
+      "codec_ms_per_image_mean": 4.504311981387825
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "ideal_zero_age",
+      "states": 192,
+      "mean_psnr_db": 30.441939423481625,
+      "delta_psnr_db": 0.17559507489204407,
+      "exploratory_block_ci95_db": [
+        0.13923112501700718,
+        0.2155838869512081
+      ],
+      "mean_mse": 0.0014155641996467239,
+      "mean_lpips": 0.03852830173855182,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": -6.445334292948246e-06,
+      "mean_rx_error_estimate": -2.1899119019508362e-05,
+      "prediction_ms_median": 0.00800006091594696,
+      "codec_ms_per_image_mean": 4.479630203907921
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "hold",
+      "states": 192,
+      "mean_psnr_db": 29.39430359005928,
+      "delta_psnr_db": 0.0,
+      "exploratory_block_ci95_db": [
+        0.0,
+        0.0
+      ],
+      "mean_mse": 0.0017721515361017737,
+      "mean_lpips": 0.04759383435399892,
+      "pooled_tx_nmse": 0.3512686129867247,
+      "pooled_rx_nmse": 0.10466422218410042,
+      "mean_tx_error_estimate": 6.952643161639571e-05,
+      "mean_rx_error_estimate": -0.000849731732159853,
+      "prediction_ms_median": 0.00870006624609232,
+      "codec_ms_per_image_mean": 4.704242188987943
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_tx",
+      "states": 192,
+      "mean_psnr_db": 28.061719020207722,
+      "delta_psnr_db": -1.3325845698515575,
+      "exploratory_block_ci95_db": [
+        -1.9768051939706008,
+        -0.9364766237636408
+      ],
+      "mean_mse": 0.0024019821818228593,
+      "mean_lpips": 0.05542161053260012,
+      "pooled_tx_nmse": 0.007402649080904649,
+      "pooled_rx_nmse": 0.10466422218410042,
+      "mean_tx_error_estimate": 6.952643161639571e-05,
+      "mean_rx_error_estimate": -0.000849731732159853,
+      "prediction_ms_median": 0.026550027541816235,
+      "codec_ms_per_image_mean": 4.663939586559233
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_rx",
+      "states": 192,
+      "mean_psnr_db": 30.039527545372646,
+      "delta_psnr_db": 0.6452239553133646,
+      "exploratory_block_ci95_db": [
+        0.5977662953237693,
+        0.6913729508717855
+      ],
+      "mean_mse": 0.00161282715824503,
+      "mean_lpips": 0.04384420133040597,
+      "pooled_tx_nmse": 0.3512686129867247,
+      "pooled_rx_nmse": 0.0012148986833327197,
+      "mean_tx_error_estimate": 6.952643161639571e-05,
+      "mean_rx_error_estimate": -0.000849731732159853,
+      "prediction_ms_median": 0.02665002830326557,
+      "codec_ms_per_image_mean": 4.635671353753423
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_both",
+      "states": 192,
+      "mean_psnr_db": 30.168450504541397,
+      "delta_psnr_db": 0.7741469144821167,
+      "exploratory_block_ci95_db": [
+        0.6632271607716879,
+        0.8738075693448385
+      ],
+      "mean_mse": 0.0015489169319001423,
+      "mean_lpips": 0.04281976376175104,
+      "pooled_tx_nmse": 0.007402649080904649,
+      "pooled_rx_nmse": 0.0012148986833327197,
+      "mean_tx_error_estimate": 6.952643161639571e-05,
+      "mean_rx_error_estimate": -0.000849731732159853,
+      "prediction_ms_median": 0.04394992720335722,
+      "codec_ms_per_image_mean": 4.591356249875389
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "acf_both",
+      "states": 192,
+      "mean_psnr_db": 30.03145240743955,
+      "delta_psnr_db": 0.6371488173802694,
+      "exploratory_block_ci95_db": [
+        0.5180024651189645,
+        0.7459961672623953
+      ],
+      "mean_mse": 0.0015802593297091032,
+      "mean_lpips": 0.04384711529079747,
+      "pooled_tx_nmse": 0.03726952052549214,
+      "pooled_rx_nmse": 0.007537445821441966,
+      "mean_tx_error_estimate": 6.952643161639571e-05,
+      "mean_rx_error_estimate": -0.000849731732159853,
+      "prediction_ms_median": 0.041100080125033855,
+      "codec_ms_per_image_mean": 4.770120835019043
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "ideal_same_metadata",
+      "states": 192,
+      "mean_psnr_db": 30.19756383697192,
+      "delta_psnr_db": 0.8032602469126383,
+      "exploratory_block_ci95_db": [
+        0.6927072055637836,
+        0.9045642117659249
+      ],
+      "mean_mse": 0.0015371559712017795,
+      "mean_lpips": 0.04274716471263673,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": 6.952643161639571e-05,
+      "mean_rx_error_estimate": -0.000849731732159853,
+      "prediction_ms_median": 0.0076999422162771225,
+      "codec_ms_per_image_mean": 4.725728644795406
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "ideal_zero_age",
+      "states": 192,
+      "mean_psnr_db": 30.1973860959212,
+      "delta_psnr_db": 0.8030825058619181,
+      "exploratory_block_ci95_db": [
+        0.6925578430294992,
+        0.9043375353018442
+      ],
+      "mean_mse": 0.0015371503028139462,
+      "mean_lpips": 0.04272220904870968,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": -6.0693128034472466e-06,
+      "mean_rx_error_estimate": -2.1385028958320618e-05,
+      "prediction_ms_median": 0.008200062438845634,
+      "codec_ms_per_image_mean": 4.692453130701324
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "hold",
+      "states": 192,
+      "mean_psnr_db": 28.602936695019405,
+      "delta_psnr_db": 0.0,
+      "exploratory_block_ci95_db": [
+        0.0,
+        0.0
+      ],
+      "mean_mse": 0.002283015154982119,
+      "mean_lpips": 0.05485443916889684,
+      "pooled_tx_nmse": 0.7769669210094601,
+      "pooled_rx_nmse": 0.2450351295803264,
+      "mean_tx_error_estimate": 7.100083166733384e-05,
+      "mean_rx_error_estimate": -0.000822972971946001,
+      "prediction_ms_median": 0.02319994382560253,
+      "codec_ms_per_image_mean": 5.69259427114351
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_tx",
+      "states": 192,
+      "mean_psnr_db": 25.15856924156348,
+      "delta_psnr_db": -3.444367453455925,
+      "exploratory_block_ci95_db": [
+        -4.655482093493144,
+        -2.4012020776669187
+      ],
+      "mean_mse": 0.00725356851065347,
+      "mean_lpips": 0.09918386279120266,
+      "pooled_tx_nmse": 0.3623620247695767,
+      "pooled_rx_nmse": 0.2450351295803264,
+      "mean_tx_error_estimate": 7.100083166733384e-05,
+      "mean_rx_error_estimate": -0.000822972971946001,
+      "prediction_ms_median": 0.08014997001737356,
+      "codec_ms_per_image_mean": 5.7016625032701995
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_rx",
+      "states": 192,
+      "mean_psnr_db": 29.700942367315292,
+      "delta_psnr_db": 1.0980056722958882,
+      "exploratory_block_ci95_db": [
+        0.9240569042662781,
+        1.2324733833471935
+      ],
+      "mean_mse": 0.0019719265803056865,
+      "mean_lpips": 0.04797313654853497,
+      "pooled_tx_nmse": 0.7769669210094601,
+      "pooled_rx_nmse": 0.06387381561709503,
+      "mean_tx_error_estimate": 7.100083166733384e-05,
+      "mean_rx_error_estimate": -0.000822972971946001,
+      "prediction_ms_median": 0.07939990609884262,
+      "codec_ms_per_image_mean": 6.001358333984778
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_both",
+      "states": 192,
+      "mean_psnr_db": 28.883561298251152,
+      "delta_psnr_db": 0.2806246032317479,
+      "exploratory_block_ci95_db": [
+        -0.21910492877165483,
+        0.6378718068202336
+      ],
+      "mean_mse": 0.002613262935407571,
+      "mean_lpips": 0.057599311340406224,
+      "pooled_tx_nmse": 0.3623620247695767,
+      "pooled_rx_nmse": 0.06387381561709503,
+      "mean_tx_error_estimate": 7.100083166733384e-05,
+      "mean_rx_error_estimate": -0.000822972971946001,
+      "prediction_ms_median": 0.1307500060647726,
+      "codec_ms_per_image_mean": 5.953180209568624
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "acf_both",
+      "states": 192,
+      "mean_psnr_db": 27.799894750118256,
+      "delta_psnr_db": -0.8030419449011484,
+      "exploratory_block_ci95_db": [
+        -1.468029815206925,
+        -0.2163455088933309
+      ],
+      "mean_mse": 0.002694512779460941,
+      "mean_lpips": 0.06146355427093416,
+      "pooled_tx_nmse": 0.3161878973730001,
+      "pooled_rx_nmse": 0.07307261000973478,
+      "mean_tx_error_estimate": 7.100083166733384e-05,
+      "mean_rx_error_estimate": -0.000822972971946001,
+      "prediction_ms_median": 0.11800008360296488,
+      "codec_ms_per_image_mean": 5.741794797359034
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "ideal_same_metadata",
+      "states": 192,
+      "mean_psnr_db": 30.438832412163418,
+      "delta_psnr_db": 1.8358957171440125,
+      "exploratory_block_ci95_db": [
+        1.5031753696501253,
+        2.1594746972123784
+      ],
+      "mean_mse": 0.0015313745523902373,
+      "mean_lpips": 0.03988604841773243,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": 7.100083166733384e-05,
+      "mean_rx_error_estimate": -0.000822972971946001,
+      "prediction_ms_median": 0.018399907276034355,
+      "codec_ms_per_image_mean": 5.670931768690934
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "ideal_zero_age",
+      "states": 192,
+      "mean_psnr_db": 30.439765632152557,
+      "delta_psnr_db": 1.8368289371331532,
+      "exploratory_block_ci95_db": [
+        1.5039613932371139,
+        2.1607582233846183
+      ],
+      "mean_mse": 0.0015311470969739578,
+      "mean_lpips": 0.039861421971484866,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": -5.825771950185299e-06,
+      "mean_rx_error_estimate": -2.0741485059261322e-05,
+      "prediction_ms_median": 0.02010003663599491,
+      "codec_ms_per_image_mean": 5.671171874079543
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "hold",
+      "states": 192,
+      "mean_psnr_db": 24.54704877237479,
+      "delta_psnr_db": 0.0,
+      "exploratory_block_ci95_db": [
+        0.0,
+        0.0
+      ],
+      "mean_mse": 0.006452293734431199,
+      "mean_lpips": 0.1292483156042484,
+      "pooled_tx_nmse": 1.8239294815028235,
+      "pooled_rx_nmse": 0.6740896711026391,
+      "mean_tx_error_estimate": 8.056283695623279e-05,
+      "mean_rx_error_estimate": -0.0007893017027527094,
+      "prediction_ms_median": 0.01019984483718872,
+      "codec_ms_per_image_mean": 5.0147687531231595
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_tx",
+      "states": 192,
+      "mean_psnr_db": 22.67037034779787,
+      "delta_psnr_db": -1.8766784245769184,
+      "exploratory_block_ci95_db": [
+        -3.397961585099498,
+        -0.8861727842440208
+      ],
+      "mean_mse": 0.014906421275100001,
+      "mean_lpips": 0.172569525311701,
+      "pooled_tx_nmse": 1.2950552345698667,
+      "pooled_rx_nmse": 0.6740896711026391,
+      "mean_tx_error_estimate": 8.056283695623279e-05,
+      "mean_rx_error_estimate": -0.0007893017027527094,
+      "prediction_ms_median": 0.02635002601891756,
+      "codec_ms_per_image_mean": 4.89503854259965
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_rx",
+      "states": 192,
+      "mean_psnr_db": 24.692522317171097,
+      "delta_psnr_db": 0.1454735447963079,
+      "exploratory_block_ci95_db": [
+        -0.5562749008337656,
+        0.7924462606509527
+      ],
+      "mean_mse": 0.008896400162332915,
+      "mean_lpips": 0.1369856672924167,
+      "pooled_tx_nmse": 1.8239294815028235,
+      "pooled_rx_nmse": 0.3578943367130313,
+      "mean_tx_error_estimate": 8.056283695623279e-05,
+      "mean_rx_error_estimate": -0.0007893017027527094,
+      "prediction_ms_median": 0.02744991797953844,
+      "codec_ms_per_image_mean": 5.000722920764626
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_both",
+      "states": 192,
+      "mean_psnr_db": 23.065066248178482,
+      "delta_psnr_db": -1.481982524196307,
+      "exploratory_block_ci95_db": [
+        -2.8528581261634827,
+        -0.30793478091557824
+      ],
+      "mean_mse": 0.01302734798127858,
+      "mean_lpips": 0.174773353675846,
+      "pooled_tx_nmse": 1.2950552345698667,
+      "pooled_rx_nmse": 0.3578943367130313,
+      "mean_tx_error_estimate": 8.056283695623279e-05,
+      "mean_rx_error_estimate": -0.0007893017027527094,
+      "prediction_ms_median": 0.039899954572319984,
+      "codec_ms_per_image_mean": 5.010876041827335
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "acf_both",
+      "states": 192,
+      "mean_psnr_db": 21.903993318478268,
+      "delta_psnr_db": -2.6430554538965225,
+      "exploratory_block_ci95_db": [
+        -3.72188346820573,
+        -1.6739403307437897
+      ],
+      "mean_mse": 0.016937426844530517,
+      "mean_lpips": 0.20356343807361554,
+      "pooled_tx_nmse": 0.828578040362869,
+      "pooled_rx_nmse": 0.22060956806512858,
+      "mean_tx_error_estimate": 8.056283695623279e-05,
+      "mean_rx_error_estimate": -0.0007893017027527094,
+      "prediction_ms_median": 0.0385999446734786,
+      "codec_ms_per_image_mean": 5.0406869789488455
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "ideal_same_metadata",
+      "states": 192,
+      "mean_psnr_db": 27.421613951524098,
+      "delta_psnr_db": 2.8745651791493096,
+      "exploratory_block_ci95_db": [
+        2.4116677630692718,
+        3.323088650902112
+      ],
+      "mean_mse": 0.002819408746897049,
+      "mean_lpips": 0.07326241024808648,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": 8.056283695623279e-05,
+      "mean_rx_error_estimate": -0.0007893017027527094,
+      "prediction_ms_median": 0.007850001566112041,
+      "codec_ms_per_image_mean": 5.167657812611044
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "ideal_zero_age",
+      "states": 192,
+      "mean_psnr_db": 27.4217430750529,
+      "delta_psnr_db": 2.874694302678108,
+      "exploratory_block_ci95_db": [
+        2.413638917480906,
+        3.321852241953214
+      ],
+      "mean_mse": 0.0028178255960635092,
+      "mean_lpips": 0.07325427864755814,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": -5.602953024208546e-06,
+      "mean_rx_error_estimate": -1.995498314499855e-05,
+      "prediction_ms_median": 0.008850009180605412,
+      "codec_ms_per_image_mean": 5.111270833973928
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "hold",
+      "states": 192,
+      "mean_psnr_db": 23.022478498518467,
+      "delta_psnr_db": 0.0,
+      "exploratory_block_ci95_db": [
+        0.0,
+        0.0
+      ],
+      "mean_mse": 0.00937358916598896,
+      "mean_lpips": 0.16556185284086192,
+      "pooled_tx_nmse": 2.3463189563702467,
+      "pooled_rx_nmse": 1.0969686883929544,
+      "mean_tx_error_estimate": 0.00010858353925868869,
+      "mean_rx_error_estimate": -0.0007483693771064281,
+      "prediction_ms_median": 0.020549981854856014,
+      "codec_ms_per_image_mean": 5.442215620860225
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_tx",
+      "states": 192,
+      "mean_psnr_db": 16.485411621630192,
+      "delta_psnr_db": -6.537066876888275,
+      "exploratory_block_ci95_db": [
+        -7.45933770791938,
+        -5.5017796730001765
+      ],
+      "mean_mse": 0.0644220733762874,
+      "mean_lpips": 0.36346008549056324,
+      "pooled_tx_nmse": 1.0299516422637038,
+      "pooled_rx_nmse": 1.0969686883929544,
+      "mean_tx_error_estimate": 0.00010858353925868869,
+      "mean_rx_error_estimate": -0.0007483693771064281,
+      "prediction_ms_median": 0.05609996151179075,
+      "codec_ms_per_image_mean": 5.465205726068234
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_rx",
+      "states": 192,
+      "mean_psnr_db": 19.99654646962881,
+      "delta_psnr_db": -3.025932028889656,
+      "exploratory_block_ci95_db": [
+        -3.376867977840205,
+        -2.6795943239082893
+      ],
+      "mean_mse": 0.017303423014406388,
+      "mean_lpips": 0.23266030211622515,
+      "pooled_tx_nmse": 2.3463189563702467,
+      "pooled_rx_nmse": 0.881779959159683,
+      "mean_tx_error_estimate": 0.00010858353925868869,
+      "mean_rx_error_estimate": -0.0007483693771064281,
+      "prediction_ms_median": 0.033400021493434906,
+      "codec_ms_per_image_mean": 5.381511979067
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_both",
+      "states": 192,
+      "mean_psnr_db": 14.400907178719839,
+      "delta_psnr_db": -8.621571319798628,
+      "exploratory_block_ci95_db": [
+        -9.254779967168966,
+        -7.953890908199051
+      ],
+      "mean_mse": 0.06738549990404863,
+      "mean_lpips": 0.42316678329370916,
+      "pooled_tx_nmse": 1.0299516422637038,
+      "pooled_rx_nmse": 0.881779959159683,
+      "mean_tx_error_estimate": 0.00010858353925868869,
+      "mean_rx_error_estimate": -0.0007483693771064281,
+      "prediction_ms_median": 0.10329997166991234,
+      "codec_ms_per_image_mean": 5.472893750265939
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "acf_both",
+      "states": 192,
+      "mean_psnr_db": 14.612129544218382,
+      "delta_psnr_db": -8.410348954300085,
+      "exploratory_block_ci95_db": [
+        -9.059858042995135,
+        -7.748388681995372
+      ],
+      "mean_mse": 0.06309812633723293,
+      "mean_lpips": 0.42098276670246076,
+      "pooled_tx_nmse": 1.0158680284611294,
+      "pooled_rx_nmse": 0.882890543427022,
+      "mean_tx_error_estimate": 0.00010858353925868869,
+      "mean_rx_error_estimate": -0.0007483693771064281,
+      "prediction_ms_median": 0.06554997526109219,
+      "codec_ms_per_image_mean": 5.367938544319865
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "ideal_same_metadata",
+      "states": 192,
+      "mean_psnr_db": 28.192756960789364,
+      "delta_psnr_db": 5.170278462270896,
+      "exploratory_block_ci95_db": [
+        4.4731916549926005,
+        5.978090979158878
+      ],
+      "mean_mse": 0.0024394002587087016,
+      "mean_lpips": 0.06256813069921918,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": 0.00010858353925868869,
+      "mean_rx_error_estimate": -0.0007483693771064281,
+      "prediction_ms_median": 0.010300078429281712,
+      "codec_ms_per_image_mean": 5.488961457255452
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "ideal_zero_age",
+      "states": 192,
+      "mean_psnr_db": 28.193545550107956,
+      "delta_psnr_db": 5.171067051589489,
+      "exploratory_block_ci95_db": [
+        4.474408381804824,
+        5.978087402880192
+      ],
+      "mean_mse": 0.0024383933332122374,
+      "mean_lpips": 0.0625906417068715,
+      "pooled_tx_nmse": 0.0,
+      "pooled_rx_nmse": 0.0,
+      "mean_tx_error_estimate": -5.587353371083736e-06,
+      "mean_rx_error_estimate": -1.904275268316269e-05,
+      "prediction_ms_median": 0.01880002673715353,
+      "codec_ms_per_image_mean": 5.3988697958023595
+    }
+  ],
+  "stratified": [
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.048587024211883545
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -0.00409543514251709
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.010212540626525879
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.0024712085723876953
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.0018752813339233398
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -0.0020337700843811035
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.003014683723449707
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.01826024055480957
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.0015987753868103027
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.023555874824523926
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.0037717819213867188
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.04046189785003662
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.05379152297973633
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.011375784873962402
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.009038031101226807
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.027163386344909668
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.005208849906921387
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.03951603174209595
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.033908724784851074
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.021999716758728027
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.01058286428451538
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.02214968204498291
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.0053642988204956055
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.03951793909072876
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.042817533016204834
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.006924629211425781
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.01234513521194458
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.026910781860351562
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.005374312400817871
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.03938424587249756
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.0033798813819885254
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.026579976081848145
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -7.855892181396484e-05
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.004699349403381348
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.00010180473327636719
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A1",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.016428232192993164
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.03473794460296631
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -0.08459687232971191
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.06584280729293823
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -0.019102931022644043
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.0004988312721252441
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -0.0012687444686889648
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.0023632049560546875
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.031317055225372314
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.007363021373748779
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.10478478670120239
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.02291238307952881
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.21540051698684692
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.04978621006011963
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.10733497142791748
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.027117133140563965
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.1342167854309082
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.02624410390853882
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.23151570558547974
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.046989619731903076
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.11723160743713379
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.015685737133026123
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.12510699033737183
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.022300302982330322
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.20541918277740479
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.041364967823028564
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.10056412220001221
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.03594970703125
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.12783563137054443
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.02648031711578369
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.23923945426940918
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.06960046291351318
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.18394416570663452
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.08197534084320068
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.19053947925567627
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.07340925931930542
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A3",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.2591635584831238
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.1359328031539917
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -0.5612825155258179
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.322576105594635
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -0.6350370645523071
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.07443410158157349
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -0.2810524106025696
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.039501965045928955
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.03919804096221924
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.03335219621658325
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.118632972240448
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.03980696201324463
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.12777554988861084
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.028155267238616943
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -0.09804844856262207
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.11432445049285889
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -0.14860999584197998
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.03695744276046753
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -0.01953524351119995
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.021367251873016357
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -0.5149564146995544
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.012752294540405273
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -0.10152149200439453
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.029434919357299805
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.1778375506401062
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.11827254295349121
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.34544456005096436
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.11544221639633179
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.3754950165748596
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.0847252607345581
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.577940046787262
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.12414884567260742
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.49596303701400757
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.11192673444747925
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.47485971450805664
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.11252850294113159
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A5",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.6452561020851135
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.15202432870864868
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -0.24297726154327393
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.22445154190063477
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -0.4613393545150757
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.21230053901672363
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -0.1563570499420166
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.21078604459762573
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -0.46106916666030884
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.2761501669883728
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -0.592201441526413
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.3400546908378601
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -0.849632054567337
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.3317195773124695
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -0.5007529854774475
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.3796703815460205
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -0.8421236872673035
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.3497851490974426
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -0.8606238961219788
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.07813537120819092
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -0.2975319027900696
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.05023014545440674
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -0.32228022813796997
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.01626533269882202
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -0.22898775339126587
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.024611592292785645
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.22378873825073242
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.00594484806060791
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.20454180240631104
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.09972190856933594
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.6141375303268433
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.0017502307891845703
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.5353773832321167
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.1597643494606018
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.720376193523407
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.22381502389907837
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A7",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 1.050352692604065
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.9040641784667969
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -1.2265704870224
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -1.2800896167755127
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.49994343519210815
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -1.1473484635353088
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.8904688358306885
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -1.612387776374817
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -1.4980565905570984
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -2.5114415884017944
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -1.1391371488571167
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -1.1473484635353088
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -1.685954213142395
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -1.612387776374817
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -2.3188804388046265
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -2.5114415884017944
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -1.1262397170066833
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -1.1262302696704865
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -1.6659817099571228
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -1.6303660869598389
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -2.2973507046699524
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -2.55715548992157
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.058213651180267334
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.35012441873550415
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.1919184923171997
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.6718989014625549
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.3528176546096802
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 1.5053080916404724
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.49907952547073364
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.7040016651153564
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.5601696968078613
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 1.0623210072517395
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.6639245748519897
+    },
+    {
+      "checkpoint_family": "without",
+      "channel": "A9",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 1.8455840945243835
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.030671775341033936
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -0.10887748003005981
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.11026787757873535
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -0.26285332441329956
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.23749446868896484
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -0.5074717998504639
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.04363828897476196
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.047117531299591064
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.1196332573890686
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.12932854890823364
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.25662916898727417
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.26431989669799805
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.09154665470123291
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.08292895555496216
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.16125571727752686
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.12459796667098999
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.2835734486579895
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.3046899437904358
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.06234478950500488
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.08233249187469482
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.13232409954071045
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.13665133714675903
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.2541772127151489
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.28510892391204834
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.10583734512329102
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.0857352614402771
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.1613810658454895
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.13385671377182007
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.2813214659690857
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.3160043954849243
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.08697319030761719
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.07224923372268677
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.16300082206726074
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.13506561517715454
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.2800876498222351
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A1",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.31619393825531006
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.1783406138420105
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -1.1041029691696167
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.4952096939086914
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -2.1152727007865906
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.8086645007133484
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -3.293916940689087
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.24574899673461914
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.19897931814193726
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.5821826457977295
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.5747689604759216
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 1.1547510623931885
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 1.114912748336792
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.3292207717895508
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.3518971800804138
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.6274296045303345
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.7686871290206909
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 1.1966818571090698
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 1.3709649443626404
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.2799254059791565
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.2931789755821228
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.5527493953704834
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.6096821427345276
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 1.0406317114830017
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 1.0467252731323242
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.3057023882865906
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.406959593296051
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.6289029121398926
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.8113754391670227
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 1.2096681594848633
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 1.45695298910141
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.30449378490448
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.4073486924171448
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.6289029121398926
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.811378538608551
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 1.2096620798110962
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A3",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 1.4567090272903442
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -1.4473261833190918
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -3.7519299685955048
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -2.2189738154411316
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -4.818352937698364
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -2.9106085896492004
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -5.519013226032257
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.5672416687011719
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.40275484323501587
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 1.2784512042999268
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.8921332359313965
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 2.040550112724304
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 1.4069029688835144
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.17620140314102173
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -0.07343503832817078
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.5540908575057983
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.01816481351852417
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.9911409616470337
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.017584621906280518
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.31201356649398804
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -1.2317059636116028
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.6760814189910889
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -2.361999213695526
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 1.1268369555473328
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -3.3394784331321716
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.783351480960846
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 1.15324866771698
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 1.6181224584579468
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 1.9195700287818909
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 2.666791558265686
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 2.874290108680725
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.7835297584533691
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 1.1565020680427551
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 1.6181223392486572
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 1.9169896245002747
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 2.666791319847107
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A5",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 2.8790385127067566
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.4862147569656372
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -0.433500200510025
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.577154815196991
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -4.089489221572876
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.7761333584785461
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -4.897578194737434
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.39796561002731323
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -1.1665103137493134
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 1.0536247491836548
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -0.39140844345092773
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 1.7772005200386047
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -0.7980308532714844
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -0.19561025500297546
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -0.028124183416366577
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -0.12753978371620178
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -3.8554676473140717
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.08520093560218811
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -4.770354211330414
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.8153843879699707
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -3.332881808280945
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 1.6368541717529297
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -7.882709801197052
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 2.889961838722229
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -9.984941512346268
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 1.0837555527687073
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 3.8831447660923004
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 2.3094951510429382
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 1.997266411781311
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 4.297236382961273
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 3.6764928102493286
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 1.0872403979301453
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 3.8855007588863373
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 2.3084713220596313
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 1.9972595572471619
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 4.294328093528748
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A7",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 3.675365686416626
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "hold",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "hold",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "hold",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 0.0
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 0.2491404414176941
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_tx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -10.03971180319786
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 0.7018530964851379
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_tx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -14.765904560685158
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -0.20081782341003418
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_tx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -15.16696061193943
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -2.4722819924354553
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_rx",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -1.5443301796913147
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -4.214956969022751
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_rx",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -1.7863831520080566
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -5.383478939533234
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_rx",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -2.7541609406471252
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -1.4817903339862823
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -10.282083168625832
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -3.038931369781494
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -15.23530113697052
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -5.590077847242355
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "wiener_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -16.101244062185287
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": -1.4924059510231018
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "acf_both",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": -9.712448507547379
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": -3.034453719854355
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "acf_both",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": -14.851315155625343
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": -5.617496579885483
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "acf_both",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": -15.753973811864853
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 3.0999231338500977
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "ideal_same_metadata",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 5.301244333386421
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 5.255297243595123
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "ideal_same_metadata",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 3.6982672810554504
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 7.749079167842865
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "ideal_same_metadata",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 5.917859613895416
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 16,
+      "delta_psnr_db": 3.105291783809662
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "ideal_zero_age",
+      "snr_db": 0,
+      "phase": 112,
+      "delta_psnr_db": 5.3012662678956985
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 16,
+      "delta_psnr_db": 5.255294620990753
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "ideal_zero_age",
+      "snr_db": 6,
+      "phase": 112,
+      "delta_psnr_db": 3.6997039318084717
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 16,
+      "delta_psnr_db": 7.7491642236709595
+    },
+    {
+      "checkpoint_family": "with",
+      "channel": "A9",
+      "policy": "ideal_zero_age",
+      "snr_db": 12,
+      "phase": 112,
+      "delta_psnr_db": 5.915681481361389
+    }
+  ]
+}

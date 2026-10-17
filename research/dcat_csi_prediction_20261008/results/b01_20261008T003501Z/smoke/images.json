@@ -1,0 +1,34 @@
+[
+  {
+    "image_id": "udis_000194.png",
+    "scene_id": "udis_000194",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000194.png",
+    "sha256": "bd8276b6c03905be6e2003bfb4e6620154b925b70847c158918c4b0fb5de5776",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000194.jpg"
+  },
+  {
+    "image_id": "udis_000702.png",
+    "scene_id": "udis_000702",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000702.png",
+    "sha256": "36a37f72fd620d2879cbd0fef0e0ad5e7bb395e13797daa5d14e992ffa76a5d0",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000702.jpg"
+  },
+  {
+    "image_id": "udis_000297.png",
+    "scene_id": "udis_000297",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000297.png",
+    "sha256": "b6ce7d4abe3a6463d21964532d2eb292e6f64aa477ba1ec89276efb6ffc53518",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000297.jpg"
+  },
+  {
+    "image_id": "udis_000339.png",
+    "scene_id": "udis_000339",
+    "path": "D:\\PyChram_project\\DCAT-SoM\\datasets\\UDIS-D\\test128\\000339.png",
+    "sha256": "eac12b5c03a612fdefbaef2f6cc16d00a0378a74e5e9c35d9a608f93b966ba94",
+    "split": "validation",
+    "source": "raw\\testing\\input1\\000339.jpg"
+  }
+]

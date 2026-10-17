@@ -1,0 +1,6 @@
+{
+  "session_id": 38850,
+  "launch_mechanism": "persistent exec session",
+  "monitoring": "Local process timeout and heartbeat only; no conversational polling",
+  "supervisor_pid": 34588
+}

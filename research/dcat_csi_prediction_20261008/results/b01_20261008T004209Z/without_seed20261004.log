@@ -1,0 +1,100 @@
+Failed to find real location of D:\anconda\envs\pytorch\python.exe
+E2E_OUTPUT D:\PyChram_project\CognitiveSemCom\research\dcat_csi_prediction_20261008\results\b01_20261008T004209Z\without_seed20261004
+D:\PyChram_project\DCAT-SoM\.venv\Lib\site-packages\timm\models\layers\__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+D:\anconda\envs\pytorch\Lib\site-packages\torch\functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\aten\src\ATen\native\TensorShape.cpp:4383.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+D:\anconda\envs\pytorch\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\anconda\envs\pytorch\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+{"channel": "A1", "snr": 0, "phase": 16, "rows": 384, "total": 11520, "elapsed_s": 7.1}
+{"channel": "A1", "snr": 0, "phase": 112, "rows": 768, "total": 11520, "elapsed_s": 9.0}
+{"channel": "A1", "snr": 6, "phase": 16, "rows": 1152, "total": 11520, "elapsed_s": 11.1}
+{"channel": "A1", "snr": 6, "phase": 112, "rows": 1536, "total": 11520, "elapsed_s": 13.2}
+{"channel": "A1", "snr": 12, "phase": 16, "rows": 1920, "total": 11520, "elapsed_s": 15.3}
+{"channel": "A1", "snr": 12, "phase": 112, "rows": 2304, "total": 11520, "elapsed_s": 17.4}
+{"channel": "A3", "snr": 0, "phase": 16, "rows": 2688, "total": 11520, "elapsed_s": 19.4}
+{"channel": "A3", "snr": 0, "phase": 112, "rows": 3072, "total": 11520, "elapsed_s": 21.4}
+{"channel": "A3", "snr": 6, "phase": 16, "rows": 3456, "total": 11520, "elapsed_s": 23.5}
+{"channel": "A3", "snr": 6, "phase": 112, "rows": 3840, "total": 11520, "elapsed_s": 25.5}
+{"channel": "A3", "snr": 12, "phase": 16, "rows": 4224, "total": 11520, "elapsed_s": 27.6}
+{"channel": "A3", "snr": 12, "phase": 112, "rows": 4608, "total": 11520, "elapsed_s": 29.7}
+{"channel": "A5", "snr": 0, "phase": 16, "rows": 4992, "total": 11520, "elapsed_s": 31.8}
+{"channel": "A5", "snr": 0, "phase": 112, "rows": 5376, "total": 11520, "elapsed_s": 33.8}
+{"channel": "A5", "snr": 6, "phase": 16, "rows": 5760, "total": 11520, "elapsed_s": 35.9}
+{"channel": "A5", "snr": 6, "phase": 112, "rows": 6144, "total": 11520, "elapsed_s": 38.0}
+{"channel": "A5", "snr": 12, "phase": 16, "rows": 6528, "total": 11520, "elapsed_s": 40.0}
+{"channel": "A5", "snr": 12, "phase": 112, "rows": 6912, "total": 11520, "elapsed_s": 42.0}
+{"channel": "A7", "snr": 0, "phase": 16, "rows": 7296, "total": 11520, "elapsed_s": 44.0}
+{"channel": "A7", "snr": 0, "phase": 112, "rows": 7680, "total": 11520, "elapsed_s": 46.1}
+{"channel": "A7", "snr": 6, "phase": 16, "rows": 8064, "total": 11520, "elapsed_s": 48.1}
+{"channel": "A7", "snr": 6, "phase": 112, "rows": 8448, "total": 11520, "elapsed_s": 50.1}
+{"channel": "A7", "snr": 12, "phase": 16, "rows": 8832, "total": 11520, "elapsed_s": 52.2}
+{"channel": "A7", "snr": 12, "phase": 112, "rows": 9216, "total": 11520, "elapsed_s": 54.3}
+{"channel": "A9", "snr": 0, "phase": 16, "rows": 9600, "total": 11520, "elapsed_s": 56.4}
+{"channel": "A9", "snr": 0, "phase": 112, "rows": 9984, "total": 11520, "elapsed_s": 58.3}
+{"channel": "A9", "snr": 6, "phase": 16, "rows": 10368, "total": 11520, "elapsed_s": 60.4}
+{"channel": "A9", "snr": 6, "phase": 112, "rows": 10752, "total": 11520, "elapsed_s": 62.5}
+{"channel": "A9", "snr": 12, "phase": 16, "rows": 11136, "total": 11520, "elapsed_s": 64.5}
+{"channel": "A9", "snr": 12, "phase": 112, "rows": 11520, "total": 11520, "elapsed_s": 66.6}
+{"channel": "A1", "policy": "hold", "psnr_db": 29.92339700460434, "delta_psnr_vs_hold_db": 0.0}
+{"channel": "A1", "policy": "hold_cal", "psnr_db": 29.923805872599285, "delta_psnr_vs_hold_db": 0.0004088679949442546}
+{"channel": "A1", "policy": "hold_mmse", "psnr_db": 29.53534770011902, "delta_psnr_vs_hold_db": -0.38804930448532104}
+{"channel": "A1", "policy": "hold_cal_mmse", "psnr_db": 29.532279670238495, "delta_psnr_vs_hold_db": -0.3911173343658447}
+{"channel": "A1", "policy": "wiener", "psnr_db": 29.942996978759766, "delta_psnr_vs_hold_db": 0.019599974155426025}
+{"channel": "A1", "policy": "wiener_cal", "psnr_db": 29.94417663415273, "delta_psnr_vs_hold_db": 0.020779629548390705}
+{"channel": "A1", "policy": "wiener_mmse", "psnr_db": 29.58583389719327, "delta_psnr_vs_hold_db": -0.3375631074110667}
+{"channel": "A1", "policy": "wiener_cal_mmse", "psnr_db": 29.561145842075348, "delta_psnr_vs_hold_db": -0.3622511625289917}
+{"channel": "A1", "policy": "acf", "psnr_db": 29.940335154533386, "delta_psnr_vs_hold_db": 0.01693814992904663}
+{"channel": "A1", "policy": "acf_cal", "psnr_db": 29.943580170472462, "delta_psnr_vs_hold_db": 0.02018316586812337}
+{"channel": "A1", "policy": "acf_mmse", "psnr_db": 29.56570170323054, "delta_psnr_vs_hold_db": -0.3576953013737996}
+{"channel": "A1", "policy": "acf_cal_mmse", "psnr_db": 29.538523097832996, "delta_psnr_vs_hold_db": -0.384873906771342}
+{"channel": "A3", "policy": "hold", "psnr_db": 29.557760308186214, "delta_psnr_vs_hold_db": 0.0}
+{"channel": "A3", "policy": "hold_cal", "psnr_db": 29.541302273670834, "delta_psnr_vs_hold_db": -0.01645803451538086}
+{"channel": "A3", "policy": "hold_mmse", "psnr_db": 28.99164205789566, "delta_psnr_vs_hold_db": -0.5661182502905527}
+{"channel": "A3", "policy": "hold_cal_mmse", "psnr_db": 29.011865998307865, "delta_psnr_vs_hold_db": -0.5458943098783493}
+{"channel": "A3", "policy": "wiener", "psnr_db": 29.653796126445133, "delta_psnr_vs_hold_db": 0.09603581825892131}
+{"channel": "A3", "policy": "wiener_cal", "psnr_db": 29.655544231335323, "delta_psnr_vs_hold_db": 0.09778392314910889}
+{"channel": "A3", "policy": "wiener_mmse", "psnr_db": 29.196139335632324, "delta_psnr_vs_hold_db": -0.361620972553889}
+{"channel": "A3", "policy": "wiener_cal_mmse", "psnr_db": 29.137026225527126, "delta_psnr_vs_hold_db": -0.4207340826590856}
+{"channel": "A3", "policy": "acf", "psnr_db": 29.646549214919407, "delta_psnr_vs_hold_db": 0.08878890673319499}
+{"channel": "A3", "policy": "acf_cal", "psnr_db": 29.655285328626633, "delta_psnr_vs_hold_db": 0.09752502044041951}
+{"channel": "A3", "policy": "acf_mmse", "psnr_db": 29.21369036535422, "delta_psnr_vs_hold_db": -0.3440699428319931}
+{"channel": "A3", "policy": "acf_cal_mmse", "psnr_db": 29.173595070838928, "delta_psnr_vs_hold_db": -0.38416523734728497}
+{"channel": "A5", "policy": "hold", "psnr_db": 29.616545806328457, "delta_psnr_vs_hold_db": 0.0}
+{"channel": "A5", "policy": "hold_cal", "psnr_db": 29.474614063898724, "delta_psnr_vs_hold_db": -0.14193174242973328}
+{"channel": "A5", "policy": "hold_mmse", "psnr_db": 29.092381954193115, "delta_psnr_vs_hold_db": -0.5241638521353403}
+{"channel": "A5", "policy": "hold_cal_mmse", "psnr_db": 29.053785264492035, "delta_psnr_vs_hold_db": -0.5627605418364207}
+{"channel": "A5", "policy": "wiener", "psnr_db": 29.542273998260498, "delta_psnr_vs_hold_db": -0.07427180806795756}
+{"channel": "A5", "policy": "wiener_cal", "psnr_db": 29.543029874563217, "delta_psnr_vs_hold_db": -0.07351593176523845}
+{"channel": "A5", "policy": "wiener_mmse", "psnr_db": 29.18770373860995, "delta_psnr_vs_hold_db": -0.42884206771850586}
+{"channel": "A5", "policy": "wiener_cal_mmse", "psnr_db": 29.18171351154645, "delta_psnr_vs_hold_db": -0.43483229478200275}
+{"channel": "A5", "policy": "acf", "psnr_db": 29.546909073988598, "delta_psnr_vs_hold_db": -0.06963673233985901}
+{"channel": "A5", "policy": "acf_cal", "psnr_db": 29.541081964969635, "delta_psnr_vs_hold_db": -0.0754638413588206}
+{"channel": "A5", "policy": "acf_mmse", "psnr_db": 29.13413617014885, "delta_psnr_vs_hold_db": -0.48240963617960614}
+{"channel": "A5", "policy": "acf_cal_mmse", "psnr_db": 29.129829853773117, "delta_psnr_vs_hold_db": -0.48671595255533856}
+{"channel": "A7", "policy": "hold", "psnr_db": 26.513981997966766, "delta_psnr_vs_hold_db": 0.0}
+{"channel": "A7", "policy": "hold_cal", "psnr_db": 26.468320081631344, "delta_psnr_vs_hold_db": -0.04566191633542379}
+{"channel": "A7", "policy": "hold_mmse", "psnr_db": 23.95676285525163, "delta_psnr_vs_hold_db": -2.557219142715136}
+{"channel": "A7", "policy": "hold_cal_mmse", "psnr_db": 23.924019654591877, "delta_psnr_vs_hold_db": -2.589962343374888}
+{"channel": "A7", "policy": "wiener", "psnr_db": 25.96986938516299, "delta_psnr_vs_hold_db": -0.5441126128037771}
+{"channel": "A7", "policy": "wiener_cal", "psnr_db": 25.996136700113613, "delta_psnr_vs_hold_db": -0.5178452978531519}
+{"channel": "A7", "policy": "wiener_mmse", "psnr_db": 23.83820616702239, "delta_psnr_vs_hold_db": -2.6757758309443793}
+{"channel": "A7", "policy": "wiener_cal_mmse", "psnr_db": 23.649624695380528, "delta_psnr_vs_hold_db": -2.8643573025862374}
+{"channel": "A7", "policy": "acf", "psnr_db": 26.348410209019978, "delta_psnr_vs_hold_db": -0.1655717889467875}
+{"channel": "A7", "policy": "acf_cal", "psnr_db": 26.47068017721176, "delta_psnr_vs_hold_db": -0.04330182075500488}
+{"channel": "A7", "policy": "acf_mmse", "psnr_db": 24.43549836675326, "delta_psnr_vs_hold_db": -2.078483631213506}
+{"channel": "A7", "policy": "acf_cal_mmse", "psnr_db": 24.164520954092342, "delta_psnr_vs_hold_db": -2.3494610438744226}
+{"channel": "A9", "policy": "hold", "psnr_db": 26.80976954102516, "delta_psnr_vs_hold_db": 0.0}
+{"channel": "A9", "policy": "hold_cal", "psnr_db": 26.854811986287434, "delta_psnr_vs_hold_db": 0.045042445262273155}
+{"channel": "A9", "policy": "hold_mmse", "psnr_db": 25.347662205497425, "delta_psnr_vs_hold_db": -1.4621073355277379}
+{"channel": "A9", "policy": "hold_cal_mmse", "psnr_db": 25.363717158635456, "delta_psnr_vs_hold_db": -1.4460523823897045}
+{"channel": "A9", "policy": "wiener", "psnr_db": 25.073911269505818, "delta_psnr_vs_hold_db": -1.7358582715193431}
+{"channel": "A9", "policy": "wiener_cal", "psnr_db": 25.132549926638603, "delta_psnr_vs_hold_db": -1.6772196143865585}
+{"channel": "A9", "policy": "wiener_mmse", "psnr_db": 21.390272026260693, "delta_psnr_vs_hold_db": -5.419497514764468}
+{"channel": "A9", "policy": "wiener_cal_mmse", "psnr_db": 21.576856449246407, "delta_psnr_vs_hold_db": -5.232913091778755}
+{"channel": "A9", "policy": "acf", "psnr_db": 25.075882211327553, "delta_psnr_vs_hold_db": -1.733887329697609}
+{"channel": "A9", "policy": "acf_cal", "psnr_db": 25.13457015156746, "delta_psnr_vs_hold_db": -1.6751993894577026}
+{"channel": "A9", "policy": "acf_mmse", "psnr_db": 21.48428977529208, "delta_psnr_vs_hold_db": -5.325479765733083}
+{"channel": "A9", "policy": "acf_cal_mmse", "psnr_db": 21.673414791623753, "delta_psnr_vs_hold_db": -5.13635474940141}

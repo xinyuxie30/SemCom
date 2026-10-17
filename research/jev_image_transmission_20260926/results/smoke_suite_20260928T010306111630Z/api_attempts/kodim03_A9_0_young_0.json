@@ -1,0 +1,6 @@
+{
+  "case_id": "kodim03_A9_0_young_0",
+  "request_sha256": "e9b18fe5478b0da2daab7a310a3be12844edc865b3815c47c2ab521a1b756806",
+  "status": "attempt_reserved_before_send",
+  "automatic_retry": false
+}

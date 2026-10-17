@@ -1,0 +1,175 @@
+{
+  "case_id": "kodim04_A9_0_young_0",
+  "input_preparation_ms": 6.14569999743253,
+  "description_ms": 325.48619993031025,
+  "descriptions": {
+    "upper_left": {
+      "grade": "noticeable",
+      "distribution": {
+        "low": 0.011743,
+        "noticeable": 0.823257,
+        "severe": 0.021939,
+        "uncertain": 0.143061
+      }
+    },
+    "upper_right": {
+      "grade": "noticeable",
+      "distribution": {
+        "low": 0.004665,
+        "noticeable": 0.888959,
+        "severe": 0.02369,
+        "uncertain": 0.082686
+      }
+    },
+    "lower_left": {
+      "grade": "noticeable",
+      "distribution": {
+        "low": 0.01236,
+        "noticeable": 0.764656,
+        "severe": 0.029649,
+        "uncertain": 0.193335
+      }
+    },
+    "lower_right": {
+      "grade": "noticeable",
+      "distribution": {
+        "low": 0.00449,
+        "noticeable": 0.855712,
+        "severe": 0.037597,
+        "uncertain": 0.1022
+      }
+    }
+  },
+  "option_order": [
+    "lower_left",
+    "upper_left",
+    "global",
+    "lower_right",
+    "stop",
+    "upper_right"
+  ],
+  "qwen_visual": {
+    "action": "global",
+    "probabilities": {
+      "lower_left": 0.0034886617213487625,
+      "upper_left": 0.0007784256595186889,
+      "global": 0.9673092365264893,
+      "lower_right": 0.0007784256595186889,
+      "stop": 0.025777917355298996,
+      "upper_right": 0.0018673461163416505
+    },
+    "elapsed_ms": 240.32589991111308
+  },
+  "qwen_description_only": {
+    "action": "global",
+    "probabilities": {
+      "lower_left": 0.031477317214012146,
+      "upper_left": 0.019091958180069923,
+      "global": 0.9199020266532898,
+      "lower_right": 0.0048272027634084225,
+      "stop": 0.013121698051691055,
+      "upper_right": 0.011579858139157295
+    },
+    "elapsed_ms": 379.21669997740537
+  },
+  "visual_jev": {
+    "action": "global",
+    "probabilities": {
+      "lower_left": 0.026504037901759148,
+      "upper_left": 0.01821594126522541,
+      "global": 0.8776931762695312,
+      "lower_right": 0.01251962035894394,
+      "stop": 0.03856314718723297,
+      "upper_right": 0.026504037901759148
+    },
+    "elapsed_ms": 290.69430008530617
+  },
+  "official_request": {
+    "model": "jev-1.13.0",
+    "state": {
+      "protocol": "A static 128x128 image was received using a fixed C128 DCAT encoder. Each enhancement uses the same C64 payload budget. A local enhancement independently codes one original quadrant after resizing it to 128x128, then shrinks its reconstruction to that quadrant. A global enhancement codes the whole original image with C64. The affected pixels are an equal blend of the first and second reconstructions. The second reconstruction can be noisy; an enhancement may worsen quality. All five transmission actions are currently feasible. This diagnostic asks about quality alone, with no penalty for unused budget and a fixed execution time.",
+      "available_evidence": "Received pixels only. Link measurements are handled by a separate numerical controller.",
+      "receiver_region_descriptions": {
+        "upper_left": {
+          "grade": "noticeable",
+          "distribution": {
+            "low": 0.011743,
+            "noticeable": 0.823257,
+            "severe": 0.021939,
+            "uncertain": 0.143061
+          }
+        },
+        "upper_right": {
+          "grade": "noticeable",
+          "distribution": {
+            "low": 0.004665,
+            "noticeable": 0.888959,
+            "severe": 0.02369,
+            "uncertain": 0.082686
+          }
+        },
+        "lower_left": {
+          "grade": "noticeable",
+          "distribution": {
+            "low": 0.01236,
+            "noticeable": 0.764656,
+            "severe": 0.029649,
+            "uncertain": 0.193335
+          }
+        },
+        "lower_right": {
+          "grade": "noticeable",
+          "distribution": {
+            "low": 0.00449,
+            "noticeable": 0.855712,
+            "severe": 0.037597,
+            "uncertain": 0.1022
+          }
+        }
+      },
+      "description_origin": "Frozen visual front end on received pixels; uncertain observations, not ground truth"
+    },
+    "questions": {
+      "action": {
+        "type": "choice",
+        "instructions": "Choose the next transmission action most likely to give the lowest reconstruction error over the ENTIRE image after the fixed blending procedure. The original image and future channel are unavailable. Use present evidence; an image that looks plausible may still contain errors. Consider all six candidates. Do not prioritize an object merely because it is salient.",
+        "criteria": {
+          "lower_left": "Enhance only the lower left quadrant.",
+          "upper_left": "Enhance only the upper left quadrant.",
+          "global": "Send an additional low-rate full image and blend it with the first reconstruction.",
+          "lower_right": "Enhance only the lower right quadrant.",
+          "stop": "Keep the current reconstruction without further transmission.",
+          "upper_right": "Enhance only the upper right quadrant."
+        }
+      },
+      "benefit_upper_left": {
+        "type": "noul",
+        "instructions": "Given only the receiver evidence and protocol, is action 'upper_left' likely to reduce whole-image mean squared reconstruction error compared with keeping the current reconstruction? Future true channel and original pixels are unavailable. This is a prediction, not a calculation."
+      },
+      "benefit_upper_right": {
+        "type": "noul",
+        "instructions": "Given only the receiver evidence and protocol, is action 'upper_right' likely to reduce whole-image mean squared reconstruction error compared with keeping the current reconstruction? Future true channel and original pixels are unavailable. This is a prediction, not a calculation."
+      },
+      "benefit_lower_left": {
+        "type": "noul",
+        "instructions": "Given only the receiver evidence and protocol, is action 'lower_left' likely to reduce whole-image mean squared reconstruction error compared with keeping the current reconstruction? Future true channel and original pixels are unavailable. This is a prediction, not a calculation."
+      },
+      "benefit_lower_right": {
+        "type": "noul",
+        "instructions": "Given only the receiver evidence and protocol, is action 'lower_right' likely to reduce whole-image mean squared reconstruction error compared with keeping the current reconstruction? Future true channel and original pixels are unavailable. This is a prediction, not a calculation."
+      },
+      "benefit_global": {
+        "type": "noul",
+        "instructions": "Given only the receiver evidence and protocol, is action 'global' likely to reduce whole-image mean squared reconstruction error compared with keeping the current reconstruction? Future true channel and original pixels are unavailable. This is a prediction, not a calculation."
+      }
+    }
+  },
+  "official_jev": {
+    "action": "stop",
+    "fallback": true,
+    "error_type": "URLError",
+    "http_status": null,
+    "elapsed_ms": 5002.301499946043
+  },
+  "peak_allocated_bytes": 9493911552
+}

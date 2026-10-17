@@ -1,0 +1,48 @@
+{
+  "case_id": "kodim05_A9_0_young_0",
+  "image_id": "kodim05.png",
+  "scene_id": "kodim05",
+  "split": "external_test",
+  "channel": "A9",
+  "snr_db": 0,
+  "age_group": "young",
+  "replica": 0,
+  "csi_age_at_last_base_symbol_ms": 0.25,
+  "last_known_csi_magnitude": 1.1129605849314435,
+  "region_features": {
+    "upper_left": {
+      "mean": 0.37612855434417725,
+      "std": 0.13482561707496643,
+      "gradient": 0.04965592175722122,
+      "laplacian_variance": 0.019682493060827255,
+      "entropy_bits": 3.0337047608322085,
+      "clipped_fraction": 0.0
+    },
+    "upper_right": {
+      "mean": 0.33987826108932495,
+      "std": 0.1284603774547577,
+      "gradient": 0.042394839227199554,
+      "laplacian_variance": 0.018374312669038773,
+      "entropy_bits": 2.7260093966730903,
+      "clipped_fraction": 0.0
+    },
+    "lower_left": {
+      "mean": 0.24878232181072235,
+      "std": 0.08907029032707214,
+      "gradient": 0.034191519021987915,
+      "laplacian_variance": 0.009860708378255367,
+      "entropy_bits": 2.459355699479641,
+      "clipped_fraction": 0.0
+    },
+    "lower_right": {
+      "mean": 0.2708985209465027,
+      "std": 0.0876641720533371,
+      "gradient": 0.03768981993198395,
+      "laplacian_variance": 0.013299604877829552,
+      "entropy_bits": 2.469928907242899,
+      "clipped_fraction": 0.0
+    }
+  },
+  "feature_ms": 2.472299966029823,
+  "array": "receiver_arrays/kodim05_A9_0_young_0.npz"
+}

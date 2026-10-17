@@ -1,0 +1,26 @@
+{
+  "variant": "uncertainty_only",
+  "seed": 29,
+  "train_rows": 4,
+  "validation_rows": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 30.659812927246094,
+      "validation_mse": 33.060394287109375
+    },
+    {
+      "epoch": 2,
+      "train_mse": 30.401344299316406,
+      "validation_mse": 32.936607360839844
+    },
+    {
+      "epoch": 3,
+      "train_mse": 30.144161224365234,
+      "validation_mse": 32.812278747558594
+    }
+  ],
+  "best_validation_mse": 32.812278747558594,
+  "objective": "log regional MSE",
+  "test_labels_used": false
+}

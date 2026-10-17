@@ -1,0 +1,178 @@
+[
+  {
+    "base_c": 64,
+    "enhancement_c": 64,
+    "alpha": 0.5,
+    "states": 32,
+    "images": 8,
+    "best_fixed_action_on_this_development_set": "global",
+    "mean_psnr_db": {
+      "upper_left": 22.319958304697114,
+      "upper_right": 21.912826890554193,
+      "lower_left": 22.327624428547765,
+      "lower_right": 22.226130197652193,
+      "global": 22.702242162294738,
+      "stop": 21.922431172329578
+    },
+    "mean_mse": {
+      "upper_left": 0.006823628042184282,
+      "upper_right": 0.008786446960584726,
+      "lower_left": 0.0067146035871701315,
+      "lower_right": 0.0068142661766614765,
+      "global": 0.006293707563600037,
+      "stop": 0.007306600680749398
+    },
+    "oracle_mean_psnr_db": 22.96318957465429,
+    "oracle_mse_reduction_vs_best_fixed_fraction": 0.07957531071299939,
+    "oracle_gain_vs_best_fixed_mean_db": 0.2609474123595501,
+    "oracle_gain_vs_expected_uniform_random_roi_mean_db": 0.7665546192914728,
+    "single_round_mean_psnr_db": 24.67785598783147,
+    "oracle_minus_single_mean_db": -1.7146664131771796,
+    "oracle_mse_reduction_vs_single_fraction": -0.43677522339466845,
+    "oracle_beats_single_fraction": 0.09375,
+    "perfect_roi_mean_psnr_db": 23.927133587000803,
+    "oracle_action_counts": {
+      "upper_left": 5,
+      "upper_right": 5,
+      "lower_left": 2,
+      "lower_right": 1,
+      "global": 18,
+      "stop": 1
+    },
+    "at_least_5pct_oracle_headroom": true,
+    "oracle_matches_single_mean_mse": false,
+    "resource_scope": "Equal forward payload only; control, pilots, feedback, service waits not debited"
+  },
+  {
+    "base_c": 64,
+    "enhancement_c": 64,
+    "alpha": 1.0,
+    "states": 32,
+    "images": 8,
+    "best_fixed_action_on_this_development_set": "lower_left",
+    "mean_psnr_db": {
+      "upper_left": 22.231420155960272,
+      "upper_right": 21.58983878867909,
+      "lower_left": 22.366217740916117,
+      "lower_right": 22.203379216412984,
+      "global": 22.16952000898941,
+      "stop": 21.922431172329578
+    },
+    "mean_mse": {
+      "upper_left": 0.0072243534959852695,
+      "upper_right": 0.012724196421913803,
+      "lower_left": 0.006699963923892938,
+      "lower_right": 0.006850909448985476,
+      "global": 0.007578353426652029,
+      "stop": 0.007306600680749398
+    },
+    "oracle_mean_psnr_db": 23.045796559773752,
+    "oracle_mse_reduction_vs_best_fixed_fraction": 0.14951373807560508,
+    "oracle_gain_vs_best_fixed_mean_db": 0.6795788188576342,
+    "oracle_gain_vs_expected_uniform_random_roi_mean_db": 0.9480825842816367,
+    "single_round_mean_psnr_db": 24.67785598783147,
+    "oracle_minus_single_mean_db": -1.6320594280577174,
+    "oracle_mse_reduction_vs_single_fraction": -0.41329810932551747,
+    "oracle_beats_single_fraction": 0.09375,
+    "perfect_roi_mean_psnr_db": 23.927133587000803,
+    "oracle_action_counts": {
+      "upper_left": 4,
+      "upper_right": 6,
+      "lower_left": 4,
+      "lower_right": 0,
+      "global": 16,
+      "stop": 2
+    },
+    "at_least_5pct_oracle_headroom": true,
+    "oracle_matches_single_mean_mse": false,
+    "resource_scope": "Equal forward payload only; control, pilots, feedback, service waits not debited"
+  },
+  {
+    "base_c": 128,
+    "enhancement_c": 64,
+    "alpha": 0.5,
+    "states": 32,
+    "images": 8,
+    "best_fixed_action_on_this_development_set": "lower_right",
+    "mean_psnr_db": {
+      "upper_left": 24.71117029338966,
+      "upper_right": 24.286310347460915,
+      "lower_left": 24.61551284561201,
+      "lower_right": 24.799120536393488,
+      "global": 24.2947464588808,
+      "stop": 24.561728683925786
+    },
+    "mean_mse": {
+      "upper_left": 0.004412769259943161,
+      "upper_right": 0.0061292052996577695,
+      "lower_left": 0.004415832787344698,
+      "lower_right": 0.004060601859237067,
+      "global": 0.004448281561053591,
+      "stop": 0.004524044969002716
+    },
+    "oracle_mean_psnr_db": 25.28884387389969,
+    "oracle_mse_reduction_vs_best_fixed_fraction": 0.13592663961665907,
+    "oracle_gain_vs_best_fixed_mean_db": 0.4897233375062008,
+    "oracle_gain_vs_expected_uniform_random_roi_mean_db": 0.6858153681856716,
+    "single_round_mean_psnr_db": 26.147082732162154,
+    "oracle_minus_single_mean_db": -0.8582388582624634,
+    "oracle_mse_reduction_vs_single_fraction": -0.12790151140100536,
+    "oracle_beats_single_fraction": 0.25,
+    "perfect_roi_mean_psnr_db": 26.549563535150288,
+    "oracle_action_counts": {
+      "upper_left": 5,
+      "upper_right": 4,
+      "lower_left": 3,
+      "lower_right": 4,
+      "global": 11,
+      "stop": 5
+    },
+    "at_least_5pct_oracle_headroom": true,
+    "oracle_matches_single_mean_mse": false,
+    "resource_scope": "Equal forward payload only; control, pilots, feedback, service waits not debited"
+  },
+  {
+    "base_c": 128,
+    "enhancement_c": 64,
+    "alpha": 1.0,
+    "states": 32,
+    "images": 8,
+    "best_fixed_action_on_this_development_set": "lower_right",
+    "mean_psnr_db": {
+      "upper_left": 24.11785060737936,
+      "upper_right": 23.480193837220042,
+      "lower_left": 24.122307533006257,
+      "lower_right": 24.38642530859471,
+      "global": 22.16952000898941,
+      "stop": 24.561728683925786
+    },
+    "mean_mse": {
+      "upper_left": 0.005340601906937081,
+      "upper_right": 0.010607410604279721,
+      "lower_left": 0.004878558152995538,
+      "lower_right": 0.004325185942434473,
+      "global": 0.007578353426652029,
+      "stop": 0.004524044969002716
+    },
+    "oracle_mean_psnr_db": 25.09019470444808,
+    "oracle_mse_reduction_vs_best_fixed_fraction": 0.14939736729774578,
+    "oracle_gain_vs_best_fixed_mean_db": 0.7037693958533734,
+    "oracle_gain_vs_expected_uniform_random_roi_mean_db": 1.0635003828979914,
+    "single_round_mean_psnr_db": 26.147082732162154,
+    "oracle_minus_single_mean_db": -1.0568880277140709,
+    "oracle_mse_reduction_vs_single_fraction": -0.18266476716911817,
+    "oracle_beats_single_fraction": 0.21875,
+    "perfect_roi_mean_psnr_db": 26.549563535150288,
+    "oracle_action_counts": {
+      "upper_left": 5,
+      "upper_right": 7,
+      "lower_left": 2,
+      "lower_right": 2,
+      "global": 4,
+      "stop": 12
+    },
+    "at_least_5pct_oracle_headroom": true,
+    "oracle_matches_single_mean_mse": false,
+    "resource_scope": "Equal forward payload only; control, pilots, feedback, service waits not debited"
+  }
+]
