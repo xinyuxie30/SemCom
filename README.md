@@ -1,9 +1,10 @@
 # Cognitive Semantic Communication
 
-Intent-driven KG-SKB semantic communication with dynamic pruning, OOD
-injection, and cloud-edge knowledge alignment.
+Cognitive Semantic Communication is a research workspace for exploring how a sender and receiver can share task-relevant knowledge without transmitting an entire knowledge graph every time.
 
-Target venues: IEEE TWC / JSAC.
+The project selects a connected subgraph using intent keywords, simulates a receiver with a stale semantic knowledge base, and compares ways to align that knowledge. Its experiments report task success, semantic consistency, payload and latency alongside communication decisions. Cloud and edge behavior is simulated locally; this is an experimental platform, not a deployed service.
+
+The implementation uses deterministic keyword matching rather than an LLM API. Results apply to the datasets, tasks and evaluation settings documented below; the project does not claim that the individual mechanisms are independently novel.
 
 ## Core Idea
 
@@ -37,7 +38,7 @@ TX reference SubGraph
   -> KG semantic consistency + payload + latency + kappa
 ```
 
-## Main Innovations
+## Core Components
 
 - Intent-driven dynamic connected sub-graph pruning.
 - OOD entity semantic injection into the KG.
